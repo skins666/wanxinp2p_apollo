@@ -1,0 +1,5 @@
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 20:40:21,343 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 20:40:21,343 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:611] - Evicting 1 items (expired=1, evictionLimit=1)
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 20:40:21,343 WARN [Eureka-EvictionTimer][AbstractInstanceRegistry.java:623] - DS: Registry: expired lease for ACCOUNT-SERVICE/account-service:192.168.2.153:53030
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 20:40:21,345 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:330] - Cancelled instance ACCOUNT-SERVICE/account-service:192.168.2.153:53030 (replication=false)
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 20:40:31,344 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms

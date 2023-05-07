@@ -1,0 +1,55 @@
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:05,334 INFO [main][SpringApplication.java:675] - No active profile set, falling back to default profiles: default
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:06,820 WARN [main][EndpointId.java:135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:07,269 INFO [main][GenericScope.java:294] - BeanFactory id=33c68227-122c-36dd-8028-a36de4f592a4
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:07,384 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$378336c7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:08,224 INFO [main][TomcatWebServer.java:90] - Tomcat initialized with port(s): 53000 (http)
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:08,260 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-53000"]
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:08,296 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:08,299 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:08,317 INFO [main][DirectJDKLog.java:173] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\nodejs\;C:\Ruby26-x64\bin;C:\Users\apple\AppData\Local\Microsoft\WindowsApps;E:\apache-maven-3.5.4\bin;C:\Users\apple\AppData\Roaming\npm;.]
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:08,728 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:08,728 INFO [main][ServletWebServerApplicationContext.java:296] - Root WebApplicationContext: initialization completed in 3367 ms
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:08,948 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:08,950 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:08,974 INFO [main][DynamicPropertyFactory.java:281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@fddd7ae
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:10,431 INFO [main][WebApplicationImpl.java:815] - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:10,733 INFO [main][DiscoveryJerseyProvider.java:70] - Using JSON encoding codec LegacyJacksonJson
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:10,735 INFO [main][DiscoveryJerseyProvider.java:71] - Using JSON decoding codec LegacyJacksonJson
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:10,942 INFO [main][DiscoveryJerseyProvider.java:80] - Using XML encoding codec XStreamXml
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:10,942 INFO [main][DiscoveryJerseyProvider.java:81] - Using XML decoding codec XStreamXml
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:11,452 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:11,452 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:11,634 INFO [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService 'applicationTaskExecutor'
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:12,233 INFO [main][InstanceInfoFactory.java:71] - Setting initial instance status as: STARTING
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:12,265 INFO [main][DiscoveryClient.java:349] - Initializing Eureka in region us-east-1
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:12,265 INFO [main][DiscoveryClient.java:352] - Client configured to neither register nor query for data.
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:12,274 INFO [main][DiscoveryClient.java:365] - Discovery Client initialized at timestamp 1568019852273 with initial instances count: 0
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:12,322 INFO [main][DefaultEurekaServerContext.java:63] - Initializing ...
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:12,326 INFO [main][PeerEurekaNodes.java:188] - Adding new peer nodes [http://localhost:53000/eureka/]
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:12,577 INFO [main][DiscoveryJerseyProvider.java:70] - Using JSON encoding codec LegacyJacksonJson
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:12,578 INFO [main][DiscoveryJerseyProvider.java:71] - Using JSON decoding codec LegacyJacksonJson
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:12,578 INFO [main][DiscoveryJerseyProvider.java:80] - Using XML encoding codec XStreamXml
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:12,578 INFO [main][DiscoveryJerseyProvider.java:81] - Using XML decoding codec XStreamXml
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:12,750 INFO [main][PeerEurekaNodes.java:110] - Replica node URL:  http://localhost:53000/eureka/
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:12,760 INFO [main][AbstractInstanceRegistry.java:151] - Finished initializing remote region registries. All known remote regions: []
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:12,761 INFO [main][DefaultEurekaServerContext.java:70] - Initialized
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:12,773 INFO [main][EndpointLinksResolver.java:59] - Exposing 2 endpoint(s) beneath base path '/actuator'
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:12,889 INFO [main][EurekaServiceRegistry.java:42] - Registering application HNRADIO-DISCOVERY with eureka with status UP
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:12,893 INFO [Thread-33][EurekaServerBootstrap.java:109] - Setting the eureka configuration..
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:12,894 INFO [Thread-33][EurekaServerBootstrap.java:114] - Eureka data center value eureka.datacenter is not set, defaulting to default
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:12,895 INFO [Thread-33][EurekaServerBootstrap.java:128] - Eureka environment value eureka.environment is not set, defaulting to test
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:12,911 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-53000"]
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:12,917 INFO [Thread-33][EurekaServerBootstrap.java:184] - isAws returned false
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:12,918 INFO [Thread-33][EurekaServerBootstrap.java:152] - Initialized server context
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:12,918 INFO [Thread-33][PeerAwareInstanceRegistryImpl.java:241] - Got 1 instances from neighboring DS node
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:12,919 INFO [Thread-33][PeerAwareInstanceRegistryImpl.java:242] - Renew threshold is: 1
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:12,919 INFO [Thread-33][PeerAwareInstanceRegistryImpl.java:253] - Changing status to UP
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:12,931 INFO [Thread-33][EurekaServerInitializerConfiguration.java:72] - Started Eureka Server
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:12,982 INFO [main][TomcatWebServer.java:204] - Tomcat started on port(s): 53000 (http) with context path ''
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:12,983 INFO [main][EurekaAutoServiceRegistration.java:141] - Updating port to 53000
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:12,986 INFO [main][StartupInfoLogger.java:59] - Started DiscoveryServer in 10.092 seconds (JVM running for 11.403)
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:13,063 INFO [RMI TCP Connection(6)-127.0.0.1][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:13,064 INFO [RMI TCP Connection(6)-127.0.0.1][FrameworkServlet.java:524] - Initializing Servlet 'dispatcherServlet'
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:13,074 INFO [RMI TCP Connection(6)-127.0.0.1][FrameworkServlet.java:546] - Completed initialization in 10 ms
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:22,922 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-09-09 17:04:32,923 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms

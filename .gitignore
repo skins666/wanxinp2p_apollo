@@ -1,0 +1,4 @@
+# 项目排除路径
+/wanxinp2p-api/target/
+/wanxinp2p-common/target/
+/wanxinp2p-discover-server/target/

@@ -1,0 +1,105 @@
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 11:17:15,793 ERROR [DiscoveryClient-HeartbeatExecutor-0][ClientResponse.java:625] - A message body reader for Java class com.netflix.appinfo.InstanceInfo, and Java type class com.netflix.appinfo.InstanceInfo, and MIME media type text/html; charset=utf-8 was not found
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 11:17:15,794 ERROR [DiscoveryClient-HeartbeatExecutor-0][ClientResponse.java:627] - The registered message body readers compatible with the MIME media type are:
+*/* ->
+  com.sun.jersey.core.impl.provider.entity.FormProvider
+  com.sun.jersey.core.impl.provider.entity.StringProvider
+  com.sun.jersey.core.impl.provider.entity.ByteArrayProvider
+  com.sun.jersey.core.impl.provider.entity.FileProvider
+  com.sun.jersey.core.impl.provider.entity.InputStreamProvider
+  com.sun.jersey.core.impl.provider.entity.DataSourceProvider
+  com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider$General
+  com.sun.jersey.core.impl.provider.entity.ReaderProvider
+  com.sun.jersey.core.impl.provider.entity.DocumentProvider
+  com.sun.jersey.core.impl.provider.entity.SourceProvider$StreamSourceReader
+  com.sun.jersey.core.impl.provider.entity.SourceProvider$SAXSourceReader
+  com.sun.jersey.core.impl.provider.entity.SourceProvider$DOMSourceReader
+  com.alibaba.fastjson.support.jaxrs.FastJsonProvider
+  com.sun.jersey.core.impl.provider.entity.XMLRootElementProvider$General
+  com.sun.jersey.core.impl.provider.entity.XMLListElementProvider$General
+  com.sun.jersey.core.impl.provider.entity.XMLRootObjectProvider$General
+  com.sun.jersey.core.impl.provider.entity.EntityHolderReader
+
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 11:17:15,796 ERROR [DiscoveryClient-HeartbeatExecutor-0][RedirectingEurekaHttpClient.java:91] - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:53000/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: A message body reader for Java class com.netflix.appinfo.InstanceInfo, and Java type class com.netflix.appinfo.InstanceInfo, and MIME media type text/html; charset=utf-8 was not found
+	at com.sun.jersey.api.client.ClientResponse.getEntity(ClientResponse.java:630)
+	at com.sun.jersey.api.client.ClientResponse.getEntity(ClientResponse.java:586)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:105)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1405)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 11:17:15,818 ERROR [DiscoveryClient-HeartbeatExecutor-0][ClientResponse.java:625] - A message body reader for Java class com.netflix.appinfo.InstanceInfo, and Java type class com.netflix.appinfo.InstanceInfo, and MIME media type text/html; charset=utf-8 was not found
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 11:17:15,819 ERROR [DiscoveryClient-HeartbeatExecutor-0][ClientResponse.java:627] - The registered message body readers compatible with the MIME media type are:
+*/* ->
+  com.sun.jersey.core.impl.provider.entity.FormProvider
+  com.sun.jersey.core.impl.provider.entity.StringProvider
+  com.sun.jersey.core.impl.provider.entity.ByteArrayProvider
+  com.sun.jersey.core.impl.provider.entity.FileProvider
+  com.sun.jersey.core.impl.provider.entity.InputStreamProvider
+  com.sun.jersey.core.impl.provider.entity.DataSourceProvider
+  com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider$General
+  com.sun.jersey.core.impl.provider.entity.ReaderProvider
+  com.sun.jersey.core.impl.provider.entity.DocumentProvider
+  com.sun.jersey.core.impl.provider.entity.SourceProvider$StreamSourceReader
+  com.sun.jersey.core.impl.provider.entity.SourceProvider$SAXSourceReader
+  com.sun.jersey.core.impl.provider.entity.SourceProvider$DOMSourceReader
+  com.alibaba.fastjson.support.jaxrs.FastJsonProvider
+  com.sun.jersey.core.impl.provider.entity.XMLRootElementProvider$General
+  com.sun.jersey.core.impl.provider.entity.XMLListElementProvider$General
+  com.sun.jersey.core.impl.provider.entity.XMLRootObjectProvider$General
+  com.sun.jersey.core.impl.provider.entity.EntityHolderReader
+
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 11:17:15,819 ERROR [DiscoveryClient-HeartbeatExecutor-0][RedirectingEurekaHttpClient.java:83] - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:53000/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: A message body reader for Java class com.netflix.appinfo.InstanceInfo, and Java type class com.netflix.appinfo.InstanceInfo, and MIME media type text/html; charset=utf-8 was not found
+	at com.sun.jersey.api.client.ClientResponse.getEntity(ClientResponse.java:630)
+	at com.sun.jersey.api.client.ClientResponse.getEntity(ClientResponse.java:586)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.sendHeartBeat(AbstractJerseyEurekaHttpClient.java:105)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1405)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[${project.name}][${env:SERVER_PORT}] 2019-07-15 11:17:15,821 ERROR [DiscoveryClient-HeartbeatExecutor-0][DiscoveryClient.java:860] - DiscoveryClient_CONSUMER-SERVICE/consumer-service\:172.16.0.126\:53050 - was unable to send heartbeat!
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89)
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:846)
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1405)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
