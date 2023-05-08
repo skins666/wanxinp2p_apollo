@@ -1,6 +1,13 @@
 package cn.itcast.wanxinp2p.uaa.domain;
 
+import cn.itcast.wanxinp2p.api.account.model.AccountDTO;
+import cn.itcast.wanxinp2p.api.account.model.AccountLoginDTO;
+import cn.itcast.wanxinp2p.common.domain.RestResponse;
+import cn.itcast.wanxinp2p.common.util.StringUtil;
+import cn.itcast.wanxinp2p.uaa.agent.AccountApiAgent;
+import cn.itcast.wanxinp2p.uaa.common.utils.ApplicationContextHelper;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.authority.AuthorityUtils;
 
@@ -21,7 +28,42 @@ public class IntegrationUserDetailsAuthenticationHandler {
 	 */
 	public UnifiedUserDetails authentication(String domain, String authenticationType,
 			UsernamePasswordAuthenticationToken token) {
-		return null;
+		//在这里进行登录处理
+		//取数据
+		String username = token.getName();
+		if(StringUtil.isBlank(username)){
+			throw new BadCredentialsException("账户为空");
+		}
+		//对password进行判断空，用工具类
+		if(token.getCredentials() == null){
+			throw new BadCredentialsException("密码为空");
+		}
+		String password = (String) token.getCredentials();
+
+
+		//远程调用统一账号服务，进行账号密码校验，用openFeign
+		AccountLoginDTO accountLoginDTO = new AccountLoginDTO();
+		accountLoginDTO.setMobile(username);
+		accountLoginDTO.setPassword(password);
+		accountLoginDTO.setDomain(domain);
+		accountLoginDTO.setUsername(username);
+		//通过类名.class得到代理对象
+		AccountApiAgent accountApiAgent = (AccountApiAgent)ApplicationContextHelper.getBean(AccountApiAgent.class);
+		//调用远程方法
+		RestResponse<AccountDTO> response = accountApiAgent.login(accountLoginDTO);
+		//判断是否成功
+		if(response.getCode() != 0){
+			throw new BadCredentialsException(response.getMsg());
+		}
+
+		//如果校验通过，用户对象封装到UnifiedUserDetails
+		UnifiedUserDetails userDetails = new UnifiedUserDetails(response.getResult().getUsername(), password, AuthorityUtils.createAuthorityList());
+		//把手机号也放进去
+		userDetails.setMobile(response.getResult().getMobile());
+
+
+
+		return userDetails;
 		
 	}
 
