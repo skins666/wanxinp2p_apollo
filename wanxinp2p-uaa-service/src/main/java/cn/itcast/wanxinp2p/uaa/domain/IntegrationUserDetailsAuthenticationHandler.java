@@ -28,42 +28,35 @@ public class IntegrationUserDetailsAuthenticationHandler {
 	 */
 	public UnifiedUserDetails authentication(String domain, String authenticationType,
 			UsernamePasswordAuthenticationToken token) {
-		//在这里进行登录处理
-		//取数据
-		String username = token.getName();
+
+		//1.从客户端取数据
+		String username=token.getName();
 		if(StringUtil.isBlank(username)){
-			throw new BadCredentialsException("账户为空");
+			throw  new BadCredentialsException("账户为空");
 		}
-		//对password进行判断空，用工具类
-		if(token.getCredentials() == null){
-			throw new BadCredentialsException("密码为空");
+		if(token.getCredentials()==null){
+			throw  new BadCredentialsException("密码为空");
 		}
-		String password = (String) token.getCredentials();
+		String presentedPassword=token.getCredentials().toString();
 
-
-		//远程调用统一账号服务，进行账号密码校验，用openFeign
-		AccountLoginDTO accountLoginDTO = new AccountLoginDTO();
-		accountLoginDTO.setMobile(username);
-		accountLoginDTO.setPassword(password);
+		//2.远程调用统一账户服务，进行账户密码校验
+		AccountLoginDTO accountLoginDTO=new AccountLoginDTO();
 		accountLoginDTO.setDomain(domain);
 		accountLoginDTO.setUsername(username);
-		//通过类名.class得到代理对象
-		AccountApiAgent accountApiAgent = (AccountApiAgent)ApplicationContextHelper.getBean(AccountApiAgent.class);
-		//调用远程方法
-		RestResponse<AccountDTO> response = accountApiAgent.login(accountLoginDTO);
-		//判断是否成功
-		if(response.getCode() != 0){
-			throw new BadCredentialsException(response.getMsg());
+		accountLoginDTO.setMobile(username);
+		accountLoginDTO.setPassword(presentedPassword);
+		AccountApiAgent accountApiAgent=(AccountApiAgent)ApplicationContextHelper.getBean(AccountApiAgent.class);
+		RestResponse<AccountDTO> restResponse=accountApiAgent.login(accountLoginDTO);
+
+		//3.异常处理
+		if(restResponse.getCode()!=0){
+			throw new BadCredentialsException("登录失败");
 		}
 
-		//如果校验通过，用户对象封装到UnifiedUserDetails
-		UnifiedUserDetails userDetails = new UnifiedUserDetails(response.getResult().getUsername(), password, AuthorityUtils.createAuthorityList());
-		//把手机号也放进去
-		userDetails.setMobile(response.getResult().getMobile());
-
-
-
-		return userDetails;
+		//4.登录成功，把用户数据封装到UnifiedUserDetails对象中
+		UnifiedUserDetails unifiedUserDetails=new UnifiedUserDetails(restResponse.getResult().getUsername(),presentedPassword,AuthorityUtils.createAuthorityList());
+		unifiedUserDetails.setMobile(restResponse.getResult().getMobile());
+		return unifiedUserDetails;
 		
 	}
 

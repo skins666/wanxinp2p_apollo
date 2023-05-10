@@ -15,7 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@Api(value = "账户服务的Controller",tags = "account",description = "账户服务API")
+@Api(value = "统一账户服务的API")
 public class AccountController implements AccountAPI {
 
     @Autowired

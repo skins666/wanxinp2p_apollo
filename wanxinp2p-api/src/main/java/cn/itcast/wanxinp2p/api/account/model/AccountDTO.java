@@ -23,4 +23,5 @@ public class AccountDTO {
 
 	@ApiModelProperty(" 域(c：c端用户；b：b端用户)")
 	private String domain;
+
 }
