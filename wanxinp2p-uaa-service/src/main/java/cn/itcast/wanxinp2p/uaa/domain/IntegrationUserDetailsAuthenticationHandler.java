@@ -56,6 +56,8 @@ public class IntegrationUserDetailsAuthenticationHandler {
 		//4.登录成功，把用户数据封装到UnifiedUserDetails对象中
 		UnifiedUserDetails unifiedUserDetails=new UnifiedUserDetails(restResponse.getResult().getUsername(),presentedPassword,AuthorityUtils.createAuthorityList());
 		unifiedUserDetails.setMobile(restResponse.getResult().getMobile());
+
+
 		return unifiedUserDetails;
 		
 	}

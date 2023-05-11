@@ -8,4 +8,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
 public interface DepositoryRecordService extends IService<DepositoryRecord> {
 
       GatewayRequest createConsumer(ConsumerRequest consumerRequest);
+
+
+      Boolean modifyRequestStatus(String requestNum,Integer status);
 }

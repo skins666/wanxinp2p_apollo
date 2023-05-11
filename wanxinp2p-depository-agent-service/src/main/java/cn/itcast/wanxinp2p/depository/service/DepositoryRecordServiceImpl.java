@@ -42,6 +42,25 @@ public class DepositoryRecordServiceImpl extends ServiceImpl<DepositoryRecordMap
         return gatewayRequest;
     }
 
+    @Override
+    public Boolean modifyRequestStatus(String requestNum, Integer status) {
+        if (requestNum == null || status == null) {
+            return false;
+        }
+        DepositoryRecord depositoryRecord = new DepositoryRecord();
+        //requestNum转换成Long类型
+        Long requestNumLong = Long.valueOf(requestNum);
+
+        depositoryRecord.setId(requestNumLong);
+        depositoryRecord.setRequestStatus(status);
+        depositoryRecord.setConfirmDate(LocalDateTime.now());
+        boolean b = updateById(depositoryRecord);
+
+
+        return b;
+    }
+
+
     private void saveDepositoryRecord(ConsumerRequest consumerRequest) {
         DepositoryRecord depositoryRecord = new DepositoryRecord();
         depositoryRecord.setRequestNo(consumerRequest.getRequestNo());
