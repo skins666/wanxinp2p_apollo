@@ -2,6 +2,7 @@ package cn.itcast.wanxinp2p.consumer.controller;
 
 import cn.itcast.wanxinp2p.api.account.model.LoginUser;
 import cn.itcast.wanxinp2p.api.consumer.ConsumerAPI;
+import cn.itcast.wanxinp2p.api.consumer.model.ConsumerDTO;
 import cn.itcast.wanxinp2p.api.consumer.model.ConsumerRegisterDTO;
 import cn.itcast.wanxinp2p.api.consumer.model.ConsumerRequest;
 import cn.itcast.wanxinp2p.api.depository.model.GatewayRequest;
@@ -60,6 +61,15 @@ import org.springframework.web.bind.annotation.RestController;
         RestResponse<GatewayRequest> response = consumerService.createConsumer(consumerRequest);
 
         return response;
+    }
+
+    @Override
+    @ApiOperation("获取当前登录用户信息")
+    @GetMapping(value = "/l/currConsumer")
+    public RestResponse<ConsumerDTO> getCurrentConsumer(String accessToken) {
+//           ConsumerDTO consumer = consumerService.getByMobile(SecurityUtil.getUser().getMobile());
+        ConsumerDTO consumer = consumerService.getByMobile(accessToken);
+        return RestResponse.success(consumer);
     }
 
     @ApiOperation("过网关受保护资源，进行认证拦截测试")
