@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanxinp2p-account-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanxinp2p-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanxinp2p-api/src/main/java/cn/itcast/wanxinp2p/api/account/model/AccountLoginDTO.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanxinp2p-api/src/main/java/cn/itcast/wanxinp2p/api/depository/model/DepositoryRecordDTO.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanxinp2p-api/src/main/java/cn/itcast/wanxinp2p/api/search/model/ProjectQueryParamsDTO.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanxinp2p-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanxinp2p-consumer-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/java/cn/itcast/wanxinp2p/consumer/common/ConsumerErrorCode.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/java/cn/itcast/wanxinp2p/consumer/entity/Consumer.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanxinp2p-content-search-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanxinp2p-depository-agent-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanxinp2p-discover-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanxinp2p-gateway-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanxinp2p-transaction-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wanxinp2p-uaa-service" charset="UTF-8" />
+  </component>
+</project>

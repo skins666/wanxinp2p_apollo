@@ -235,9 +235,7 @@ public class DepositoryRecordServiceImpl extends ServiceImpl<DepositoryRecordMap
         }
 
         //3. 交易记录已经存在，并且状态是“已同步”
-        return JSON.parseObject(depositoryRecordDTO.getResponseData(),
-                new TypeReference<DepositoryResponseDTO<DepositoryBaseResponse>>(){
-                });
+        return JSON.parseObject(depositoryRecordDTO.getResponseData(), new TypeReference<DepositoryResponseDTO<DepositoryBaseResponse>>(){});
     }
 
     private DepositoryRecordDTO getByRequestNo(String requestNo) {

@@ -1,0 +1,3 @@
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 19:55:03,760 INFO [DiscoveryClient-HeartbeatExecutor-0][DiscoveryClient.java:850] - DiscoveryClient_TRANSACTION-SERVICE/transaction-service:192.168.2.153:53060 - Re-registering apps/TRANSACTION-SERVICE
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 19:55:03,760 INFO [DiscoveryClient-HeartbeatExecutor-0][DiscoveryClient.java:826] - DiscoveryClient_TRANSACTION-SERVICE/transaction-service:192.168.2.153:53060: registering service...
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 19:55:03,765 INFO [DiscoveryClient-HeartbeatExecutor-0][DiscoveryClient.java:835] - DiscoveryClient_TRANSACTION-SERVICE/transaction-service:192.168.2.153:53060 - registration status: 204

@@ -1,0 +1,1693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cf191dfa-47aa-43b4-9766-32b2582fd996" name="Default Changelist" comment="身份认证功能bug修复" />
+    <ignored path="$PROJECT_DIR$/wanxinp2p-account-service/target/" />
+    <ignored path="$PROJECT_DIR$/wanxinp2p-discover-server/target/" />
+    <ignored path="$PROJECT_DIR$/wanxinp2p-repayment-service/target/" />
+    <ignored path="$PROJECT_DIR$/wanxinp2p-api/target/" />
+    <ignored path="$PROJECT_DIR$/wanxinp2p-depository-agent-service/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/wanxinp2p-uaa-service/target/" />
+    <ignored path="$PROJECT_DIR$/wanxinp2p-gateway-server/target/" />
+    <ignored path="$PROJECT_DIR$/wanxinp2p-consumer-service/target/" />
+    <ignored path="$PROJECT_DIR$/wanxinp2p-content-search-service/target/" />
+    <ignored path="$PROJECT_DIR$/wanxinp2p-transaction-service/target/" />
+    <ignored path="$PROJECT_DIR$/wanxinp2p-common/target/" />
+    <ignored path="$PROJECT_DIR$/../wanxindepository/target/" />
+    <ignored path="$PROJECT_DIR$/wanxinp2p-file-service/target/" />
+    <ignored path="$PROJECT_DIR$/wanxinp2p-sms-service/target/" />
+    <ignored path="$PROJECT_DIR$/MyTest/target/" />
+    <ignored path="$PROJECT_DIR$/demo/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/wanxinp2p_apollo$DiscoveryServer.ic" NAME="DiscoveryServer Coverage Results" MODIFIED="1569303246081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="185" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1005310565">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="9" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.12" value="2" />
+          <entry key="project.open.time.13" value="2" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.opened" value="9" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="57" />
+          <entry key="properties" value="1" />
+          <entry key="xml" value="11" />
+          <entry key="yml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="57" />
+          <entry key="Properties" value="1" />
+          <entry key="XML" value="11" />
+          <entry key="YAML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="ft" value="7" />
+          <entry key="java" value="1527" />
+          <entry key="xml" value="11" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1527" />
+          <entry key="VTL" value="7" />
+          <entry key="XML" value="11" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-692082814">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="1" />
+          <entry key="java" value="86" />
+          <entry key="xml" value="1" />
+          <entry key="yml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="1" />
+          <entry key="JAVA" value="86" />
+          <entry key="XML" value="1" />
+          <entry key="YAML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="691" />
+          <entry key="xml" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="691" />
+          <entry key="XML" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="1157618139">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="19" />
+          <entry key="xml" value="2" />
+          <entry key="yml" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="19" />
+          <entry key="XML" value="2" />
+          <entry key="YAML" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="173" />
+          <entry key="xml" value="4" />
+          <entry key="yml" value="38" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="173" />
+          <entry key="XML" value="4" />
+          <entry key="YAML" value="38" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="710774134">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.12" value="2" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="104" />
+          <entry key="xml" value="9" />
+          <entry key="yml" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="104" />
+          <entry key="XML" value="9" />
+          <entry key="YAML" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="1352" />
+          <entry key="xml" value="35" />
+          <entry key="yml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1352" />
+          <entry key="XML" value="35" />
+          <entry key="YAML" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-1481587057">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.10" value="2" />
+          <entry key="project.open.time.2" value="3" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="49" />
+          <entry key="properties" value="4" />
+          <entry key="xml" value="4" />
+          <entry key="yml" value="13" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="49" />
+          <entry key="Properties" value="4" />
+          <entry key="XML" value="4" />
+          <entry key="YAML" value="13" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="982" />
+          <entry key="properties" value="32" />
+          <entry key="yml" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="982" />
+          <entry key="Properties" value="32" />
+          <entry key="YAML" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="1505365979">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.11" value="2" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="4" />
+          <entry key="java" value="85" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="4" />
+          <entry key="JAVA" value="85" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="1308" />
+          <entry key="xml" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="1308" />
+          <entry key="XML" value="10" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="841632149">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="13" />
+          <entry key="project.open.time.1" value="4" />
+          <entry key="project.open.time.10" value="2" />
+          <entry key="project.open.time.11" value="5" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="14" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="2" />
+          <entry key="java" value="175" />
+          <entry key="properties" value="1" />
+          <entry key="xml" value="5" />
+          <entry key="yml" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="2" />
+          <entry key="JAVA" value="175" />
+          <entry key="Properties" value="1" />
+          <entry key="XML" value="5" />
+          <entry key="YAML" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="4" />
+          <entry key="java" value="3401" />
+          <entry key="properties" value="26" />
+          <entry key="xml" value="29" />
+          <entry key="yml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="3401" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="Properties" value="26" />
+          <entry key="XML" value="29" />
+          <entry key="YAML" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="wanxinp2p" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wanxinp2p-depository-agent-service/src/main/java/cn/itcast/wanxinp2p/depository/service/DepositoryRecordServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="119" column="8" selection-start-line="119" selection-start-column="8" selection-end-line="120" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="MP Mapper XML" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>apollo</find>
+      <find>swagger</find>
+      <find>mybatis</find>
+      <find>config</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/java/cn/itcast/wanxinp2p/consumer/service/BankCardServiceImpl.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/java/cn/itcast/wanxinp2p/consumer/common/SecurityUtil.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-depository-agent-service/src/main/java/cn/itcast/wanxinp2p/depository/mapper/DepositoryRecordMapper.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-depository-agent-service/src/main/java/cn/itcast/wanxinp2p/depository/mapper/DepositoryRecordMapper.xml" />
+        <option value="$PROJECT_DIR$/wanxinp2p-common/src/main/java/cn/itcast/wanxinp2p/common/util/RSAUtil.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-depository-agent-service/pom.xml" />
+        <option value="$PROJECT_DIR$/wanxinp2p-depository-agent-service/src/main/java/cn/itcast/wanxinp2p/depository/message/GatewayMessageProducer.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-depository-agent-service/src/main/java/cn/itcast/wanxinp2p/depository/controller/DepositoryNotifyController.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/java/cn/itcast/wanxinp2p/consumer/ConsumerService.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/java/cn/itcast/wanxinp2p/consumer/controller/GatewayNotifyConsumer.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/java/cn/itcast/wanxinp2p/consumer/message/GatewayNotifyConsumer.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-transaction-service/src/main/java/cn/itcast/wanxinp2p/transaction/config/SwaggerConfiguration.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-transaction-service/src/main/java/cn/itcast/wanxinp2p/transaction/config/WebConfig.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-transaction-service/src/main/java/cn/itcast/wanxinp2p/transaction/TransactionService.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-transaction-service/pom.xml" />
+        <option value="$PROJECT_DIR$/wanxinp2p-transaction-service/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/wanxinp2p-transaction-service/src/main/resources/shardingsphere.properties" />
+        <option value="$PROJECT_DIR$/wanxinp2p-transaction-service/src/main/java/cn/itcast/wanxinp2p/transaction/mapper/ProjectMapper.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-transaction-service/src/main/java/cn/itcast/wanxinp2p/transaction/mapper/ProjectMapper.xml" />
+        <option value="$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/java/cn/itcast/wanxinp2p/consumer/service/ConsumerService.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/java/cn/itcast/wanxinp2p/consumer/service/ConsumerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-transaction-service/src/main/java/cn/itcast/wanxinp2p/transaction/service/ConfigService.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-api/src/main/java/cn/itcast/wanxinp2p/api/consumer/ConsumerAPI.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/java/cn/itcast/wanxinp2p/consumer/controller/ConsumerController.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-transaction-service/src/main/java/cn/itcast/wanxinp2p/transaction/agent/ConsumerApiAgent.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-common/src/main/java/cn/itcast/wanxinp2p/common/util/PasswordUtil.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-api/src/main/java/cn/itcast/wanxinp2p/api/depository/DepositoryAgentApi.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-depository-agent-service/src/main/java/cn/itcast/wanxinp2p/depository/service/DepositoryRecordService.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-depository-agent-service/src/main/java/cn/itcast/wanxinp2p/depository/controller/DepositoryAgentController.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-transaction-service/src/main/java/cn/itcast/wanxinp2p/transaction/agent/DepositoryAgentApiAgent.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-content-search-service/pom.xml" />
+        <option value="$PROJECT_DIR$/wanxinp2p-content-search-service/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/wanxinp2p-content-search-service/src/main/java/cn/itcast/wanxinp2p/search/config/ElasticsearchConfig.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-content-search-service/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/wanxinp2p-content-search-service/src/main/java/cn/itcast/wanxinp2p/search/model/ProjectIndexDTO.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-content-search-service/src/main/java/cn/itcast/wanxinp2p/search/model/ProjectQueryParamsDTO.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-api/src/main/java/cn/itcast/wanxinp2p/api/transaction/TransactionApi.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-transaction-service/src/main/java/cn/itcast/wanxinp2p/transaction/agent/ContentSearchApiAgent.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-transaction-service/src/main/java/cn/itcast/wanxinp2p/transaction/service/ProjectService.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-api/src/main/java/cn/itcast/wanxinp2p/api/search/ContentSearchApi.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-api/src/main/java/cn/itcast/wanxinp2p/api/search/model/ProjectQueryParamsDTO.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-transaction-service/src/main/java/cn/itcast/wanxinp2p/transaction/controller/TransactionController.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-content-search-service/src/main/java/cn/itcast/wanxinp2p/search/service/ProjectIndexService.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-content-search-service/src/main/java/cn/itcast/wanxinp2p/search/controller/ContentSearchController.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-content-search-service/src/main/java/cn/itcast/wanxinp2p/search/service/ProjectIndexServiceImpl.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-depository-agent-service/src/main/java/cn/itcast/wanxinp2p/depository/entity/DepositoryRecord.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-transaction-service/src/main/java/cn/itcast/wanxinp2p/transaction/entity/Project.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-api/src/main/java/cn/itcast/wanxinp2p/api/transaction/model/ProjectDTO.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-transaction-service/src/main/java/cn/itcast/wanxinp2p/transaction/service/ProjectServiceImpl.java" />
+        <option value="$PROJECT_DIR$/wanxinp2p-depository-agent-service/src/main/java/cn/itcast/wanxinp2p/depository/service/DepositoryRecordServiceImpl.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\apache-maven-3.5.4\rep" />
+        <option name="mavenHome" value="E:/apache-maven-3.5.4" />
+        <option name="userSettingsFile" value="E:\apache-maven-3.5.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="wanxinp2p-transaction-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="wanxinp2p-transaction-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-6" />
+    <option name="y" value="-6" />
+    <option name="width" value="1368" />
+    <option name="height" value="732" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="wanxinp2p_apollo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wanxinp2p_apollo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wanxinp2p_apollo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wanxinp2p_apollo" type="462c0819:PsiDirectoryNode" />
+              <item name="wanxinp2p-api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wanxinp2p_apollo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wanxinp2p_apollo" type="462c0819:PsiDirectoryNode" />
+              <item name="wanxinp2p-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wanxinp2p_apollo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wanxinp2p_apollo" type="462c0819:PsiDirectoryNode" />
+              <item name="wanxinp2p-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wanxinp2p_apollo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wanxinp2p_apollo" type="462c0819:PsiDirectoryNode" />
+              <item name="wanxinp2p-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wanxinp2p_apollo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wanxinp2p_apollo" type="462c0819:PsiDirectoryNode" />
+              <item name="wanxinp2p-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wanxinp2p_apollo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wanxinp2p_apollo" type="462c0819:PsiDirectoryNode" />
+              <item name="wanxinp2p-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="depository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wanxinp2p_apollo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wanxinp2p_apollo" type="462c0819:PsiDirectoryNode" />
+              <item name="wanxinp2p-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="depository" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wanxinp2p_apollo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wanxinp2p_apollo" type="462c0819:PsiDirectoryNode" />
+              <item name="wanxinp2p-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wanxinp2p_apollo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wanxinp2p_apollo" type="462c0819:PsiDirectoryNode" />
+              <item name="wanxinp2p-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wanxinp2p_apollo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wanxinp2p_apollo" type="462c0819:PsiDirectoryNode" />
+              <item name="wanxinp2p-depository-agent-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wanxinp2p_apollo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wanxinp2p_apollo" type="462c0819:PsiDirectoryNode" />
+              <item name="wanxinp2p-depository-agent-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wanxinp2p_apollo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wanxinp2p_apollo" type="462c0819:PsiDirectoryNode" />
+              <item name="wanxinp2p-depository-agent-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wanxinp2p_apollo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wanxinp2p_apollo" type="462c0819:PsiDirectoryNode" />
+              <item name="wanxinp2p-depository-agent-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wanxinp2p_apollo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wanxinp2p_apollo" type="462c0819:PsiDirectoryNode" />
+              <item name="wanxinp2p-depository-agent-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="depository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wanxinp2p_apollo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wanxinp2p_apollo" type="462c0819:PsiDirectoryNode" />
+              <item name="wanxinp2p-depository-agent-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="depository" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wanxinp2p_apollo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wanxinp2p_apollo" type="462c0819:PsiDirectoryNode" />
+              <item name="wanxinp2p-depository-agent-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="depository" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wanxinp2p_apollo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wanxinp2p_apollo" type="462c0819:PsiDirectoryNode" />
+              <item name="wanxinp2p-transaction-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wanxinp2p_apollo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wanxinp2p_apollo" type="462c0819:PsiDirectoryNode" />
+              <item name="wanxinp2p-transaction-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wanxinp2p_apollo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wanxinp2p_apollo" type="462c0819:PsiDirectoryNode" />
+              <item name="wanxinp2p-transaction-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wanxinp2p_apollo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wanxinp2p_apollo" type="462c0819:PsiDirectoryNode" />
+              <item name="wanxinp2p-transaction-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wanxinp2p_apollo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wanxinp2p_apollo" type="462c0819:PsiDirectoryNode" />
+              <item name="wanxinp2p-transaction-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wanxinp2p_apollo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wanxinp2p_apollo" type="462c0819:PsiDirectoryNode" />
+              <item name="wanxinp2p-transaction-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wanxinp2p_apollo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wanxinp2p_apollo" type="462c0819:PsiDirectoryNode" />
+              <item name="wanxinp2p-transaction-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wanxinp2p_apollo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wanxinp2p_apollo" type="462c0819:PsiDirectoryNode" />
+              <item name="wanxinp2p-transaction-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wanxinp2p_apollo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wanxinp2p_apollo" type="462c0819:PsiDirectoryNode" />
+              <item name="wanxinp2p-transaction-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SearchEverywhereHistoryKey" value="Depo&#9;FILE&#9;file://C:/Users/apple/Desktop/wanxinp2p/day09/代码/wanxinp2p_apollo/wanxinp2p-depository-agent-service/src/main/java/cn/itcast/wanxinp2p/depository/service/DepositoryRecordServiceImpl.java&#10;De&#9;FILE&#9;file://C:/Users/apple/Desktop/wanxinp2p/day09/代码/wanxinp2p_apollo/wanxinp2p-depository-agent-service/src/main/java/cn/itcast/wanxinp2p/depository/entity/DepositoryRecord.java&#10;DepositoryRecord&#9;FILE&#9;file://C:/Users/apple/Desktop/wanxinp2p/day09/代码/wanxinp2p_apollo/wanxinp2p-api/src/main/java/cn/itcast/wanxinp2p/api/depository/model/DepositoryRecordDTO.java&#10;proje&#9;FILE&#9;file://C:/Users/apple/Desktop/wanxinp2p/day09/代码/wanxinp2p_apollo/wanxinp2p-transaction-service/src/main/java/cn/itcast/wanxinp2p/transaction/service/ProjectServiceImpl.java&#10;Dep&#9;FILE&#9;file://C:/Users/apple/Desktop/wanxinp2p/day09/代码/wanxinp2p_apollo/wanxinp2p-depository-agent-service/src/main/java/cn/itcast/wanxinp2p/depository/service/DepositoryRecordServiceImpl.java&#10;Pro&#9;FILE&#9;file://C:/Users/apple/Desktop/wanxinp2p/day08/代码/wanxinp2p_apollo/wanxinp2p-transaction-service/src/main/java/cn/itcast/wanxinp2p/transaction/entity/Project.java&#10;SignatureInterceptor&#9;PSI&#9;JAVA://cn.itcast.wanxinp2p.depository.interceptor.SignatureInterceptor&#10;Page&#9;PSI&#9;JAVA://cn.itcast.wanxinp2p.common.domain.PageVO&#10;Consumer&#9;FILE&#9;file://C:/Users/apple/Desktop/wanxinp2p/day08/代码/wanxinp2p_apollo/wanxinp2p-api/src/main/java/cn/itcast/wanxinp2p/api/consumer/model/ConsumerDTO.java&#10;OKHttp&#9;PSI&#9;JAVA://cn.itcast.wanxinp2p.depository.service.OkHttpService&#10;Lo&#9;FILE&#9;file://C:/Users/apple/Desktop/wanxinp2p/day06/代码/wanxinp2p_apollo/wanxinp2p-api/src/main/java/cn/itcast/wanxinp2p/api/account/model/LoginUser.java&#10;Depository&#9;FILE&#9;file://C:/Users/apple/Desktop/wanxinp2p/day06/代码/wanxinp2p_apollo/wanxinp2p-depository-agent-service/src/main/java/cn/itcast/wanxinp2p/depository/service/DepositoryRecordServiceImpl.java&#10;RSA&#9;PSI&#9;JAVA://cn.itcast.wanxinp2p.common.util.RSAUtil&#10;statusC&#9;FILE&#9;file://C:/Users/apple/Desktop/wanxinp2p/day02/代码/wanxinp2p_apollo/wanxinp2p-common/src/main/java/cn/itcast/wanxinp2p/common/domain/StatusCode.java" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569405590834" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../day10/代码/wanxinp2p_apollo" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.26436782" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="cn.itcast.wanxinp2p.api.consumer" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\apple\Desktop\wanxinp2p\day09\代码\wanxinp2p_apollo\wanxinp2p-api\src\main\java\cn\itcast\wanxinp2p\api\depository\model" />
+      <recent name="C:\Users\apple\Desktop\wanxinp2p\day09\代码\wanxinp2p_apollo\wanxinp2p-content-search-service\src\main\java\cn\itcast\wanxinp2p\search\service" />
+      <recent name="C:\Users\apple\Desktop\wanxinp2p\day09\代码\wanxinp2p_apollo\wanxinp2p-api\src\main\java\cn\itcast\wanxinp2p\api\search\model" />
+      <recent name="C:\Users\apple\Desktop\wanxinp2p\day09\代码\wanxinp2p_apollo\wanxinp2p-content-search-service\src\main\java\cn\itcast\wanxinp2p\search\controller" />
+      <recent name="C:\Users\apple\Desktop\wanxinp2p\day08\代码\wanxinp2p_apollo\wanxinp2p-api\src\main\java\cn\itcast\wanxinp2p\api\transaction\model" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.itcast.wanxinp2p.api.search.model" />
+      <recent name="cn.itcast.wanxinp2p.api.file" />
+      <recent name="cn.itcast.wanxinp2p.file.entity" />
+      <recent name="cn.itcast.wanxinp2p.file.common.util" />
+      <recent name="cn.itcast.wanxinp2p.file.config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\xu\Desktop\wanxinp2p\day02\代码\wanxinp2p_apollo\wanxinp2p-account-service\src\main\java\cn\itcast\wanxinp2p\account\mapper\xml" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.TransactionService">
+    <configuration name="PasswordUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.itcast.wanxinp2p.common.util.PasswordUtil" />
+      <module name="wanxinp2p-common" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.itcast.wanxinp2p.common.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConsumerService" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="wanxinp2p-consumer-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.itcast.wanxinp2p.consumer.ConsumerService" />
+      <option name="VM_PARAMETERS" value="-Denv=dev -Dapollo.cluster=DEFAULT -Dserver.port=53050" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContentSearchService" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="wanxinp2p-content-search-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.itcast.wanxinp2p.search.ContentSearchService" />
+      <option name="VM_PARAMETERS" value="-Denv=dev -Dapollo.cluster=DEFAULT -Dserver.port=53090" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DepositoryAgentService (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="wanxinp2p-depository-agent-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.itcast.wanxinp2p.depository.DepositoryAgentService" />
+      <option name="VM_PARAMETERS" value="-Denv=dev -Dapollo.cluster=DEFAULT -Dserver.port=53071" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DepositoryAgentService (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="wanxinp2p-depository-agent-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.itcast.wanxinp2p.depository.DepositoryAgentService" />
+      <option name="VM_PARAMETERS" value="-Denv=dev -Dapollo.cluster=DEFAULT -Dserver.port=53072" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DepositoryAgentService" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="wanxinp2p-depository-agent-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.itcast.wanxinp2p.depository.DepositoryAgentService" />
+      <option name="VM_PARAMETERS" value="-Denv=dev -Dapollo.cluster=DEFAULT -Dserver.port=53070" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscoveryServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="wanxinp2p-discover-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.itcast.wanxinp2p.discover.DiscoveryServer" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="wanxinp2p-gateway-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.itcast.wanxinp2p.gateway.GatewayServer" />
+      <option name="VM_PARAMETERS" value="-Denv=dev -Dapollo.cluster=DEFAULT -Dserver.port=53010" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransactionService" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="wanxinp2p-transaction-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.itcast.wanxinp2p.transaction.TransactionService" />
+      <option name="VM_PARAMETERS" value="-Denv=dev -Dapollo.cluster=DEFAULT -Dserver.port=53060" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UAAServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="wanxinp2p-uaa-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.itcast.wanxinp2p.uaa.UAAServer" />
+      <option name="VM_PARAMETERS" value="-Denv=dev -Dapollo.cluster=DEFAULT -Dserver.port=53020" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Wanxinp2pAccountServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="wanxinp2p-account-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.itcast.wanxinp2p.account.Wanxinp2pAccountServiceApplication" />
+      <option name="VM_PARAMETERS" value="-Denv=dev -Dapollo.cluster=DEFAULT -Dserver.port=53030" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.ConsumerService" />
+      <item itemvalue="Spring Boot.DiscoveryServer" />
+      <item itemvalue="Spring Boot.GatewayServer" />
+      <item itemvalue="Spring Boot.Wanxinp2pAccountServiceApplication" />
+      <item itemvalue="Spring Boot.UAAServer" />
+      <item itemvalue="Spring Boot.DepositoryAgentService" />
+      <item itemvalue="Spring Boot.DepositoryAgentService (1)" />
+      <item itemvalue="Spring Boot.DepositoryAgentService (2)" />
+      <item itemvalue="Spring Boot.TransactionService" />
+      <item itemvalue="Spring Boot.ContentSearchService" />
+      <item itemvalue="Application.PasswordUtil" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PasswordUtil" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cf191dfa-47aa-43b4-9766-32b2582fd996" name="Default Changelist" comment="" />
+      <created>1561104725540</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1561104725540</updated>
+      <workItem from="1561104728654" duration="11569000" />
+      <workItem from="1561336098452" duration="3088000" />
+      <workItem from="1561340146925" duration="23489000" />
+      <workItem from="1561422754694" duration="29526000" />
+      <workItem from="1561509033041" duration="31626000" />
+      <workItem from="1561596048383" duration="32821000" />
+      <workItem from="1561681771577" duration="10974000" />
+      <workItem from="1562027543573" duration="15312000" />
+      <workItem from="1562062283537" duration="4113000" />
+      <workItem from="1562113491463" duration="23275000" />
+      <workItem from="1562200739197" duration="16466000" />
+      <workItem from="1562287304674" duration="14123000" />
+      <workItem from="1562549002071" duration="6054000" />
+      <workItem from="1562564240726" duration="7331000" />
+      <workItem from="1562632197497" duration="17402000" />
+      <workItem from="1562719696903" duration="2027000" />
+      <workItem from="1562725608704" duration="1480000" />
+      <workItem from="1562727821658" duration="15358000" />
+      <workItem from="1562825831270" duration="5704000" />
+      <workItem from="1562942500039" duration="680000" />
+      <workItem from="1563088005252" duration="595000" />
+      <workItem from="1563094859747" duration="4142000" />
+      <workItem from="1563102393917" duration="1692000" />
+      <workItem from="1563112661968" duration="1339000" />
+      <workItem from="1563151291490" duration="1635000" />
+      <workItem from="1563153032346" duration="11035000" />
+      <workItem from="1563164408005" duration="974000" />
+      <workItem from="1563238402797" duration="603000" />
+      <workItem from="1563246248233" duration="6618000" />
+      <workItem from="1563325268732" duration="2390000" />
+      <workItem from="1563523957780" duration="2237000" />
+      <workItem from="1563584543603" duration="17556000" />
+      <workItem from="1563672860561" duration="13147000" />
+      <workItem from="1563758445939" duration="1812000" />
+      <workItem from="1563867457357" duration="9886000" />
+      <workItem from="1564363347529" duration="1586000" />
+      <workItem from="1564365383713" duration="2486000" />
+      <workItem from="1564368492926" duration="185000" />
+      <workItem from="1564368783504" duration="5724000" />
+      <workItem from="1564384664537" duration="4736000" />
+      <workItem from="1564393763863" duration="7229000" />
+      <workItem from="1564450208818" duration="8948000" />
+      <workItem from="1564554895724" duration="11000" />
+      <workItem from="1564558966567" duration="11000" />
+      <workItem from="1564559121586" duration="8209000" />
+      <workItem from="1564710505859" duration="20148000" />
+      <workItem from="1565078749098" duration="4754000" />
+      <workItem from="1565140744459" duration="7802000" />
+      <workItem from="1565228820408" duration="2735000" />
+      <workItem from="1565360318591" duration="261000" />
+      <workItem from="1565402614429" duration="3464000" />
+      <workItem from="1565406986444" duration="6622000" />
+      <workItem from="1565587679614" duration="13005000" />
+      <workItem from="1565602510067" duration="300000" />
+      <workItem from="1565604451897" duration="5213000" />
+      <workItem from="1565659940430" duration="8728000" />
+      <workItem from="1565747272803" duration="10677000" />
+      <workItem from="1565764070819" duration="5045000" />
+      <workItem from="1565784711761" duration="1156000" />
+      <workItem from="1565920020379" duration="7865000" />
+      <workItem from="1565938996334" duration="883000" />
+      <workItem from="1566007656103" duration="1905000" />
+      <workItem from="1566207699806" duration="3377000" />
+      <workItem from="1566263719210" duration="2649000" />
+      <workItem from="1566437323402" duration="16898000" />
+      <workItem from="1566529871631" duration="14932000" />
+      <workItem from="1566609735435" duration="6515000" />
+      <workItem from="1566631380993" duration="633000" />
+      <workItem from="1566869022269" duration="633000" />
+      <workItem from="1566869823378" duration="19591000" />
+      <workItem from="1567042479011" duration="7392000" />
+      <workItem from="1567068193425" duration="16474000" />
+      <workItem from="1567128085371" duration="14746000" />
+      <workItem from="1567156875759" duration="322000" />
+      <workItem from="1567212850849" duration="6138000" />
+      <workItem from="1567395965803" duration="41000" />
+      <workItem from="1569130580446" duration="2750000" />
+      <workItem from="1569135980489" duration="3419000" />
+      <workItem from="1569202228025" duration="608000" />
+      <workItem from="1569286436651" duration="6739000" />
+      <workItem from="1569308042178" duration="3764000" />
+      <workItem from="1569374346589" duration="16498000" />
+      <workItem from="1569461283662" duration="157000" />
+    </task>
+    <task id="LOCAL-00001" summary="身份认证功能第1次提交">
+      <created>1561349704707</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1561349704708</updated>
+    </task>
+    <task id="LOCAL-00002" summary="身份认证功能第2次提交">
+      <created>1561350030060</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1561350030060</updated>
+    </task>
+    <task id="LOCAL-00003" summary="身份认证功能第3次提交">
+      <created>1561357120833</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1561357120833</updated>
+    </task>
+    <task id="LOCAL-00004" summary="身份认证功能第4次提交">
+      <created>1561359237746</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1561359237746</updated>
+    </task>
+    <task id="LOCAL-00005" summary="登录用户还款记录查询bug修复">
+      <created>1561517885447</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1561517885447</updated>
+    </task>
+    <task id="LOCAL-00006" summary="身份认证功能第1次提交">
+      <created>1561518472110</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1561518472110</updated>
+    </task>
+    <task id="LOCAL-00007" summary="身份认证功能">
+      <created>1561520085053</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1561520085053</updated>
+    </task>
+    <task id="LOCAL-00008" summary="身份认证功能第1次提交(本地测试通过)">
+      <created>1561625406782</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1561625406782</updated>
+    </task>
+    <task id="LOCAL-00009" summary="身份认证功能第2次提交">
+      <created>1561625938765</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1561625938765</updated>
+    </task>
+    <task id="LOCAL-00010" summary="身份认证功能第3次提交">
+      <created>1561626064627</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1561626064627</updated>
+    </task>
+    <task id="LOCAL-00011" summary="身份认证功能第4次提交">
+      <created>1561626484952</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1561626484952</updated>
+    </task>
+    <task id="LOCAL-00012" summary="修复">
+      <created>1561627298355</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1561627298355</updated>
+    </task>
+    <task id="LOCAL-00013" summary="身份认证功能bug修复">
+      <created>1561688407685</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1561688407685</updated>
+    </task>
+    <task id="LOCAL-00014" summary="身份认证功能bug修复">
+      <created>1561688983739</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1561688983739</updated>
+    </task>
+    <task id="LOCAL-00015" summary="身份认证功能bug修复">
+      <created>1562134305267</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1562134305267</updated>
+    </task>
+    <task id="LOCAL-00016" summary="身份认证功能bug修复">
+      <created>1562144406483</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1562144406483</updated>
+    </task>
+    <task id="LOCAL-00017" summary="身份认证功能bug修复">
+      <created>1562293773759</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1562293773760</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="632043000" />
+  </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49758455" visible="true" weight="0.28744328" />
+      <window_info id="Structure" order="1" sideWeight="0.5024155" side_tool="true" weight="0.32591876" />
+      <window_info id="Web" order="2" sideWeight="0.5024155" side_tool="true" weight="0.32591876" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" sideWeight="0.5024155" side_tool="true" weight="0.32591876" />
+      <window_info id="Image Layers" order="6" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3270869" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.43781942" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4995958" weight="0.22487223" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.41030195" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Spring" order="9" weight="0.32850242" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" weight="0.46536413" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32850242" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5004042" side_tool="true" weight="0.3937198" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.3781942" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.3270869" />
+      <window_info anchor="bottom" id="Problems" order="15" weight="0.32850242" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32978722" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.1851253" />
+      <window_info anchor="right" id="Bean Validation" order="6" weight="0.32978722" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="8" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.19667171" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
+      <window_info anchor="right" id="Coverage" order="11" side_tool="true" weight="0.32980332" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49758455" visible="true" weight="0.25869894" />
+      <window_info id="Structure" order="1" sideWeight="0.5024155" side_tool="true" weight="0.32591876" />
+      <window_info id="Web" order="2" sideWeight="0.5024155" side_tool="true" weight="0.32591876" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" sideWeight="0.5024155" side_tool="true" weight="0.32591876" />
+      <window_info id="Image Layers" order="6" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3270869" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31516185" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4995958" weight="0.2793867" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.41030195" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Spring" order="9" weight="0.32850242" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" weight="0.46536413" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32850242" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5004042" side_tool="true" weight="0.3937198" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.516184" />
+      <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.3270869" />
+      <window_info anchor="bottom" id="Problems" order="15" weight="0.32850242" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32978722" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.1851253" />
+      <window_info anchor="right" id="Bean Validation" order="6" weight="0.32978722" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="8" />
+      <window_info active="true" anchor="right" id="Maven Projects" order="9" visible="true" weight="0.1732224" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
+      <window_info anchor="right" id="Coverage" order="11" side_tool="true" weight="0.32980332" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../wanxindepository" />
+      <path value="$PROJECT_DIR$" />
+      <path value="$PROJECT_DIR$/../../../../../.." />
+    </ignored-roots>
+    <MESSAGE value="登录用户还款记录查询bug修复" />
+    <MESSAGE value="身份认证功能第1次提交" />
+    <MESSAGE value="身份认证功能" />
+    <MESSAGE value="身份认证功能第1次提交(本地测试通过)" />
+    <MESSAGE value="身份认证功能第2次提交" />
+    <MESSAGE value="身份认证功能第3次提交" />
+    <MESSAGE value="身份认证功能第4次提交" />
+    <MESSAGE value="修复" />
+    <MESSAGE value="身份认证功能bug修复" />
+    <option name="LAST_COMMIT_MESSAGE" value="身份认证功能bug修复" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>fileObject</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>SecurityUtil.getUser()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-depository-agent-service/src/main/java/cn/itcast/wanxinp2p/depository/service/ConfigService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-depository-agent-service/src/main/java/cn/itcast/wanxinp2p/depository/service/OkHttpService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="32" column="44" lean-forward="true" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-depository-agent-service/src/main/java/cn/itcast/wanxinp2p/depository/interceptor/SignatureInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="54" column="54" selection-start-line="54" selection-start-column="54" selection-end-line="54" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-transaction-service/src/main/java/cn/itcast/wanxinp2p/transaction/agent/DepositoryAgentApiAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-common/src/main/java/cn/itcast/wanxinp2p/common/util/EncryptUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-content-search-service/src/main/java/cn/itcast/wanxinp2p/search/config/SwaggerConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-275">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-300" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-content-search-service/src/main/resources/application.properties" />
+    <entry file="jar://E:/apache-maven-3.5.4/rep/org/apache/httpcomponents/httpcore/4.4.11/httpcore-4.4.11-sources.jar!/org/apache/http/HttpHost.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="85" column="9" lean-forward="true" selection-start-line="85" selection-start-column="9" selection-end-line="85" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-consumer-service/src/main/java/cn/itcast/wanxinp2p/consumer/service/ConsumerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/apache-maven-3.5.4/rep/org/elasticsearch/client/elasticsearch-rest-high-level-client/7.2.0/elasticsearch-rest-high-level-client-7.2.0.jar!/org/elasticsearch/client/RestHighLevelClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="418" column="90" selection-start-line="418" selection-start-column="83" selection-end-line="418" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/apache-maven-3.5.4/rep/org/elasticsearch/client/elasticsearch-rest-client/6.4.3/elasticsearch-rest-client-6.4.3.jar!/org/elasticsearch/client/RequestOptions.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1184">
+          <caret line="16" column="46" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-content-search-service/src/main/java/cn/itcast/wanxinp2p/search/ContentSearchService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-content-search-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="72" column="21" selection-start-line="72" selection-start-column="21" selection-end-line="79" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-content-search-service/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="14" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-content-search-service/src/main/java/cn/itcast/wanxinp2p/search/model/ProjectIndexDTO.java" />
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-content-search-service/src/main/java/cn/itcast/wanxinp2p/search/common/constant/ContentSearchErrorCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-content-search-service/src/main/java/cn/itcast/wanxinp2p/search/common/intercept/GlobalExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-transaction-service/src/main/java/cn/itcast/wanxinp2p/transaction/agent/ContentSearchApiAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-content-search-service/src/main/java/cn/itcast/wanxinp2p/search/model/ProjectQueryParamsDTO.java" />
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-api/src/main/java/cn/itcast/wanxinp2p/api/search/model.java" />
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-api/src/main/java/cn/itcast/wanxinp2p/api/search/ContentSearchApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-common/src/main/java/cn/itcast/wanxinp2p/common/domain/CommonErrorCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="55" column="4" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/time/LocalDateTime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="489" column="74" selection-start-line="489" selection-start-column="57" selection-end-line="489" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/time/format/DateTimeFormatter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3175">
+          <caret line="482" column="19" selection-start-line="482" selection-start-column="19" selection-end-line="482" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-api/src/main/java/cn/itcast/wanxinp2p/api/transaction/TransactionApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1175">
+          <caret line="50" column="51" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-content-search-service/src/main/java/cn/itcast/wanxinp2p/search/service/ProjectIndexService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-content-search-service/src/main/java/cn/itcast/wanxinp2p/search/config/ElasticsearchConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="16" column="4" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-api/src/main/java/cn/itcast/wanxinp2p/api/search/model/ProjectQueryParamsDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="28" column="19" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-common/src/main/java/cn/itcast/wanxinp2p/common/domain/PageVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-content-search-service/src/main/java/cn/itcast/wanxinp2p/search/controller/ContentSearchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="775">
+          <caret line="45" column="43" selection-start-line="45" selection-start-column="43" selection-end-line="45" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-content-search-service/src/main/java/cn/itcast/wanxinp2p/search/service/ProjectIndexServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="102" column="16" selection-start-line="102" selection-start-column="16" selection-end-line="102" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-api/src/main/java/cn/itcast/wanxinp2p/api/depository/model/DepositoryBaseResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="27" column="27" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-api/src/main/java/cn/itcast/wanxinp2p/api/depository/model/DepositoryResponseDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-common/src/main/java/cn/itcast/wanxinp2p/common/cache/Cache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-depository-agent-service/src/main/java/cn/itcast/wanxinp2p/depository/common/cache/RedisCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="74" column="47" lean-forward="true" selection-start-line="74" selection-start-column="47" selection-end-line="74" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-common/src/main/java/cn/itcast/wanxinp2p/common/domain/StatusCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-depository-agent-service/src/main/java/cn/itcast/wanxinp2p/depository/common/constant/DepositoryErrorCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-depository-agent-service/src/main/java/cn/itcast/wanxinp2p/depository/config/RedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-transaction-service/src/main/java/cn/itcast/wanxinp2p/transaction/controller/TransactionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="66" column="51" selection-start-line="66" selection-start-column="51" selection-end-line="66" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-transaction-service/src/main/java/cn/itcast/wanxinp2p/transaction/service/ProjectService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="469">
+          <caret line="45" column="20" lean-forward="true" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-common/src/main/java/cn/itcast/wanxinp2p/common/util/CodeNoUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="20" column="78" lean-forward="true" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/apache-maven-3.5.4/rep/org/springframework/spring-core/5.1.5.RELEASE/spring-core-5.1.5.RELEASE-sources.jar!/org/springframework/cglib/proxy/MethodProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="220" selection-start-line="220" selection-end-line="220" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/apache-maven-3.5.4/rep/com/alibaba/druid/1.1.16/druid-1.1.16-sources.jar!/com/alibaba/druid/support/spring/stat/DruidStatInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3">
+          <caret line="74" column="22" lean-forward="true" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-depository-agent-service/src/main/java/cn/itcast/wanxinp2p/depository/controller/DepositoryAgentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="42" column="78" selection-start-line="42" selection-start-column="66" selection-end-line="42" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-transaction-service/src/main/java/cn/itcast/wanxinp2p/transaction/service/ProjectServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="144" column="12" selection-start-line="144" selection-start-column="12" selection-end-line="144" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-depository-agent-service/src/main/java/cn/itcast/wanxinp2p/depository/entity/DepositoryRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-api/src/main/java/cn/itcast/wanxinp2p/api/transaction/model/ProjectDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2150">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-transaction-service/src/main/java/cn/itcast/wanxinp2p/transaction/entity/Project.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="129" column="1" lean-forward="true" selection-start-line="129" selection-start-column="1" selection-end-line="133" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-api/src/main/java/cn/itcast/wanxinp2p/api/depository/model/DepositoryRecordDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="48" column="4" lean-forward="true" selection-start-line="48" selection-start-column="4" selection-end-line="49" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wanxinp2p-depository-agent-service/src/main/java/cn/itcast/wanxinp2p/depository/service/DepositoryRecordServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="119" column="8" selection-start-line="119" selection-start-column="8" selection-end-line="120" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.26436782" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web (wanxinp2p-gateway-server)|Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.26436782" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.26436782" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.26436782" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>wanxinp2p-content-search-service</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.26436782" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.26436782" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

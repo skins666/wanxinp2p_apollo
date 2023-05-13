@@ -1,0 +1,355 @@
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:30,348 INFO [main][DefaultApplicationProvider.java:85] - App ID is set to transaction-service by app.id property from System Property
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:30,357 INFO [main][DefaultServerProvider.java:108] - Environment is set to [dev] by JVM system property 'env'.
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:30,444 WARN [main][DefaultMetaServerProvider.java:39] - Could not find meta server address, because it is not available in neither (1) JVM system property 'apollo.meta', (2) OS env variable 'APOLLO_META' (3) property 'apollo.meta' from server.properties nor (4) property 'apollo.meta' from app.properties
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:30,455 INFO [main][MetaDomainConsts.java:93] - Located meta server address http://localhost:8080 for env DEV from com.ctrip.framework.apollo.core.internals.LegacyMetaServerProvider
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:30,756 WARN [main][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:31,767 WARN [main][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/transaction-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153 [Cause: [status code: 404] Could not find config for namespace - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:31,776 WARN [main][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:32,787 WARN [main][LocalFileConfigRepository.java:167] - Sync config from upstream repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository failed, reason: Load Apollo Config failed - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/transaction-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22transaction-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A285%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:32,798 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:33,607 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:33,811 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:34,820 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/transaction-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22transaction-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A285%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:34,833 WARN [main][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:35,845 WARN [main][LocalFileConfigRepository.java:167] - Sync config from upstream repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository failed, reason: Load Apollo Config failed - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/transaction-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22transaction-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A285%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:35,845 WARN [main][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.LocalFileConfigRepository, reason: Load config from local config failed! [Cause: Cannot read from local cache file C:\opt\data\transaction-service\config-cache\transaction-service+DEFAULT+micro_service.spring-cloud-feign.properties]
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:35,853 WARN [main][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:36,864 WARN [main][LocalFileConfigRepository.java:167] - Sync config from upstream repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository failed, reason: Load Apollo Config failed - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/transaction-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22transaction-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A285%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:36,865 WARN [main][DefaultConfig.java:61] - Init Apollo Local Config failed - namespace: micro_service.spring-cloud-feign, reason: Load config from local config failed! [Cause: Cannot read from local cache file C:\opt\data\transaction-service\config-cache\transaction-service+DEFAULT+micro_service.spring-cloud-feign.properties].
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:36,903 WARN [main][DefaultConfig.java:95] - Could not load config for namespace micro_service.spring-cloud-feign from Apollo, please check whether the configs are released in Apollo! Return default value now!
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:36,904 INFO [main][SpringApplication.java:675] - No active profile set, falling back to default profiles: default
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:39,190 WARN [main][EndpointId.java:135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:39,667 INFO [main][GenericScope.java:294] - BeanFactory id=bf508fed-90a9-3260-9fe9-9a0a46307974
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:39,759 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'cn.itcast.wanxinp2p.transaction.agent.ConsumerApiAgent' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:39,934 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1a754e3f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:39,999 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$368f513c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:40,633 INFO [main][TomcatWebServer.java:90] - Tomcat initialized with port(s): 53060 (http)
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:40,662 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-53060"]
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:40,675 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:40,677 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:40,691 INFO [main][DirectJDKLog.java:173] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Users\apple\AppData\Local\Microsoft\WindowsApps;E:\apache-maven-3.5.4\bin;;.]
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:40,998 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:40,999 INFO [main][ServletWebServerApplicationContext.java:296] - Root WebApplicationContext: initialization completed in 4068 ms
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:41,204 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:41,205 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:41,232 INFO [main][DynamicPropertyFactory.java:281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@7641ed02
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:42,166 INFO [main][DruidDataSource.java:1002] - {dataSource-1} inited
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:42,364 INFO [main][DruidDataSource.java:1002] - {dataSource-2} inited
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:43,608 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:44,933 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:45,439 INFO [main][EndpointLinksResolver.java:59] - Exposing 2 endpoint(s) beneath base path '/actuator'
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:45,632 INFO [main][PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:45,672 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:45,672 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:45,943 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:46,285 INFO [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService 'applicationTaskExecutor'
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:47,086 INFO [main][StdSchedulerFactory.java:1208] - Using default implementation for ThreadExecutor
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:47,115 INFO [main][SchedulerSignalerImpl.java:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:47,117 INFO [main][QuartzScheduler.java:229] - Quartz Scheduler v.2.3.0 created.
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:47,119 INFO [main][RAMJobStore.java:155] - RAMJobStore initialized.
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:47,120 INFO [main][QuartzScheduler.java:294] - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:47,121 INFO [main][StdSchedulerFactory.java:1362] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:47,121 INFO [main][StdSchedulerFactory.java:1366] - Quartz scheduler version: 2.3.0
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:47,122 INFO [main][QuartzScheduler.java:2287] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@54da736e
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:47,744 INFO [main][InstanceInfoFactory.java:71] - Setting initial instance status as: STARTING
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:47,833 INFO [main][DiscoveryClient.java:349] - Initializing Eureka in region us-east-1
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:48,206 INFO [main][DiscoveryJerseyProvider.java:70] - Using JSON encoding codec LegacyJacksonJson
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:48,207 INFO [main][DiscoveryJerseyProvider.java:71] - Using JSON decoding codec LegacyJacksonJson
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:48,437 INFO [main][DiscoveryJerseyProvider.java:80] - Using XML encoding codec XStreamXml
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:48,438 INFO [main][DiscoveryJerseyProvider.java:81] - Using XML decoding codec XStreamXml
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:48,926 INFO [main][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:49,037 INFO [main][DiscoveryClient.java:958] - Disable delta property : false
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:49,038 INFO [main][DiscoveryClient.java:959] - Single vip registry refresh property : null
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:49,038 INFO [main][DiscoveryClient.java:960] - Force full registry fetch : false
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:49,039 INFO [main][DiscoveryClient.java:961] - Application is null : false
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:49,039 INFO [main][DiscoveryClient.java:962] - Registered Applications size is zero : true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:49,040 INFO [main][DiscoveryClient.java:964] - Application version is -1: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:49,040 INFO [main][DiscoveryClient.java:1047] - Getting all instance registry info from the eureka server
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:49,429 INFO [main][DiscoveryClient.java:1056] - The response status is 200
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:49,440 INFO [main][DiscoveryClient.java:1270] - Starting heartbeat executor: renew interval is: 30
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:49,453 INFO [main][InstanceInfoReplicator.java:60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:49,466 INFO [main][DiscoveryClient.java:449] - Discovery Client initialized at timestamp 1566616669459 with initial instances count: 5
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:49,472 INFO [main][EurekaServiceRegistry.java:42] - Registering application TRANSACTION-SERVICE with eureka with status UP
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:49,473 INFO [main][DiscoveryClient.java:1305] - Saw local status change event StatusChangeEvent [timestamp=1566616669472, current=UP, previous=STARTING]
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:49,479 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:826] - DiscoveryClient_TRANSACTION-SERVICE/transaction-service:192.168.2.153:53060: registering service...
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:49,480 INFO [main][DocumentationPluginsBootstrapper.java:160] - Context refreshed
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:49,501 INFO [main][DocumentationPluginsBootstrapper.java:163] - Found 1 custom documentation plugin(s)
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:49,558 INFO [http-nio-53000-exec-9][AbstractInstanceRegistry.java:266] - Registered instance TRANSACTION-SERVICE/transaction-service:192.168.2.153:53060 with status UP (replication=false)
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:49,560 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:835] - DiscoveryClient_TRANSACTION-SERVICE/transaction-service:192.168.2.153:53060 - registration status: 204
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:49,597 INFO [main][ApiListingReferenceScanner.java:41] - Scanning for api listing references
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:49,808 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:50,009 INFO [main][SchedulerFactoryBean.java:726] - Starting Quartz Scheduler now
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:50,010 INFO [main][QuartzScheduler.java:547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:50,035 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-53060"]
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:50,068 INFO [http-nio-53000-exec-4][AbstractInstanceRegistry.java:266] - Registered instance TRANSACTION-SERVICE/transaction-service:192.168.2.153:53060 with status UP (replication=true)
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:50,101 INFO [main][TomcatWebServer.java:204] - Tomcat started on port(s): 53060 (http) with context path '/transaction'
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:50,103 INFO [main][EurekaAutoServiceRegistration.java:141] - Updating port to 53060
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:50,107 INFO [main][StartupInfoLogger.java:59] - Started TransactionService in 22.004 seconds (JVM running for 25.087)
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:50,377 INFO [RMI TCP Connection(2)-127.0.0.1][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:50,378 INFO [RMI TCP Connection(2)-127.0.0.1][FrameworkServlet.java:524] - Initializing Servlet 'dispatcherServlet'
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:50,405 INFO [RMI TCP Connection(2)-127.0.0.1][FrameworkServlet.java:546] - Completed initialization in 26 ms
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:50,777 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:50,814 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:51,541 INFO [RMI TCP Connection(4)-127.0.0.1][SQLLogger.java:89] - Rule Type: sharding
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:51,545 INFO [RMI TCP Connection(4)-127.0.0.1][SQLLogger.java:89] - Logic SQL: /* ping */ SELECT 1
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:51,545 INFO [RMI TCP Connection(4)-127.0.0.1][SQLLogger.java:89] - SQLStatement: SelectStatement(super=DQLStatement(super=AbstractSQLStatement(type=DQL, tables=Tables(tables=[]), routeConditions=Conditions(orCondition=OrCondition(andConditions=[])), encryptConditions=Conditions(orCondition=OrCondition(andConditions=[])), sqlTokens=[], parametersIndex=0, logicSQL=/* ping */ SELECT 1)), containStar=false, firstSelectItemStartIndex=18, selectListStopIndex=18, groupByLastIndex=0, items=[CommonSelectItem(expression=1, alias=Optional.absent())], groupByItems=[], orderByItems=[], limit=null, subqueryStatement=null, subqueryStatements=[], subqueryConditions=[])
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:51,546 INFO [RMI TCP Connection(4)-127.0.0.1][SQLLogger.java:89] - Actual SQL: ds1 ::: /* ping */ SELECT 1
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:51,702 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:51,823 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:51,879 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:53,609 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:55,152 INFO [hmilyTransaction-hmily-transaction-self-recovery-14][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:55,317 INFO [hmilyTransaction-hmily-transaction-self-recovery-28][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:17:59,452 INFO [hmilyTransaction-hmily-transaction-self-recovery-2][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:01,685 INFO [hmilyTransaction-hmily-transaction-self-recovery-42][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:03,610 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:06,948 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:07,981 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:12,665 DEBUG [http-nio-53050-exec-9][BaseJdbcLogger.java:159] - ==>  Preparing: SELECT ID,USERNAME,FULLNAME,ID_NUMBER,USER_NO,MOBILE,USER_TYPE,ROLE,AUTH_LIST,IS_BIND_CARD,STATUS,LOAN_AMOUNT,REQUEST_NO FROM consumer WHERE MOBILE = ? 
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:12,668 DEBUG [http-nio-53050-exec-9][BaseJdbcLogger.java:159] - ==> Parameters: 15378791911(String)
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:12,674 DEBUG [http-nio-53050-exec-9][BaseJdbcLogger.java:159] - <==      Total: 1
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:13,610 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:13,644 DEBUG [http-nio-53060-exec-1][BaseJdbcLogger.java:159] - ==>  Preparing: SELECT COUNT(1) FROM project WHERE PROJECT_STATUS = ? 
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:13,663 DEBUG [http-nio-53060-exec-1][BaseJdbcLogger.java:159] - ==> Parameters: COLLECTING(String)
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:13,741 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Rule Type: sharding
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:13,742 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Logic SQL: SELECT COUNT(1) FROM project WHERE PROJECT_STATUS = ?
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:13,742 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - SQLStatement: SelectStatement(super=DQLStatement(super=AbstractSQLStatement(type=DQL, tables=Tables(tables=[Table(name=project, alias=Optional.absent())]), routeConditions=Conditions(orCondition=OrCondition(andConditions=[])), encryptConditions=Conditions(orCondition=OrCondition(andConditions=[])), sqlTokens=[TableToken(tableName=project, quoteCharacter=NONE, schemaNameLength=0)], parametersIndex=1, logicSQL=SELECT COUNT(1) FROM project WHERE PROJECT_STATUS = ?)), containStar=false, firstSelectItemStartIndex=7, selectListStopIndex=14, groupByLastIndex=0, items=[AggregationSelectItem(type=COUNT, innerExpression=(1), alias=Optional.absent(), derivedAggregationSelectItems=[], index=-1)], groupByItems=[], orderByItems=[], limit=null, subqueryStatement=null, subqueryStatements=[], subqueryConditions=[])
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:13,743 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds0 ::: SELECT COUNT(1) FROM project_0 WHERE PROJECT_STATUS = ? ::: [COLLECTING]
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:13,744 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds0 ::: SELECT COUNT(1) FROM project_1 WHERE PROJECT_STATUS = ? ::: [COLLECTING]
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:13,745 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds1 ::: SELECT COUNT(1) FROM project_0 WHERE PROJECT_STATUS = ? ::: [COLLECTING]
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:13,746 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds1 ::: SELECT COUNT(1) FROM project_1 WHERE PROJECT_STATUS = ? ::: [COLLECTING]
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:13,877 DEBUG [http-nio-53060-exec-1][BaseJdbcLogger.java:159] - ==>  Preparing: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,MODIFY_DATE,STATUS,IS_ASSIGNMENT FROM project WHERE PROJECT_STATUS = ? ORDER BY CREATE_DATE DESC LIMIT ?,? 
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:13,896 DEBUG [http-nio-53060-exec-1][BaseJdbcLogger.java:159] - ==> Parameters: COLLECTING(String), 0(Long), 10(Long)
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:13,969 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Rule Type: sharding
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:13,971 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Logic SQL: SELECT  ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,MODIFY_DATE,STATUS,IS_ASSIGNMENT  FROM project 
+ 
+ WHERE PROJECT_STATUS = ? ORDER BY CREATE_DATE DESC LIMIT ?,?
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:13,972 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - SQLStatement: SelectStatement(super=DQLStatement(super=AbstractSQLStatement(type=DQL, tables=Tables(tables=[Table(name=project, alias=Optional.absent())]), routeConditions=Conditions(orCondition=OrCondition(andConditions=[])), encryptConditions=Conditions(orCondition=OrCondition(andConditions=[])), sqlTokens=[TableToken(tableName=project, quoteCharacter=NONE, schemaNameLength=0)], parametersIndex=3, logicSQL=SELECT  ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,MODIFY_DATE,STATUS,IS_ASSIGNMENT  FROM project 
+ 
+ WHERE PROJECT_STATUS = ? ORDER BY CREATE_DATE DESC LIMIT ?,?)), containStar=false, firstSelectItemStartIndex=8, selectListStopIndex=206, groupByLastIndex=0, items=[CommonSelectItem(expression=ID, alias=Optional.absent()), CommonSelectItem(expression=CONSUMER_ID, alias=Optional.absent()), CommonSelectItem(expression=USER_NO, alias=Optional.absent()), CommonSelectItem(expression=PROJECT_NO, alias=Optional.absent()), CommonSelectItem(expression=NAME, alias=Optional.absent()), CommonSelectItem(expression=DESCRIPTION, alias=Optional.absent()), CommonSelectItem(expression=TYPE, alias=Optional.absent()), CommonSelectItem(expression=PERIOD, alias=Optional.absent()), CommonSelectItem(expression=ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=BORROWER_ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=COMMISSION_ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=REPAYMENT_WAY, alias=Optional.absent()), CommonSelectItem(expression=AMOUNT, alias=Optional.absent()), CommonSelectItem(expression=PROJECT_STATUS, alias=Optional.absent()), CommonSelectItem(expression=CREATE_DATE, alias=Optional.absent()), CommonSelectItem(expression=MODIFY_DATE, alias=Optional.absent()), CommonSelectItem(expression=STATUS, alias=Optional.absent()), CommonSelectItem(expression=IS_ASSIGNMENT, alias=Optional.absent())], groupByItems=[], orderByItems=[OrderItem(owner=Optional.absent(), name=Optional.of(CREATE_DATE), orderDirection=DESC, nullOrderDirection=ASC, index=-1, expression=null, alias=Optional.absent())], limit=Limit(offset=LimitValue(value=-1, index=1, boundOpened=false), rowCount=LimitValue(value=-1, index=2, boundOpened=false)), subqueryStatement=null, subqueryStatements=[], subqueryConditions=[])
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:13,974 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds0 ::: SELECT  ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,MODIFY_DATE,STATUS,IS_ASSIGNMENT  FROM project_0 
+ 
+ WHERE PROJECT_STATUS = ? ORDER BY CREATE_DATE DESC LIMIT ?,? ::: [COLLECTING, 0, 10]
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:13,974 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds0 ::: SELECT  ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,MODIFY_DATE,STATUS,IS_ASSIGNMENT  FROM project_1 
+ 
+ WHERE PROJECT_STATUS = ? ORDER BY CREATE_DATE DESC LIMIT ?,? ::: [COLLECTING, 0, 10]
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:13,975 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds1 ::: SELECT  ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,MODIFY_DATE,STATUS,IS_ASSIGNMENT  FROM project_0 
+ 
+ WHERE PROJECT_STATUS = ? ORDER BY CREATE_DATE DESC LIMIT ?,? ::: [COLLECTING, 0, 10]
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:13,977 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds1 ::: SELECT  ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,MODIFY_DATE,STATUS,IS_ASSIGNMENT  FROM project_1 
+ 
+ WHERE PROJECT_STATUS = ? ORDER BY CREATE_DATE DESC LIMIT ?,? ::: [COLLECTING, 0, 10]
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:14,137 ERROR [http-nio-53060-exec-1][GlobalExceptionHandler.java:45] - 【系统异常】{}
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'MODIFY_DATE' in 'field list'
+### The error may exist in cn/itcast/wanxinp2p/transaction/mapper/ProjectMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,MODIFY_DATE,STATUS,IS_ASSIGNMENT  FROM project     WHERE PROJECT_STATUS = ? ORDER BY CREATE_DATE DESC LIMIT ?,?
+### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'MODIFY_DATE' in 'field list'
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'MODIFY_DATE' in 'field list'
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:234)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:73)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:446)
+	at com.sun.proxy.$Proxy146.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForIPage(MybatisMapperMethod.java:125)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:94)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:61)
+	at com.sun.proxy.$Proxy149.selectPage(Unknown Source)
+	at com.baomidou.mybatisplus.extension.service.impl.ServiceImpl.page(ServiceImpl.java:277)
+	at cn.itcast.wanxinp2p.transaction.service.ProjectServiceImpl.queryProjectsByQueryDTO(ProjectServiceImpl.java:121)
+	at cn.itcast.wanxinp2p.transaction.service.ProjectServiceImpl$$FastClassBySpringCGLIB$$997f0e9f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at cn.itcast.wanxinp2p.transaction.service.ProjectServiceImpl$$EnhancerBySpringCGLIB$$2b28d980.queryProjectsByQueryDTO(<generated>)
+	at cn.itcast.wanxinp2p.transaction.controller.TransactionController.queryProjects(TransactionController.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'MODIFY_DATE' in 'field list'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:95)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:960)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:388)
+	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497)
+	at org.apache.shardingsphere.shardingjdbc.executor.SQLExecuteCallbackFactory$2.executeSQL(SQLExecuteCallbackFactory.java:65)
+	at org.apache.shardingsphere.shardingjdbc.executor.SQLExecuteCallbackFactory$2.executeSQL(SQLExecuteCallbackFactory.java:61)
+	at org.apache.shardingsphere.core.execute.sql.execute.SQLExecuteCallback.execute0(SQLExecuteCallback.java:69)
+	at org.apache.shardingsphere.core.execute.sql.execute.SQLExecuteCallback.execute(SQLExecuteCallback.java:58)
+	at org.apache.shardingsphere.core.execute.ShardingExecuteEngine.syncGroupExecute(ShardingExecuteEngine.java:126)
+	at org.apache.shardingsphere.core.execute.ShardingExecuteEngine.parallelExecute(ShardingExecuteEngine.java:103)
+	at org.apache.shardingsphere.core.execute.ShardingExecuteEngine.groupExecute(ShardingExecuteEngine.java:83)
+	at org.apache.shardingsphere.core.execute.sql.execute.SQLExecuteTemplate.executeGroup(SQLExecuteTemplate.java:73)
+	at org.apache.shardingsphere.core.execute.sql.execute.SQLExecuteTemplate.executeGroup(SQLExecuteTemplate.java:56)
+	at org.apache.shardingsphere.shardingjdbc.executor.AbstractStatementExecutor.executeCallback(AbstractStatementExecutor.java:128)
+	at org.apache.shardingsphere.shardingjdbc.executor.PreparedStatementExecutor.execute(PreparedStatementExecutor.java:156)
+	at org.apache.shardingsphere.shardingjdbc.jdbc.core.statement.ShardingPreparedStatement.execute(ShardingPreparedStatement.java:172)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at com.sun.proxy.$Proxy203.execute(Unknown Source)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy201.query(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49)
+	at com.baomidou.mybatisplus.extension.plugins.PerformanceInterceptor.intercept(PerformanceInterceptor.java:172)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61)
+	at com.sun.proxy.$Proxy201.query(Unknown Source)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:136)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	... 76 more
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:20,778 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:20,819 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:21,699 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:21,830 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:21,883 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:23,610 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:28,965 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:29,971 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:33,611 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:43,612 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:50,774 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:51,693 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:51,821 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:51,876 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:52,827 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:53,612 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:53,837 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:55,155 INFO [hmilyTransaction-hmily-transaction-self-recovery-14][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:55,319 INFO [hmilyTransaction-hmily-transaction-self-recovery-28][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:18:59,455 INFO [hmilyTransaction-hmily-transaction-self-recovery-2][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:19:01,689 INFO [hmilyTransaction-hmily-transaction-self-recovery-42][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:19:03,613 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:19:13,614 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:19:14,837 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:19:15,846 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:19:19,812 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:19:20,772 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:19:20,817 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:19:21,699 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:19:21,823 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:19:21,883 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:19:23,615 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:19:33,616 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:19:36,856 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:19:37,862 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:19:43,616 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:19:49,811 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:19:50,792 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:19:50,981 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: uaa-service, cluster: DEFAULT, namespaces: application
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:19:51,625 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:19:51,698 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:19:51,833 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:19:51,880 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:19:51,993 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: uaa-service, cluster: DEFAULT, namespace: application, url: http://192.168.2.153:8080/configs/uaa-service/DEFAULT/application?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22uaa-service%2Bdefault%2Bapplication%22%3A308%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: uaa-service, cluster: DEFAULT, namespace: application, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:19:53,617 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:19:55,146 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: uaa-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:19:55,159 INFO [hmilyTransaction-hmily-transaction-self-recovery-14][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:19:55,322 INFO [hmilyTransaction-hmily-transaction-self-recovery-28][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:19:56,155 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: uaa-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/uaa-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22uaa-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A313%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: uaa-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:19:58,679 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:19:59,458 INFO [hmilyTransaction-hmily-transaction-self-recovery-2][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:19:59,874 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:20:01,014 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:20:01,691 INFO [hmilyTransaction-hmily-transaction-self-recovery-42][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:20:03,620 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 3ms
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:20:07,459 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:20:13,621 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:20:19,812 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:20:20,772 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:20:20,820 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:20:21,705 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:20:21,827 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:20:21,878 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:20:23,622 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-08-24 11:20:23,854 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true

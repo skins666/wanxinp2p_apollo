@@ -1,0 +1,7 @@
+[${project.name}][${env:SERVER_PORT}] 2019-08-14 15:23:36,716 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-08-14 15:23:36,716 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:611] - Evicting 1 items (expired=1, evictionLimit=1)
+[${project.name}][${env:SERVER_PORT}] 2019-08-14 15:23:36,717 WARN [Eureka-EvictionTimer][AbstractInstanceRegistry.java:623] - DS: Registry: expired lease for CONSUMER-SERVICE/consumer-service:192.168.2.153:53050
+[${project.name}][${env:SERVER_PORT}] 2019-08-14 15:23:36,720 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:330] - Cancelled instance CONSUMER-SERVICE/consumer-service:192.168.2.153:53050 (replication=false)
+[${project.name}][${env:SERVER_PORT}] 2019-08-14 15:23:46,718 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 1ms
+[${project.name}][${env:SERVER_PORT}] 2019-08-14 15:23:51,345 WARN [http-nio-53000-exec-2][AbstractInstanceRegistry.java:353] - DS: Registry: lease doesn't exist, registering resource: CONSUMER-SERVICE - consumer-service:192.168.2.153:53050
+[${project.name}][${env:SERVER_PORT}] 2019-08-14 15:23:51,345 WARN [http-nio-53000-exec-2][InstanceResource.java:116] - Not Found (Renew): CONSUMER-SERVICE - consumer-service:192.168.2.153:53050

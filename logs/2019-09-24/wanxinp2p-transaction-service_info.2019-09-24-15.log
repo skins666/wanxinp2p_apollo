@@ -1,0 +1,1306 @@
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:22,157 INFO [main][DefaultApplicationProvider.java:85] - App ID is set to transaction-service by app.id property from System Property
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:22,166 INFO [main][DefaultServerProvider.java:108] - Environment is set to [dev] by JVM system property 'env'.
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:22,266 WARN [main][DefaultMetaServerProvider.java:39] - Could not find meta server address, because it is not available in neither (1) JVM system property 'apollo.meta', (2) OS env variable 'APOLLO_META' (3) property 'apollo.meta' from server.properties nor (4) property 'apollo.meta' from app.properties
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:22,280 INFO [main][MetaDomainConsts.java:93] - Located meta server address http://localhost:8080 for env DEV from com.ctrip.framework.apollo.core.internals.LegacyMetaServerProvider
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:22,729 WARN [main][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:23,746 WARN [main][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/transaction-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153 [Cause: [status code: 404] Could not find config for namespace - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:23,755 WARN [main][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:24,789 WARN [main][LocalFileConfigRepository.java:167] - Sync config from upstream repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository failed, reason: Load Apollo Config failed - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/transaction-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22transaction-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A285%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:24,873 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:25,896 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:26,922 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/transaction-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22transaction-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A285%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:26,929 WARN [main][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:27,943 WARN [main][LocalFileConfigRepository.java:167] - Sync config from upstream repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository failed, reason: Load Apollo Config failed - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/transaction-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22transaction-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A285%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:27,944 WARN [main][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.LocalFileConfigRepository, reason: Load config from local config failed! [Cause: Cannot read from local cache file C:\opt\data\transaction-service\config-cache\transaction-service+DEFAULT+micro_service.spring-cloud-feign.properties]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:27,954 WARN [main][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:28,969 WARN [main][LocalFileConfigRepository.java:167] - Sync config from upstream repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository failed, reason: Load Apollo Config failed - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/transaction-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22transaction-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A285%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:28,969 WARN [main][DefaultConfig.java:61] - Init Apollo Local Config failed - namespace: micro_service.spring-cloud-feign, reason: Load config from local config failed! [Cause: Cannot read from local cache file C:\opt\data\transaction-service\config-cache\transaction-service+DEFAULT+micro_service.spring-cloud-feign.properties].
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:29,004 WARN [main][DefaultConfig.java:95] - Could not load config for namespace micro_service.spring-cloud-feign from Apollo, please check whether the configs are released in Apollo! Return default value now!
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:29,006 INFO [main][SpringApplication.java:675] - No active profile set, falling back to default profiles: default
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:33,727 WARN [main][EndpointId.java:135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:34,076 INFO [main][GenericScope.java:294] - BeanFactory id=4ff5fc92-ce0a-3b9a-a5b6-b64b5cd0bb79
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:34,154 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'cn.itcast.wanxinp2p.transaction.agent.ConsumerApiAgent' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:34,155 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'cn.itcast.wanxinp2p.transaction.agent.ContentSearchApiAgent' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:34,157 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'cn.itcast.wanxinp2p.transaction.agent.DepositoryAgentApiAgent' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:34,690 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$212a51a8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:34,751 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$3d4454a5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:35,406 INFO [main][TomcatWebServer.java:90] - Tomcat initialized with port(s): 53060 (http)
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:35,439 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-53060"]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:35,453 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:35,454 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:35,472 INFO [main][DirectJDKLog.java:173] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\nodejs\;C:\Ruby26-x64\bin;C:\Users\apple\AppData\Local\Microsoft\WindowsApps;E:\apache-maven-3.5.4\bin;C:\Users\apple\AppData\Roaming\npm;.]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:35,816 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:35,816 INFO [main][ServletWebServerApplicationContext.java:296] - Root WebApplicationContext: initialization completed in 6785 ms
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:36,010 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:36,011 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:36,032 INFO [main][DynamicPropertyFactory.java:281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6eded11a
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:36,931 INFO [main][DruidDataSource.java:1002] - {dataSource-1} inited
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:37,111 INFO [main][DruidDataSource.java:1002] - {dataSource-2} inited
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:39,207 INFO [main][EndpointLinksResolver.java:59] - Exposing 2 endpoint(s) beneath base path '/actuator'
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:39,338 INFO [main][PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:39,366 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:39,366 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:40,201 INFO [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService 'applicationTaskExecutor'
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:40,921 INFO [main][StdSchedulerFactory.java:1208] - Using default implementation for ThreadExecutor
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:40,951 INFO [main][SchedulerSignalerImpl.java:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:40,951 INFO [main][QuartzScheduler.java:229] - Quartz Scheduler v.2.3.0 created.
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:40,953 INFO [main][RAMJobStore.java:155] - RAMJobStore initialized.
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:40,954 INFO [main][QuartzScheduler.java:294] - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:40,954 INFO [main][StdSchedulerFactory.java:1362] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:40,954 INFO [main][StdSchedulerFactory.java:1366] - Quartz scheduler version: 2.3.0
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:40,955 INFO [main][QuartzScheduler.java:2287] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@55849272
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:41,341 INFO [main][InstanceInfoFactory.java:71] - Setting initial instance status as: STARTING
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:41,409 INFO [main][DiscoveryClient.java:349] - Initializing Eureka in region us-east-1
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:41,783 INFO [main][DiscoveryJerseyProvider.java:70] - Using JSON encoding codec LegacyJacksonJson
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:41,783 INFO [main][DiscoveryJerseyProvider.java:71] - Using JSON decoding codec LegacyJacksonJson
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:41,972 INFO [main][DiscoveryJerseyProvider.java:80] - Using XML encoding codec XStreamXml
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:41,973 INFO [main][DiscoveryJerseyProvider.java:81] - Using XML decoding codec XStreamXml
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:42,374 INFO [main][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:42,455 INFO [main][DiscoveryClient.java:958] - Disable delta property : false
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:42,455 INFO [main][DiscoveryClient.java:959] - Single vip registry refresh property : null
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:42,455 INFO [main][DiscoveryClient.java:960] - Force full registry fetch : false
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:42,456 INFO [main][DiscoveryClient.java:961] - Application is null : false
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:42,456 INFO [main][DiscoveryClient.java:962] - Registered Applications size is zero : true
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:42,456 INFO [main][DiscoveryClient.java:964] - Application version is -1: true
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:42,456 INFO [main][DiscoveryClient.java:1047] - Getting all instance registry info from the eureka server
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:42,879 INFO [main][DiscoveryClient.java:1056] - The response status is 200
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:42,884 INFO [main][DiscoveryClient.java:1270] - Starting heartbeat executor: renew interval is: 30
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:42,889 INFO [main][InstanceInfoReplicator.java:60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:42,895 INFO [main][DiscoveryClient.java:449] - Discovery Client initialized at timestamp 1569308442893 with initial instances count: 3
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:42,897 INFO [main][EurekaServiceRegistry.java:42] - Registering application TRANSACTION-SERVICE with eureka with status UP
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:42,898 INFO [main][DiscoveryClient.java:1305] - Saw local status change event StatusChangeEvent [timestamp=1569308442898, current=UP, previous=STARTING]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:42,901 INFO [main][DocumentationPluginsBootstrapper.java:160] - Context refreshed
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:42,902 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:826] - DiscoveryClient_TRANSACTION-SERVICE/transaction-service:192.168.2.153:53060: registering service...
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:42,914 INFO [main][DocumentationPluginsBootstrapper.java:163] - Found 1 custom documentation plugin(s)
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:42,960 INFO [main][ApiListingReferenceScanner.java:41] - Scanning for api listing references
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:42,963 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:835] - DiscoveryClient_TRANSACTION-SERVICE/transaction-service:192.168.2.153:53060 - registration status: 204
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:43,467 INFO [main][CachingOperationNameGenerator.java:40] - Generating unique operation named: queryProjectsUsingPOST_1
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:43,610 INFO [main][SchedulerFactoryBean.java:726] - Starting Quartz Scheduler now
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:43,611 INFO [main][QuartzScheduler.java:547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:43,629 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-53060"]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:43,673 INFO [main][TomcatWebServer.java:204] - Tomcat started on port(s): 53060 (http) with context path '/transaction'
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:43,674 INFO [main][EurekaAutoServiceRegistration.java:141] - Updating port to 53060
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:43,678 INFO [main][StartupInfoLogger.java:59] - Started TransactionService in 27.109 seconds (JVM running for 34.63)
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:44,216 INFO [RMI TCP Connection(4)-127.0.0.1][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:44,216 INFO [RMI TCP Connection(4)-127.0.0.1][FrameworkServlet.java:524] - Initializing Servlet 'dispatcherServlet'
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:44,234 INFO [RMI TCP Connection(4)-127.0.0.1][FrameworkServlet.java:546] - Completed initialization in 17 ms
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:47,094 INFO [RMI TCP Connection(2)-127.0.0.1][SQLLogger.java:89] - Rule Type: sharding
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:47,097 INFO [RMI TCP Connection(2)-127.0.0.1][SQLLogger.java:89] - Logic SQL: /* ping */ SELECT 1
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:47,098 INFO [RMI TCP Connection(2)-127.0.0.1][SQLLogger.java:89] - SQLStatement: SelectStatement(super=DQLStatement(super=AbstractSQLStatement(type=DQL, tables=Tables(tables=[]), routeConditions=Conditions(orCondition=OrCondition(andConditions=[])), encryptConditions=Conditions(orCondition=OrCondition(andConditions=[])), sqlTokens=[], parametersIndex=0, logicSQL=/* ping */ SELECT 1)), containStar=false, firstSelectItemStartIndex=18, selectListStopIndex=18, groupByLastIndex=0, items=[CommonSelectItem(expression=1, alias=Optional.absent())], groupByItems=[], orderByItems=[], limit=null, subqueryStatement=null, subqueryStatements=[], subqueryConditions=[])
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:00:47,099 INFO [RMI TCP Connection(2)-127.0.0.1][SQLLogger.java:89] - Actual SQL: ds0 ::: /* ping */ SELECT 1
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:05:23,767 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:05:24,783 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/transaction-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22transaction-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A285%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:05:42,461 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:10:23,758 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:10:24,781 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/transaction-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22transaction-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A285%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:10:42,464 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:15:23,755 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:15:24,764 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/transaction-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22transaction-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A285%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:15:42,466 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:20:23,760 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:20:24,786 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/transaction-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22transaction-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A285%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:20:42,470 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:23:36,952 DEBUG [http-nio-53060-exec-1][BaseJdbcLogger.java:159] - ==>  Preparing: SELECT COUNT(1) FROM project WHERE PROJECT_STATUS = ? 
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:23:36,989 DEBUG [http-nio-53060-exec-1][BaseJdbcLogger.java:159] - ==> Parameters: COLLECTING(String)
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:23:37,134 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Rule Type: sharding
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:23:37,135 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Logic SQL: SELECT COUNT(1) FROM project WHERE PROJECT_STATUS = ?
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:23:37,136 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - SQLStatement: SelectStatement(super=DQLStatement(super=AbstractSQLStatement(type=DQL, tables=Tables(tables=[Table(name=project, alias=Optional.absent())]), routeConditions=Conditions(orCondition=OrCondition(andConditions=[])), encryptConditions=Conditions(orCondition=OrCondition(andConditions=[])), sqlTokens=[TableToken(tableName=project, quoteCharacter=NONE, schemaNameLength=0)], parametersIndex=1, logicSQL=SELECT COUNT(1) FROM project WHERE PROJECT_STATUS = ?)), containStar=false, firstSelectItemStartIndex=7, selectListStopIndex=14, groupByLastIndex=0, items=[AggregationSelectItem(type=COUNT, innerExpression=(1), alias=Optional.absent(), derivedAggregationSelectItems=[], index=-1)], groupByItems=[], orderByItems=[], limit=null, subqueryStatement=null, subqueryStatements=[], subqueryConditions=[])
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:23:37,137 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds0 ::: SELECT COUNT(1) FROM project_0 WHERE PROJECT_STATUS = ? ::: [COLLECTING]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:23:37,137 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds0 ::: SELECT COUNT(1) FROM project_1 WHERE PROJECT_STATUS = ? ::: [COLLECTING]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:23:37,137 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds1 ::: SELECT COUNT(1) FROM project_0 WHERE PROJECT_STATUS = ? ::: [COLLECTING]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:23:37,138 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds1 ::: SELECT COUNT(1) FROM project_1 WHERE PROJECT_STATUS = ? ::: [COLLECTING]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:23:37,305 DEBUG [http-nio-53060-exec-1][BaseJdbcLogger.java:159] - ==>  Preparing: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project WHERE PROJECT_STATUS = ? ORDER BY CREATE_DATE DESC LIMIT ?,? 
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:23:37,329 DEBUG [http-nio-53060-exec-1][BaseJdbcLogger.java:159] - ==> Parameters: COLLECTING(String), 0(Long), 10(Long)
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:23:37,439 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Rule Type: sharding
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:23:37,440 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Logic SQL: SELECT  ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT  FROM project 
+ 
+ WHERE PROJECT_STATUS = ? ORDER BY CREATE_DATE DESC LIMIT ?,?
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:23:37,440 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - SQLStatement: SelectStatement(super=DQLStatement(super=AbstractSQLStatement(type=DQL, tables=Tables(tables=[Table(name=project, alias=Optional.absent())]), routeConditions=Conditions(orCondition=OrCondition(andConditions=[])), encryptConditions=Conditions(orCondition=OrCondition(andConditions=[])), sqlTokens=[TableToken(tableName=project, quoteCharacter=NONE, schemaNameLength=0)], parametersIndex=3, logicSQL=SELECT  ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT  FROM project 
+ 
+ WHERE PROJECT_STATUS = ? ORDER BY CREATE_DATE DESC LIMIT ?,?)), containStar=false, firstSelectItemStartIndex=8, selectListStopIndex=194, groupByLastIndex=0, items=[CommonSelectItem(expression=ID, alias=Optional.absent()), CommonSelectItem(expression=CONSUMER_ID, alias=Optional.absent()), CommonSelectItem(expression=USER_NO, alias=Optional.absent()), CommonSelectItem(expression=PROJECT_NO, alias=Optional.absent()), CommonSelectItem(expression=NAME, alias=Optional.absent()), CommonSelectItem(expression=DESCRIPTION, alias=Optional.absent()), CommonSelectItem(expression=TYPE, alias=Optional.absent()), CommonSelectItem(expression=PERIOD, alias=Optional.absent()), CommonSelectItem(expression=ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=BORROWER_ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=COMMISSION_ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=REPAYMENT_WAY, alias=Optional.absent()), CommonSelectItem(expression=AMOUNT, alias=Optional.absent()), CommonSelectItem(expression=PROJECT_STATUS, alias=Optional.absent()), CommonSelectItem(expression=CREATE_DATE, alias=Optional.absent()), CommonSelectItem(expression=STATUS, alias=Optional.absent()), CommonSelectItem(expression=IS_ASSIGNMENT, alias=Optional.absent())], groupByItems=[], orderByItems=[OrderItem(owner=Optional.absent(), name=Optional.of(CREATE_DATE), orderDirection=DESC, nullOrderDirection=ASC, index=-1, expression=null, alias=Optional.absent())], limit=Limit(offset=LimitValue(value=-1, index=1, boundOpened=false), rowCount=LimitValue(value=-1, index=2, boundOpened=false)), subqueryStatement=null, subqueryStatements=[], subqueryConditions=[])
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:23:37,442 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds0 ::: SELECT  ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT  FROM project_0 
+ 
+ WHERE PROJECT_STATUS = ? ORDER BY CREATE_DATE DESC LIMIT ?,? ::: [COLLECTING, 0, 10]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:23:37,442 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds0 ::: SELECT  ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT  FROM project_1 
+ 
+ WHERE PROJECT_STATUS = ? ORDER BY CREATE_DATE DESC LIMIT ?,? ::: [COLLECTING, 0, 10]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:23:37,443 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds1 ::: SELECT  ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT  FROM project_0 
+ 
+ WHERE PROJECT_STATUS = ? ORDER BY CREATE_DATE DESC LIMIT ?,? ::: [COLLECTING, 0, 10]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:23:37,444 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds1 ::: SELECT  ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT  FROM project_1 
+ 
+ WHERE PROJECT_STATUS = ? ORDER BY CREATE_DATE DESC LIMIT ?,? ::: [COLLECTING, 0, 10]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:23:37,494 DEBUG [http-nio-53060-exec-1][BaseJdbcLogger.java:159] - <==      Total: 3
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:24:22,508 DEBUG [http-nio-53060-exec-2][BaseJdbcLogger.java:159] - ==>  Preparing: SELECT COUNT(1) FROM project WHERE PROJECT_STATUS = ? 
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:24:22,511 DEBUG [http-nio-53060-exec-2][BaseJdbcLogger.java:159] - ==> Parameters: COLLECTING(String)
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:24:22,516 INFO [http-nio-53060-exec-2][SQLLogger.java:89] - Rule Type: sharding
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:24:22,517 INFO [http-nio-53060-exec-2][SQLLogger.java:89] - Logic SQL: SELECT COUNT(1) FROM project WHERE PROJECT_STATUS = ?
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:24:22,518 INFO [http-nio-53060-exec-2][SQLLogger.java:89] - SQLStatement: SelectStatement(super=DQLStatement(super=AbstractSQLStatement(type=DQL, tables=Tables(tables=[Table(name=project, alias=Optional.absent())]), routeConditions=Conditions(orCondition=OrCondition(andConditions=[])), encryptConditions=Conditions(orCondition=OrCondition(andConditions=[])), sqlTokens=[TableToken(tableName=project, quoteCharacter=NONE, schemaNameLength=0)], parametersIndex=1, logicSQL=SELECT COUNT(1) FROM project WHERE PROJECT_STATUS = ?)), containStar=false, firstSelectItemStartIndex=7, selectListStopIndex=14, groupByLastIndex=0, items=[AggregationSelectItem(type=COUNT, innerExpression=(1), alias=Optional.absent(), derivedAggregationSelectItems=[], index=1)], groupByItems=[], orderByItems=[], limit=null, subqueryStatement=null, subqueryStatements=[], subqueryConditions=[])
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:24:22,519 INFO [http-nio-53060-exec-2][SQLLogger.java:89] - Actual SQL: ds0 ::: SELECT COUNT(1) FROM project_0 WHERE PROJECT_STATUS = ? ::: [COLLECTING]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:24:22,520 INFO [http-nio-53060-exec-2][SQLLogger.java:89] - Actual SQL: ds0 ::: SELECT COUNT(1) FROM project_1 WHERE PROJECT_STATUS = ? ::: [COLLECTING]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:24:22,521 INFO [http-nio-53060-exec-2][SQLLogger.java:89] - Actual SQL: ds1 ::: SELECT COUNT(1) FROM project_0 WHERE PROJECT_STATUS = ? ::: [COLLECTING]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:24:22,521 INFO [http-nio-53060-exec-2][SQLLogger.java:89] - Actual SQL: ds1 ::: SELECT COUNT(1) FROM project_1 WHERE PROJECT_STATUS = ? ::: [COLLECTING]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:24:22,530 DEBUG [http-nio-53060-exec-2][BaseJdbcLogger.java:159] - ==>  Preparing: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project WHERE PROJECT_STATUS = ? ORDER BY CREATE_DATE DESC LIMIT ?,? 
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:24:22,545 DEBUG [http-nio-53060-exec-2][BaseJdbcLogger.java:159] - ==> Parameters: COLLECTING(String), 0(Long), 10(Long)
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:24:22,547 INFO [http-nio-53060-exec-2][SQLLogger.java:89] - Rule Type: sharding
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:24:22,547 INFO [http-nio-53060-exec-2][SQLLogger.java:89] - Logic SQL: SELECT  ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT  FROM project 
+ 
+ WHERE PROJECT_STATUS = ? ORDER BY CREATE_DATE DESC LIMIT ?,?
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:24:22,548 INFO [http-nio-53060-exec-2][SQLLogger.java:89] - SQLStatement: SelectStatement(super=DQLStatement(super=AbstractSQLStatement(type=DQL, tables=Tables(tables=[Table(name=project, alias=Optional.absent())]), routeConditions=Conditions(orCondition=OrCondition(andConditions=[])), encryptConditions=Conditions(orCondition=OrCondition(andConditions=[])), sqlTokens=[TableToken(tableName=project, quoteCharacter=NONE, schemaNameLength=0)], parametersIndex=3, logicSQL=SELECT  ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT  FROM project 
+ 
+ WHERE PROJECT_STATUS = ? ORDER BY CREATE_DATE DESC LIMIT ?,?)), containStar=false, firstSelectItemStartIndex=8, selectListStopIndex=194, groupByLastIndex=0, items=[CommonSelectItem(expression=ID, alias=Optional.absent()), CommonSelectItem(expression=CONSUMER_ID, alias=Optional.absent()), CommonSelectItem(expression=USER_NO, alias=Optional.absent()), CommonSelectItem(expression=PROJECT_NO, alias=Optional.absent()), CommonSelectItem(expression=NAME, alias=Optional.absent()), CommonSelectItem(expression=DESCRIPTION, alias=Optional.absent()), CommonSelectItem(expression=TYPE, alias=Optional.absent()), CommonSelectItem(expression=PERIOD, alias=Optional.absent()), CommonSelectItem(expression=ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=BORROWER_ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=COMMISSION_ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=REPAYMENT_WAY, alias=Optional.absent()), CommonSelectItem(expression=AMOUNT, alias=Optional.absent()), CommonSelectItem(expression=PROJECT_STATUS, alias=Optional.absent()), CommonSelectItem(expression=CREATE_DATE, alias=Optional.absent()), CommonSelectItem(expression=STATUS, alias=Optional.absent()), CommonSelectItem(expression=IS_ASSIGNMENT, alias=Optional.absent())], groupByItems=[], orderByItems=[OrderItem(owner=Optional.absent(), name=Optional.of(CREATE_DATE), orderDirection=DESC, nullOrderDirection=ASC, index=15, expression=null, alias=Optional.absent())], limit=Limit(offset=LimitValue(value=-1, index=1, boundOpened=false), rowCount=LimitValue(value=-1, index=2, boundOpened=false)), subqueryStatement=null, subqueryStatements=[], subqueryConditions=[])
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:24:22,549 INFO [http-nio-53060-exec-2][SQLLogger.java:89] - Actual SQL: ds0 ::: SELECT  ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT  FROM project_0 
+ 
+ WHERE PROJECT_STATUS = ? ORDER BY CREATE_DATE DESC LIMIT ?,? ::: [COLLECTING, 0, 10]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:24:22,550 INFO [http-nio-53060-exec-2][SQLLogger.java:89] - Actual SQL: ds0 ::: SELECT  ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT  FROM project_1 
+ 
+ WHERE PROJECT_STATUS = ? ORDER BY CREATE_DATE DESC LIMIT ?,? ::: [COLLECTING, 0, 10]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:24:22,550 INFO [http-nio-53060-exec-2][SQLLogger.java:89] - Actual SQL: ds1 ::: SELECT  ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT  FROM project_0 
+ 
+ WHERE PROJECT_STATUS = ? ORDER BY CREATE_DATE DESC LIMIT ?,? ::: [COLLECTING, 0, 10]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:24:22,551 INFO [http-nio-53060-exec-2][SQLLogger.java:89] - Actual SQL: ds1 ::: SELECT  ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT  FROM project_1 
+ 
+ WHERE PROJECT_STATUS = ? ORDER BY CREATE_DATE DESC LIMIT ?,? ::: [COLLECTING, 0, 10]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:24:22,562 DEBUG [http-nio-53060-exec-2][BaseJdbcLogger.java:159] - <==      Total: 3
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:25:23,755 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:25:24,763 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/transaction-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22transaction-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A285%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:25:40,589 DEBUG [http-nio-53060-exec-5][BaseJdbcLogger.java:159] - ==>  Preparing: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project WHERE ID=? 
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:25:40,599 DEBUG [http-nio-53060-exec-5][BaseJdbcLogger.java:159] - ==> Parameters: 2144527401414811650(Long)
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:25:40,821 INFO [http-nio-53060-exec-5][SQLLogger.java:89] - Rule Type: sharding
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:25:40,822 INFO [http-nio-53060-exec-5][SQLLogger.java:89] - Logic SQL: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project WHERE ID=?
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:25:40,822 INFO [http-nio-53060-exec-5][SQLLogger.java:89] - SQLStatement: SelectStatement(super=DQLStatement(super=AbstractSQLStatement(type=DQL, tables=Tables(tables=[Table(name=project, alias=Optional.absent())]), routeConditions=Conditions(orCondition=OrCondition(andConditions=[AndCondition(conditions=[Condition(column=Column(name=ID, tableName=project), operator=EQUAL, compareOperator==, positionValueMap={}, positionIndexMap={0=0})])])), encryptConditions=Conditions(orCondition=OrCondition(andConditions=[])), sqlTokens=[TableToken(tableName=project, quoteCharacter=NONE, schemaNameLength=0)], parametersIndex=1, logicSQL=SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project WHERE ID=?)), containStar=false, firstSelectItemStartIndex=7, selectListStopIndex=193, groupByLastIndex=0, items=[CommonSelectItem(expression=ID, alias=Optional.absent()), CommonSelectItem(expression=CONSUMER_ID, alias=Optional.absent()), CommonSelectItem(expression=USER_NO, alias=Optional.absent()), CommonSelectItem(expression=PROJECT_NO, alias=Optional.absent()), CommonSelectItem(expression=NAME, alias=Optional.absent()), CommonSelectItem(expression=DESCRIPTION, alias=Optional.absent()), CommonSelectItem(expression=TYPE, alias=Optional.absent()), CommonSelectItem(expression=PERIOD, alias=Optional.absent()), CommonSelectItem(expression=ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=BORROWER_ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=COMMISSION_ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=REPAYMENT_WAY, alias=Optional.absent()), CommonSelectItem(expression=AMOUNT, alias=Optional.absent()), CommonSelectItem(expression=PROJECT_STATUS, alias=Optional.absent()), CommonSelectItem(expression=CREATE_DATE, alias=Optional.absent()), CommonSelectItem(expression=STATUS, alias=Optional.absent()), CommonSelectItem(expression=IS_ASSIGNMENT, alias=Optional.absent())], groupByItems=[], orderByItems=[], limit=null, subqueryStatement=null, subqueryStatements=[], subqueryConditions=[])
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:25:40,824 INFO [http-nio-53060-exec-5][SQLLogger.java:89] - Actual SQL: ds0 ::: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project_0 WHERE ID=? ::: [2144527401414811650]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:25:40,826 INFO [http-nio-53060-exec-5][SQLLogger.java:89] - Actual SQL: ds1 ::: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project_0 WHERE ID=? ::: [2144527401414811650]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:25:40,856 DEBUG [http-nio-53060-exec-5][BaseJdbcLogger.java:159] - <==      Total: 1
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:25:40,919 WARN [http-nio-53060-exec-5][DefaultConfig.java:95] - Could not load config for namespace micro_service.spring-cloud-feign from Apollo, please check whether the configs are released in Apollo! Return default value now!
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:25:41,360 INFO [http-nio-53060-exec-5][ChainedDynamicProperty.java:115] - Flipping property: depository-agent-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:25:41,402 INFO [http-nio-53060-exec-5][ShutdownEnabledTimer.java:58] - Shutdown hook installed for: NFLoadBalancer-PingTimer-depository-agent-service
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:25:41,405 INFO [http-nio-53060-exec-5][BaseLoadBalancer.java:197] - Client: depository-agent-service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=depository-agent-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:25:41,415 INFO [http-nio-53060-exec-5][DynamicServerListLoadBalancer.java:222] - Using serverListUpdater PollingServerListUpdater
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:25:41,447 INFO [http-nio-53060-exec-5][ChainedDynamicProperty.java:115] - Flipping property: depository-agent-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:25:41,454 INFO [http-nio-53060-exec-5][DynamicServerListLoadBalancer.java:150] - DynamicServerListLoadBalancer for client depository-agent-service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=depository-agent-service,current list of Servers=[192.168.2.153:53070, 192.168.2.153:53072, 192.168.2.153:53071],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:3;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.2.153:53070;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+, [Server:192.168.2.153:53071;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+, [Server:192.168.2.153:53072;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@3dfab772
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:25:42,422 INFO [PollingServerListUpdater-0][ChainedDynamicProperty.java:115] - Flipping property: depository-agent-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:25:42,473 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:30:13,298 DEBUG [http-nio-53060-exec-6][BaseJdbcLogger.java:159] - ==>  Preparing: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project WHERE ID=? 
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:30:13,318 DEBUG [http-nio-53060-exec-6][BaseJdbcLogger.java:159] - ==> Parameters: 2144527401414811650(Long)
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:30:13,320 INFO [http-nio-53060-exec-6][SQLLogger.java:89] - Rule Type: sharding
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:30:13,321 INFO [http-nio-53060-exec-6][SQLLogger.java:89] - Logic SQL: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project WHERE ID=?
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:30:13,321 INFO [http-nio-53060-exec-6][SQLLogger.java:89] - SQLStatement: SelectStatement(super=DQLStatement(super=AbstractSQLStatement(type=DQL, tables=Tables(tables=[Table(name=project, alias=Optional.absent())]), routeConditions=Conditions(orCondition=OrCondition(andConditions=[AndCondition(conditions=[Condition(column=Column(name=ID, tableName=project), operator=EQUAL, compareOperator==, positionValueMap={}, positionIndexMap={0=0})])])), encryptConditions=Conditions(orCondition=OrCondition(andConditions=[])), sqlTokens=[TableToken(tableName=project, quoteCharacter=NONE, schemaNameLength=0)], parametersIndex=1, logicSQL=SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project WHERE ID=?)), containStar=false, firstSelectItemStartIndex=7, selectListStopIndex=193, groupByLastIndex=0, items=[CommonSelectItem(expression=ID, alias=Optional.absent()), CommonSelectItem(expression=CONSUMER_ID, alias=Optional.absent()), CommonSelectItem(expression=USER_NO, alias=Optional.absent()), CommonSelectItem(expression=PROJECT_NO, alias=Optional.absent()), CommonSelectItem(expression=NAME, alias=Optional.absent()), CommonSelectItem(expression=DESCRIPTION, alias=Optional.absent()), CommonSelectItem(expression=TYPE, alias=Optional.absent()), CommonSelectItem(expression=PERIOD, alias=Optional.absent()), CommonSelectItem(expression=ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=BORROWER_ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=COMMISSION_ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=REPAYMENT_WAY, alias=Optional.absent()), CommonSelectItem(expression=AMOUNT, alias=Optional.absent()), CommonSelectItem(expression=PROJECT_STATUS, alias=Optional.absent()), CommonSelectItem(expression=CREATE_DATE, alias=Optional.absent()), CommonSelectItem(expression=STATUS, alias=Optional.absent()), CommonSelectItem(expression=IS_ASSIGNMENT, alias=Optional.absent())], groupByItems=[], orderByItems=[], limit=null, subqueryStatement=null, subqueryStatements=[], subqueryConditions=[])
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:30:13,324 INFO [http-nio-53060-exec-6][SQLLogger.java:89] - Actual SQL: ds0 ::: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project_0 WHERE ID=? ::: [2144527401414811650]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:30:13,324 INFO [http-nio-53060-exec-6][SQLLogger.java:89] - Actual SQL: ds1 ::: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project_0 WHERE ID=? ::: [2144527401414811650]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:30:13,369 DEBUG [http-nio-53060-exec-6][BaseJdbcLogger.java:159] - <==      Total: 1
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:30:23,756 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:30:24,763 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/transaction-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22transaction-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A285%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:30:33,409 ERROR [http-nio-53060-exec-6][GlobalExceptionHandler.java:45] - 【系统异常】{}
+feign.RetryableException: Read timed out executing POST http://depository-agent-service/depository-agent/l/createProject
+	at feign.FeignException.errorExecuting(FeignException.java:84)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:113)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:78)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:103)
+	at com.sun.proxy.$Proxy158.createProject(Unknown Source)
+	at cn.itcast.wanxinp2p.transaction.service.ProjectServiceImpl.projectsApprovalStatus(ProjectServiceImpl.java:151)
+	at cn.itcast.wanxinp2p.transaction.service.ProjectServiceImpl$$FastClassBySpringCGLIB$$997f0e9f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at cn.itcast.wanxinp2p.transaction.service.ProjectServiceImpl$$EnhancerBySpringCGLIB$$4203352c.projectsApprovalStatus(<generated>)
+	at cn.itcast.wanxinp2p.transaction.controller.TransactionController.projectsApprovalStatus(TransactionController.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:919)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:663)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:735)
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:678)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1587)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at feign.Client$Default.convertResponse(Client.java:143)
+	at feign.Client$Default.execute(Client.java:68)
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer$1.doWithRetry(RetryableFeignLoadBalancer.java:103)
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer$1.doWithRetry(RetryableFeignLoadBalancer.java:88)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:287)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:180)
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer.execute(RetryableFeignLoadBalancer.java:88)
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer.execute(RetryableFeignLoadBalancer.java:54)
+	at com.netflix.client.AbstractLoadBalancerAwareClient$1.call(AbstractLoadBalancerAwareClient.java:104)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:303)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:287)
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:231)
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:228)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45)
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276)
+	at rx.Subscriber.setProducer(Subscriber.java:209)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.drain(OnSubscribeConcatMap.java:286)
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.onNext(OnSubscribeConcatMap.java:144)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:185)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:180)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:94)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:42)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45)
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276)
+	at rx.Subscriber.setProducer(Subscriber.java:209)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.subscribe(Observable.java:10423)
+	at rx.Observable.subscribe(Observable.java:10390)
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:443)
+	at rx.observables.BlockingObservable.single(BlockingObservable.java:340)
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:112)
+	at org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient.execute(LoadBalancerFeignClient.java:65)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:108)
+	... 72 more
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:30:42,476 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:32:45,777 DEBUG [http-nio-53060-exec-7][BaseJdbcLogger.java:159] - ==>  Preparing: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project WHERE ID=? 
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:32:45,786 DEBUG [http-nio-53060-exec-7][BaseJdbcLogger.java:159] - ==> Parameters: 2144527401414811650(Long)
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:32:45,789 INFO [http-nio-53060-exec-7][SQLLogger.java:89] - Rule Type: sharding
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:32:45,790 INFO [http-nio-53060-exec-7][SQLLogger.java:89] - Logic SQL: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project WHERE ID=?
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:32:45,791 INFO [http-nio-53060-exec-7][SQLLogger.java:89] - SQLStatement: SelectStatement(super=DQLStatement(super=AbstractSQLStatement(type=DQL, tables=Tables(tables=[Table(name=project, alias=Optional.absent())]), routeConditions=Conditions(orCondition=OrCondition(andConditions=[AndCondition(conditions=[Condition(column=Column(name=ID, tableName=project), operator=EQUAL, compareOperator==, positionValueMap={}, positionIndexMap={0=0})])])), encryptConditions=Conditions(orCondition=OrCondition(andConditions=[])), sqlTokens=[TableToken(tableName=project, quoteCharacter=NONE, schemaNameLength=0)], parametersIndex=1, logicSQL=SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project WHERE ID=?)), containStar=false, firstSelectItemStartIndex=7, selectListStopIndex=193, groupByLastIndex=0, items=[CommonSelectItem(expression=ID, alias=Optional.absent()), CommonSelectItem(expression=CONSUMER_ID, alias=Optional.absent()), CommonSelectItem(expression=USER_NO, alias=Optional.absent()), CommonSelectItem(expression=PROJECT_NO, alias=Optional.absent()), CommonSelectItem(expression=NAME, alias=Optional.absent()), CommonSelectItem(expression=DESCRIPTION, alias=Optional.absent()), CommonSelectItem(expression=TYPE, alias=Optional.absent()), CommonSelectItem(expression=PERIOD, alias=Optional.absent()), CommonSelectItem(expression=ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=BORROWER_ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=COMMISSION_ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=REPAYMENT_WAY, alias=Optional.absent()), CommonSelectItem(expression=AMOUNT, alias=Optional.absent()), CommonSelectItem(expression=PROJECT_STATUS, alias=Optional.absent()), CommonSelectItem(expression=CREATE_DATE, alias=Optional.absent()), CommonSelectItem(expression=STATUS, alias=Optional.absent()), CommonSelectItem(expression=IS_ASSIGNMENT, alias=Optional.absent())], groupByItems=[], orderByItems=[], limit=null, subqueryStatement=null, subqueryStatements=[], subqueryConditions=[])
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:32:45,792 INFO [http-nio-53060-exec-7][SQLLogger.java:89] - Actual SQL: ds0 ::: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project_0 WHERE ID=? ::: [2144527401414811650]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:32:45,793 INFO [http-nio-53060-exec-7][SQLLogger.java:89] - Actual SQL: ds1 ::: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project_0 WHERE ID=? ::: [2144527401414811650]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:32:45,824 DEBUG [http-nio-53060-exec-7][BaseJdbcLogger.java:159] - <==      Total: 1
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:33:05,840 ERROR [http-nio-53060-exec-7][GlobalExceptionHandler.java:45] - 【系统异常】{}
+feign.RetryableException: Read timed out executing POST http://depository-agent-service/depository-agent/l/createProject
+	at feign.FeignException.errorExecuting(FeignException.java:84)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:113)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:78)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:103)
+	at com.sun.proxy.$Proxy158.createProject(Unknown Source)
+	at cn.itcast.wanxinp2p.transaction.service.ProjectServiceImpl.projectsApprovalStatus(ProjectServiceImpl.java:151)
+	at cn.itcast.wanxinp2p.transaction.service.ProjectServiceImpl$$FastClassBySpringCGLIB$$997f0e9f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at cn.itcast.wanxinp2p.transaction.service.ProjectServiceImpl$$EnhancerBySpringCGLIB$$4203352c.projectsApprovalStatus(<generated>)
+	at cn.itcast.wanxinp2p.transaction.controller.TransactionController.projectsApprovalStatus(TransactionController.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:919)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:663)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:735)
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:678)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1587)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at feign.Client$Default.convertResponse(Client.java:143)
+	at feign.Client$Default.execute(Client.java:68)
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer$1.doWithRetry(RetryableFeignLoadBalancer.java:103)
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer$1.doWithRetry(RetryableFeignLoadBalancer.java:88)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:287)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:180)
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer.execute(RetryableFeignLoadBalancer.java:88)
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer.execute(RetryableFeignLoadBalancer.java:54)
+	at com.netflix.client.AbstractLoadBalancerAwareClient$1.call(AbstractLoadBalancerAwareClient.java:104)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:303)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:287)
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:231)
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:228)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45)
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276)
+	at rx.Subscriber.setProducer(Subscriber.java:209)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.drain(OnSubscribeConcatMap.java:286)
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.onNext(OnSubscribeConcatMap.java:144)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:185)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:180)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:94)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:42)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45)
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276)
+	at rx.Subscriber.setProducer(Subscriber.java:209)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.subscribe(Observable.java:10423)
+	at rx.Observable.subscribe(Observable.java:10390)
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:443)
+	at rx.observables.BlockingObservable.single(BlockingObservable.java:340)
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:112)
+	at org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient.execute(LoadBalancerFeignClient.java:65)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:108)
+	... 72 more
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:35:23,754 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:35:24,764 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/transaction-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22transaction-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A285%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:35:42,477 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:40:23,754 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:40:24,761 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/transaction-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22transaction-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A285%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:40:42,479 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:45:23,758 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:45:24,767 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/transaction-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22transaction-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A285%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:45:42,481 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:49:56,500 DEBUG [http-nio-53060-exec-8][BaseJdbcLogger.java:159] - ==>  Preparing: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project WHERE ID=? 
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:49:56,525 DEBUG [http-nio-53060-exec-8][BaseJdbcLogger.java:159] - ==> Parameters: 2144527401414811650(Long)
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:49:56,527 INFO [http-nio-53060-exec-8][SQLLogger.java:89] - Rule Type: sharding
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:49:56,529 INFO [http-nio-53060-exec-8][SQLLogger.java:89] - Logic SQL: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project WHERE ID=?
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:49:56,530 INFO [http-nio-53060-exec-8][SQLLogger.java:89] - SQLStatement: SelectStatement(super=DQLStatement(super=AbstractSQLStatement(type=DQL, tables=Tables(tables=[Table(name=project, alias=Optional.absent())]), routeConditions=Conditions(orCondition=OrCondition(andConditions=[AndCondition(conditions=[Condition(column=Column(name=ID, tableName=project), operator=EQUAL, compareOperator==, positionValueMap={}, positionIndexMap={0=0})])])), encryptConditions=Conditions(orCondition=OrCondition(andConditions=[])), sqlTokens=[TableToken(tableName=project, quoteCharacter=NONE, schemaNameLength=0)], parametersIndex=1, logicSQL=SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project WHERE ID=?)), containStar=false, firstSelectItemStartIndex=7, selectListStopIndex=193, groupByLastIndex=0, items=[CommonSelectItem(expression=ID, alias=Optional.absent()), CommonSelectItem(expression=CONSUMER_ID, alias=Optional.absent()), CommonSelectItem(expression=USER_NO, alias=Optional.absent()), CommonSelectItem(expression=PROJECT_NO, alias=Optional.absent()), CommonSelectItem(expression=NAME, alias=Optional.absent()), CommonSelectItem(expression=DESCRIPTION, alias=Optional.absent()), CommonSelectItem(expression=TYPE, alias=Optional.absent()), CommonSelectItem(expression=PERIOD, alias=Optional.absent()), CommonSelectItem(expression=ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=BORROWER_ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=COMMISSION_ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=REPAYMENT_WAY, alias=Optional.absent()), CommonSelectItem(expression=AMOUNT, alias=Optional.absent()), CommonSelectItem(expression=PROJECT_STATUS, alias=Optional.absent()), CommonSelectItem(expression=CREATE_DATE, alias=Optional.absent()), CommonSelectItem(expression=STATUS, alias=Optional.absent()), CommonSelectItem(expression=IS_ASSIGNMENT, alias=Optional.absent())], groupByItems=[], orderByItems=[], limit=null, subqueryStatement=null, subqueryStatements=[], subqueryConditions=[])
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:49:56,533 INFO [http-nio-53060-exec-8][SQLLogger.java:89] - Actual SQL: ds0 ::: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project_0 WHERE ID=? ::: [2144527401414811650]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:49:56,534 INFO [http-nio-53060-exec-8][SQLLogger.java:89] - Actual SQL: ds1 ::: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project_0 WHERE ID=? ::: [2144527401414811650]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:49:56,568 DEBUG [http-nio-53060-exec-8][BaseJdbcLogger.java:159] - <==      Total: 1
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:50:16,589 ERROR [http-nio-53060-exec-8][GlobalExceptionHandler.java:45] - 【系统异常】{}
+feign.RetryableException: Read timed out executing POST http://depository-agent-service/depository-agent/l/createProject
+	at feign.FeignException.errorExecuting(FeignException.java:84)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:113)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:78)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:103)
+	at com.sun.proxy.$Proxy158.createProject(Unknown Source)
+	at cn.itcast.wanxinp2p.transaction.service.ProjectServiceImpl.projectsApprovalStatus(ProjectServiceImpl.java:151)
+	at cn.itcast.wanxinp2p.transaction.service.ProjectServiceImpl$$FastClassBySpringCGLIB$$997f0e9f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at cn.itcast.wanxinp2p.transaction.service.ProjectServiceImpl$$EnhancerBySpringCGLIB$$4203352c.projectsApprovalStatus(<generated>)
+	at cn.itcast.wanxinp2p.transaction.controller.TransactionController.projectsApprovalStatus(TransactionController.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:919)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:663)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:735)
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:678)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1587)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at feign.Client$Default.convertResponse(Client.java:143)
+	at feign.Client$Default.execute(Client.java:68)
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer$1.doWithRetry(RetryableFeignLoadBalancer.java:103)
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer$1.doWithRetry(RetryableFeignLoadBalancer.java:88)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:287)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:180)
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer.execute(RetryableFeignLoadBalancer.java:88)
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer.execute(RetryableFeignLoadBalancer.java:54)
+	at com.netflix.client.AbstractLoadBalancerAwareClient$1.call(AbstractLoadBalancerAwareClient.java:104)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:303)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:287)
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:231)
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:228)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45)
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276)
+	at rx.Subscriber.setProducer(Subscriber.java:209)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.drain(OnSubscribeConcatMap.java:286)
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.onNext(OnSubscribeConcatMap.java:144)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:185)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:180)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:94)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:42)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45)
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276)
+	at rx.Subscriber.setProducer(Subscriber.java:209)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.subscribe(Observable.java:10423)
+	at rx.Observable.subscribe(Observable.java:10390)
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:443)
+	at rx.observables.BlockingObservable.single(BlockingObservable.java:340)
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:112)
+	at org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient.execute(LoadBalancerFeignClient.java:65)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:108)
+	... 72 more
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:50:23,755 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:50:24,762 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/transaction-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22transaction-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A285%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:50:32,146 DEBUG [http-nio-53060-exec-10][BaseJdbcLogger.java:159] - ==>  Preparing: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project WHERE ID=? 
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:50:32,153 DEBUG [http-nio-53060-exec-10][BaseJdbcLogger.java:159] - ==> Parameters: 2144527401414811650(Long)
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:50:32,154 INFO [http-nio-53060-exec-10][SQLLogger.java:89] - Rule Type: sharding
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:50:32,154 INFO [http-nio-53060-exec-10][SQLLogger.java:89] - Logic SQL: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project WHERE ID=?
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:50:32,155 INFO [http-nio-53060-exec-10][SQLLogger.java:89] - SQLStatement: SelectStatement(super=DQLStatement(super=AbstractSQLStatement(type=DQL, tables=Tables(tables=[Table(name=project, alias=Optional.absent())]), routeConditions=Conditions(orCondition=OrCondition(andConditions=[AndCondition(conditions=[Condition(column=Column(name=ID, tableName=project), operator=EQUAL, compareOperator==, positionValueMap={}, positionIndexMap={0=0})])])), encryptConditions=Conditions(orCondition=OrCondition(andConditions=[])), sqlTokens=[TableToken(tableName=project, quoteCharacter=NONE, schemaNameLength=0)], parametersIndex=1, logicSQL=SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project WHERE ID=?)), containStar=false, firstSelectItemStartIndex=7, selectListStopIndex=193, groupByLastIndex=0, items=[CommonSelectItem(expression=ID, alias=Optional.absent()), CommonSelectItem(expression=CONSUMER_ID, alias=Optional.absent()), CommonSelectItem(expression=USER_NO, alias=Optional.absent()), CommonSelectItem(expression=PROJECT_NO, alias=Optional.absent()), CommonSelectItem(expression=NAME, alias=Optional.absent()), CommonSelectItem(expression=DESCRIPTION, alias=Optional.absent()), CommonSelectItem(expression=TYPE, alias=Optional.absent()), CommonSelectItem(expression=PERIOD, alias=Optional.absent()), CommonSelectItem(expression=ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=BORROWER_ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=COMMISSION_ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=REPAYMENT_WAY, alias=Optional.absent()), CommonSelectItem(expression=AMOUNT, alias=Optional.absent()), CommonSelectItem(expression=PROJECT_STATUS, alias=Optional.absent()), CommonSelectItem(expression=CREATE_DATE, alias=Optional.absent()), CommonSelectItem(expression=STATUS, alias=Optional.absent()), CommonSelectItem(expression=IS_ASSIGNMENT, alias=Optional.absent())], groupByItems=[], orderByItems=[], limit=null, subqueryStatement=null, subqueryStatements=[], subqueryConditions=[])
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:50:32,156 INFO [http-nio-53060-exec-10][SQLLogger.java:89] - Actual SQL: ds0 ::: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project_0 WHERE ID=? ::: [2144527401414811650]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:50:32,157 INFO [http-nio-53060-exec-10][SQLLogger.java:89] - Actual SQL: ds1 ::: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project_0 WHERE ID=? ::: [2144527401414811650]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:50:32,162 DEBUG [http-nio-53060-exec-10][BaseJdbcLogger.java:159] - <==      Total: 1
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:50:42,482 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:50:52,175 ERROR [http-nio-53060-exec-10][GlobalExceptionHandler.java:45] - 【系统异常】{}
+feign.RetryableException: Read timed out executing POST http://depository-agent-service/depository-agent/l/createProject
+	at feign.FeignException.errorExecuting(FeignException.java:84)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:113)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:78)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:103)
+	at com.sun.proxy.$Proxy158.createProject(Unknown Source)
+	at cn.itcast.wanxinp2p.transaction.service.ProjectServiceImpl.projectsApprovalStatus(ProjectServiceImpl.java:151)
+	at cn.itcast.wanxinp2p.transaction.service.ProjectServiceImpl$$FastClassBySpringCGLIB$$997f0e9f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at cn.itcast.wanxinp2p.transaction.service.ProjectServiceImpl$$EnhancerBySpringCGLIB$$4203352c.projectsApprovalStatus(<generated>)
+	at cn.itcast.wanxinp2p.transaction.controller.TransactionController.projectsApprovalStatus(TransactionController.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:919)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:663)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:735)
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:678)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1587)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at feign.Client$Default.convertResponse(Client.java:143)
+	at feign.Client$Default.execute(Client.java:68)
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer$1.doWithRetry(RetryableFeignLoadBalancer.java:103)
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer$1.doWithRetry(RetryableFeignLoadBalancer.java:88)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:287)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:180)
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer.execute(RetryableFeignLoadBalancer.java:88)
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer.execute(RetryableFeignLoadBalancer.java:54)
+	at com.netflix.client.AbstractLoadBalancerAwareClient$1.call(AbstractLoadBalancerAwareClient.java:104)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:303)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:287)
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:231)
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:228)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45)
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276)
+	at rx.Subscriber.setProducer(Subscriber.java:209)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.drain(OnSubscribeConcatMap.java:286)
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.onNext(OnSubscribeConcatMap.java:144)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:185)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:180)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:94)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:42)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45)
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276)
+	at rx.Subscriber.setProducer(Subscriber.java:209)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.subscribe(Observable.java:10423)
+	at rx.Observable.subscribe(Observable.java:10390)
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:443)
+	at rx.observables.BlockingObservable.single(BlockingObservable.java:340)
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:112)
+	at org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient.execute(LoadBalancerFeignClient.java:65)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:108)
+	... 72 more
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:52:52,269 DEBUG [http-nio-53060-exec-9][BaseJdbcLogger.java:159] - ==>  Preparing: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project WHERE ID=? 
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:52:52,280 DEBUG [http-nio-53060-exec-9][BaseJdbcLogger.java:159] - ==> Parameters: 2144527401414811650(Long)
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:52:52,283 INFO [http-nio-53060-exec-9][SQLLogger.java:89] - Rule Type: sharding
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:52:52,284 INFO [http-nio-53060-exec-9][SQLLogger.java:89] - Logic SQL: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project WHERE ID=?
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:52:52,285 INFO [http-nio-53060-exec-9][SQLLogger.java:89] - SQLStatement: SelectStatement(super=DQLStatement(super=AbstractSQLStatement(type=DQL, tables=Tables(tables=[Table(name=project, alias=Optional.absent())]), routeConditions=Conditions(orCondition=OrCondition(andConditions=[AndCondition(conditions=[Condition(column=Column(name=ID, tableName=project), operator=EQUAL, compareOperator==, positionValueMap={}, positionIndexMap={0=0})])])), encryptConditions=Conditions(orCondition=OrCondition(andConditions=[])), sqlTokens=[TableToken(tableName=project, quoteCharacter=NONE, schemaNameLength=0)], parametersIndex=1, logicSQL=SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project WHERE ID=?)), containStar=false, firstSelectItemStartIndex=7, selectListStopIndex=193, groupByLastIndex=0, items=[CommonSelectItem(expression=ID, alias=Optional.absent()), CommonSelectItem(expression=CONSUMER_ID, alias=Optional.absent()), CommonSelectItem(expression=USER_NO, alias=Optional.absent()), CommonSelectItem(expression=PROJECT_NO, alias=Optional.absent()), CommonSelectItem(expression=NAME, alias=Optional.absent()), CommonSelectItem(expression=DESCRIPTION, alias=Optional.absent()), CommonSelectItem(expression=TYPE, alias=Optional.absent()), CommonSelectItem(expression=PERIOD, alias=Optional.absent()), CommonSelectItem(expression=ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=BORROWER_ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=COMMISSION_ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=REPAYMENT_WAY, alias=Optional.absent()), CommonSelectItem(expression=AMOUNT, alias=Optional.absent()), CommonSelectItem(expression=PROJECT_STATUS, alias=Optional.absent()), CommonSelectItem(expression=CREATE_DATE, alias=Optional.absent()), CommonSelectItem(expression=STATUS, alias=Optional.absent()), CommonSelectItem(expression=IS_ASSIGNMENT, alias=Optional.absent())], groupByItems=[], orderByItems=[], limit=null, subqueryStatement=null, subqueryStatements=[], subqueryConditions=[])
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:52:52,286 INFO [http-nio-53060-exec-9][SQLLogger.java:89] - Actual SQL: ds0 ::: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project_0 WHERE ID=? ::: [2144527401414811650]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:52:52,287 INFO [http-nio-53060-exec-9][SQLLogger.java:89] - Actual SQL: ds1 ::: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project_0 WHERE ID=? ::: [2144527401414811650]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:52:52,327 DEBUG [http-nio-53060-exec-9][BaseJdbcLogger.java:159] - <==      Total: 1
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:52:53,348 ERROR [http-nio-53060-exec-9][GlobalExceptionHandler.java:45] - 【系统异常】{}
+feign.RetryableException: Connection refused: connect executing POST http://depository-agent-service/depository-agent/l/createProject
+	at feign.FeignException.errorExecuting(FeignException.java:84)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:113)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:78)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:103)
+	at com.sun.proxy.$Proxy158.createProject(Unknown Source)
+	at cn.itcast.wanxinp2p.transaction.service.ProjectServiceImpl.projectsApprovalStatus(ProjectServiceImpl.java:151)
+	at cn.itcast.wanxinp2p.transaction.service.ProjectServiceImpl$$FastClassBySpringCGLIB$$997f0e9f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at cn.itcast.wanxinp2p.transaction.service.ProjectServiceImpl$$EnhancerBySpringCGLIB$$4203352c.projectsApprovalStatus(<generated>)
+	at cn.itcast.wanxinp2p.transaction.controller.TransactionController.projectsApprovalStatus(TransactionController.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:919)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:663)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream0(HttpURLConnection.java:1334)
+	at sun.net.www.protocol.http.HttpURLConnection.getOutputStream(HttpURLConnection.java:1309)
+	at feign.Client$Default.convertAndSend(Client.java:124)
+	at feign.Client$Default.execute(Client.java:67)
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer$1.doWithRetry(RetryableFeignLoadBalancer.java:103)
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer$1.doWithRetry(RetryableFeignLoadBalancer.java:88)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:287)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:180)
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer.execute(RetryableFeignLoadBalancer.java:88)
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer.execute(RetryableFeignLoadBalancer.java:54)
+	at com.netflix.client.AbstractLoadBalancerAwareClient$1.call(AbstractLoadBalancerAwareClient.java:104)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:303)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:287)
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:231)
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:228)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45)
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276)
+	at rx.Subscriber.setProducer(Subscriber.java:209)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.drain(OnSubscribeConcatMap.java:286)
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.onNext(OnSubscribeConcatMap.java:144)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:185)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:180)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:94)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:42)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45)
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276)
+	at rx.Subscriber.setProducer(Subscriber.java:209)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.subscribe(Observable.java:10423)
+	at rx.Observable.subscribe(Observable.java:10390)
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:443)
+	at rx.observables.BlockingObservable.single(BlockingObservable.java:340)
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:112)
+	at org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient.execute(LoadBalancerFeignClient.java:65)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:108)
+	... 72 more
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:55:23,754 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:55:24,762 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/transaction-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22transaction-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A285%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:55:42,483 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:57:37,087 DEBUG [http-nio-53060-exec-2][BaseJdbcLogger.java:159] - ==>  Preparing: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project WHERE ID=? 
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:57:37,102 DEBUG [http-nio-53060-exec-2][BaseJdbcLogger.java:159] - ==> Parameters: 2144527401414811650(Long)
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:57:37,103 INFO [http-nio-53060-exec-2][SQLLogger.java:89] - Rule Type: sharding
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:57:37,105 INFO [http-nio-53060-exec-2][SQLLogger.java:89] - Logic SQL: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project WHERE ID=?
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:57:37,105 INFO [http-nio-53060-exec-2][SQLLogger.java:89] - SQLStatement: SelectStatement(super=DQLStatement(super=AbstractSQLStatement(type=DQL, tables=Tables(tables=[Table(name=project, alias=Optional.absent())]), routeConditions=Conditions(orCondition=OrCondition(andConditions=[AndCondition(conditions=[Condition(column=Column(name=ID, tableName=project), operator=EQUAL, compareOperator==, positionValueMap={}, positionIndexMap={0=0})])])), encryptConditions=Conditions(orCondition=OrCondition(andConditions=[])), sqlTokens=[TableToken(tableName=project, quoteCharacter=NONE, schemaNameLength=0)], parametersIndex=1, logicSQL=SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project WHERE ID=?)), containStar=false, firstSelectItemStartIndex=7, selectListStopIndex=193, groupByLastIndex=0, items=[CommonSelectItem(expression=ID, alias=Optional.absent()), CommonSelectItem(expression=CONSUMER_ID, alias=Optional.absent()), CommonSelectItem(expression=USER_NO, alias=Optional.absent()), CommonSelectItem(expression=PROJECT_NO, alias=Optional.absent()), CommonSelectItem(expression=NAME, alias=Optional.absent()), CommonSelectItem(expression=DESCRIPTION, alias=Optional.absent()), CommonSelectItem(expression=TYPE, alias=Optional.absent()), CommonSelectItem(expression=PERIOD, alias=Optional.absent()), CommonSelectItem(expression=ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=BORROWER_ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=COMMISSION_ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=REPAYMENT_WAY, alias=Optional.absent()), CommonSelectItem(expression=AMOUNT, alias=Optional.absent()), CommonSelectItem(expression=PROJECT_STATUS, alias=Optional.absent()), CommonSelectItem(expression=CREATE_DATE, alias=Optional.absent()), CommonSelectItem(expression=STATUS, alias=Optional.absent()), CommonSelectItem(expression=IS_ASSIGNMENT, alias=Optional.absent())], groupByItems=[], orderByItems=[], limit=null, subqueryStatement=null, subqueryStatements=[], subqueryConditions=[])
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:57:37,106 INFO [http-nio-53060-exec-2][SQLLogger.java:89] - Actual SQL: ds0 ::: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project_0 WHERE ID=? ::: [2144527401414811650]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:57:37,106 INFO [http-nio-53060-exec-2][SQLLogger.java:89] - Actual SQL: ds1 ::: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project_0 WHERE ID=? ::: [2144527401414811650]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:57:37,144 DEBUG [http-nio-53060-exec-2][BaseJdbcLogger.java:159] - <==      Total: 1
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:57:57,160 ERROR [http-nio-53060-exec-2][GlobalExceptionHandler.java:45] - 【系统异常】{}
+feign.RetryableException: Read timed out executing POST http://depository-agent-service/depository-agent/l/createProject
+	at feign.FeignException.errorExecuting(FeignException.java:84)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:113)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:78)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:103)
+	at com.sun.proxy.$Proxy158.createProject(Unknown Source)
+	at cn.itcast.wanxinp2p.transaction.service.ProjectServiceImpl.projectsApprovalStatus(ProjectServiceImpl.java:151)
+	at cn.itcast.wanxinp2p.transaction.service.ProjectServiceImpl$$FastClassBySpringCGLIB$$997f0e9f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at cn.itcast.wanxinp2p.transaction.service.ProjectServiceImpl$$EnhancerBySpringCGLIB$$4203352c.projectsApprovalStatus(<generated>)
+	at cn.itcast.wanxinp2p.transaction.controller.TransactionController.projectsApprovalStatus(TransactionController.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:919)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:663)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:735)
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:678)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1587)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at feign.Client$Default.convertResponse(Client.java:143)
+	at feign.Client$Default.execute(Client.java:68)
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer$1.doWithRetry(RetryableFeignLoadBalancer.java:103)
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer$1.doWithRetry(RetryableFeignLoadBalancer.java:88)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:287)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:180)
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer.execute(RetryableFeignLoadBalancer.java:88)
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer.execute(RetryableFeignLoadBalancer.java:54)
+	at com.netflix.client.AbstractLoadBalancerAwareClient$1.call(AbstractLoadBalancerAwareClient.java:104)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:303)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:287)
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:231)
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:228)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45)
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276)
+	at rx.Subscriber.setProducer(Subscriber.java:209)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.drain(OnSubscribeConcatMap.java:286)
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.onNext(OnSubscribeConcatMap.java:144)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:185)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:180)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:94)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:42)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45)
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276)
+	at rx.Subscriber.setProducer(Subscriber.java:209)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.subscribe(Observable.java:10423)
+	at rx.Observable.subscribe(Observable.java:10390)
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:443)
+	at rx.observables.BlockingObservable.single(BlockingObservable.java:340)
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:112)
+	at org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient.execute(LoadBalancerFeignClient.java:65)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:108)
+	... 72 more
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:59:19,435 DEBUG [http-nio-53060-exec-3][BaseJdbcLogger.java:159] - ==>  Preparing: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project WHERE ID=? 
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:59:19,448 DEBUG [http-nio-53060-exec-3][BaseJdbcLogger.java:159] - ==> Parameters: 2144527401414811650(Long)
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:59:19,453 INFO [http-nio-53060-exec-3][SQLLogger.java:89] - Rule Type: sharding
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:59:19,453 INFO [http-nio-53060-exec-3][SQLLogger.java:89] - Logic SQL: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project WHERE ID=?
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:59:19,454 INFO [http-nio-53060-exec-3][SQLLogger.java:89] - SQLStatement: SelectStatement(super=DQLStatement(super=AbstractSQLStatement(type=DQL, tables=Tables(tables=[Table(name=project, alias=Optional.absent())]), routeConditions=Conditions(orCondition=OrCondition(andConditions=[AndCondition(conditions=[Condition(column=Column(name=ID, tableName=project), operator=EQUAL, compareOperator==, positionValueMap={}, positionIndexMap={0=0})])])), encryptConditions=Conditions(orCondition=OrCondition(andConditions=[])), sqlTokens=[TableToken(tableName=project, quoteCharacter=NONE, schemaNameLength=0)], parametersIndex=1, logicSQL=SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project WHERE ID=?)), containStar=false, firstSelectItemStartIndex=7, selectListStopIndex=193, groupByLastIndex=0, items=[CommonSelectItem(expression=ID, alias=Optional.absent()), CommonSelectItem(expression=CONSUMER_ID, alias=Optional.absent()), CommonSelectItem(expression=USER_NO, alias=Optional.absent()), CommonSelectItem(expression=PROJECT_NO, alias=Optional.absent()), CommonSelectItem(expression=NAME, alias=Optional.absent()), CommonSelectItem(expression=DESCRIPTION, alias=Optional.absent()), CommonSelectItem(expression=TYPE, alias=Optional.absent()), CommonSelectItem(expression=PERIOD, alias=Optional.absent()), CommonSelectItem(expression=ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=BORROWER_ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=COMMISSION_ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=REPAYMENT_WAY, alias=Optional.absent()), CommonSelectItem(expression=AMOUNT, alias=Optional.absent()), CommonSelectItem(expression=PROJECT_STATUS, alias=Optional.absent()), CommonSelectItem(expression=CREATE_DATE, alias=Optional.absent()), CommonSelectItem(expression=STATUS, alias=Optional.absent()), CommonSelectItem(expression=IS_ASSIGNMENT, alias=Optional.absent())], groupByItems=[], orderByItems=[], limit=null, subqueryStatement=null, subqueryStatements=[], subqueryConditions=[])
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:59:19,457 INFO [http-nio-53060-exec-3][SQLLogger.java:89] - Actual SQL: ds0 ::: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project_0 WHERE ID=? ::: [2144527401414811650]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:59:19,457 INFO [http-nio-53060-exec-3][SQLLogger.java:89] - Actual SQL: ds1 ::: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project_0 WHERE ID=? ::: [2144527401414811650]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:59:19,487 DEBUG [http-nio-53060-exec-3][BaseJdbcLogger.java:159] - <==      Total: 1
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:59:39,497 ERROR [http-nio-53060-exec-3][GlobalExceptionHandler.java:45] - 【系统异常】{}
+feign.RetryableException: Read timed out executing POST http://depository-agent-service/depository-agent/l/createProject
+	at feign.FeignException.errorExecuting(FeignException.java:84)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:113)
+	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:78)
+	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:103)
+	at com.sun.proxy.$Proxy158.createProject(Unknown Source)
+	at cn.itcast.wanxinp2p.transaction.service.ProjectServiceImpl.projectsApprovalStatus(ProjectServiceImpl.java:151)
+	at cn.itcast.wanxinp2p.transaction.service.ProjectServiceImpl$$FastClassBySpringCGLIB$$997f0e9f.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
+	at cn.itcast.wanxinp2p.transaction.service.ProjectServiceImpl$$EnhancerBySpringCGLIB$$4203352c.projectsApprovalStatus(<generated>)
+	at cn.itcast.wanxinp2p.transaction.controller.TransactionController.projectsApprovalStatus(TransactionController.java:67)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:919)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:663)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:117)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:735)
+	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:678)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1587)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+	at feign.Client$Default.convertResponse(Client.java:143)
+	at feign.Client$Default.execute(Client.java:68)
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer$1.doWithRetry(RetryableFeignLoadBalancer.java:103)
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer$1.doWithRetry(RetryableFeignLoadBalancer.java:88)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:287)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:180)
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer.execute(RetryableFeignLoadBalancer.java:88)
+	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer.execute(RetryableFeignLoadBalancer.java:54)
+	at com.netflix.client.AbstractLoadBalancerAwareClient$1.call(AbstractLoadBalancerAwareClient.java:104)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:303)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:287)
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:231)
+	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:228)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45)
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276)
+	at rx.Subscriber.setProducer(Subscriber.java:209)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.drain(OnSubscribeConcatMap.java:286)
+	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.onNext(OnSubscribeConcatMap.java:144)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:185)
+	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:180)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:94)
+	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:42)
+	at rx.Observable.unsafeSubscribe(Observable.java:10327)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73)
+	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79)
+	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45)
+	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276)
+	at rx.Subscriber.setProducer(Subscriber.java:209)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138)
+	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
+	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
+	at rx.Observable.subscribe(Observable.java:10423)
+	at rx.Observable.subscribe(Observable.java:10390)
+	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:443)
+	at rx.observables.BlockingObservable.single(BlockingObservable.java:340)
+	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:112)
+	at org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient.execute(LoadBalancerFeignClient.java:65)
+	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:108)
+	... 72 more
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:59:52,064 DEBUG [http-nio-53060-exec-5][BaseJdbcLogger.java:159] - ==>  Preparing: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project WHERE ID=? 
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:59:52,072 DEBUG [http-nio-53060-exec-5][BaseJdbcLogger.java:159] - ==> Parameters: 2144527401414811650(Long)
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:59:52,074 INFO [http-nio-53060-exec-5][SQLLogger.java:89] - Rule Type: sharding
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:59:52,074 INFO [http-nio-53060-exec-5][SQLLogger.java:89] - Logic SQL: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project WHERE ID=?
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:59:52,075 INFO [http-nio-53060-exec-5][SQLLogger.java:89] - SQLStatement: SelectStatement(super=DQLStatement(super=AbstractSQLStatement(type=DQL, tables=Tables(tables=[Table(name=project, alias=Optional.absent())]), routeConditions=Conditions(orCondition=OrCondition(andConditions=[AndCondition(conditions=[Condition(column=Column(name=ID, tableName=project), operator=EQUAL, compareOperator==, positionValueMap={}, positionIndexMap={0=0})])])), encryptConditions=Conditions(orCondition=OrCondition(andConditions=[])), sqlTokens=[TableToken(tableName=project, quoteCharacter=NONE, schemaNameLength=0)], parametersIndex=1, logicSQL=SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project WHERE ID=?)), containStar=false, firstSelectItemStartIndex=7, selectListStopIndex=193, groupByLastIndex=0, items=[CommonSelectItem(expression=ID, alias=Optional.absent()), CommonSelectItem(expression=CONSUMER_ID, alias=Optional.absent()), CommonSelectItem(expression=USER_NO, alias=Optional.absent()), CommonSelectItem(expression=PROJECT_NO, alias=Optional.absent()), CommonSelectItem(expression=NAME, alias=Optional.absent()), CommonSelectItem(expression=DESCRIPTION, alias=Optional.absent()), CommonSelectItem(expression=TYPE, alias=Optional.absent()), CommonSelectItem(expression=PERIOD, alias=Optional.absent()), CommonSelectItem(expression=ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=BORROWER_ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=COMMISSION_ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=REPAYMENT_WAY, alias=Optional.absent()), CommonSelectItem(expression=AMOUNT, alias=Optional.absent()), CommonSelectItem(expression=PROJECT_STATUS, alias=Optional.absent()), CommonSelectItem(expression=CREATE_DATE, alias=Optional.absent()), CommonSelectItem(expression=STATUS, alias=Optional.absent()), CommonSelectItem(expression=IS_ASSIGNMENT, alias=Optional.absent())], groupByItems=[], orderByItems=[], limit=null, subqueryStatement=null, subqueryStatements=[], subqueryConditions=[])
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:59:52,075 INFO [http-nio-53060-exec-5][SQLLogger.java:89] - Actual SQL: ds0 ::: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project_0 WHERE ID=? ::: [2144527401414811650]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:59:52,076 INFO [http-nio-53060-exec-5][SQLLogger.java:89] - Actual SQL: ds1 ::: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT FROM project_0 WHERE ID=? ::: [2144527401414811650]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-24 15:59:52,080 DEBUG [http-nio-53060-exec-5][BaseJdbcLogger.java:159] - <==      Total: 1
