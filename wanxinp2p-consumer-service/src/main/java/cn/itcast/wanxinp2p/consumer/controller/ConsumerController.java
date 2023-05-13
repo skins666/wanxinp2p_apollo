@@ -14,10 +14,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @Api(value = "用户服务的Controller", tags = "Consumer", description = "用户服务API")
@@ -65,10 +62,10 @@ import org.springframework.web.bind.annotation.RestController;
 
     @Override
     @ApiOperation("获取当前登录用户信息")
-    @GetMapping(value = "/l/currConsumer")
-    public RestResponse<ConsumerDTO> getCurrentConsumer(String accessToken) {
+    @GetMapping(value = "/l/currConsumer/{mobile}")
+    public RestResponse<ConsumerDTO> getCurrentConsumer(@PathVariable String mobile) {
 //           ConsumerDTO consumer = consumerService.getByMobile(SecurityUtil.getUser().getMobile());
-        ConsumerDTO consumer = consumerService.getByMobile(accessToken);
+        ConsumerDTO consumer = consumerService.getByMobile(mobile);
         return RestResponse.success(consumer);
     }
 
