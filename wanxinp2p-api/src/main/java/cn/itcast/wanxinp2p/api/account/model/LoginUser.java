@@ -1,6 +1,5 @@
 package cn.itcast.wanxinp2p.api.account.model;
 
-
 import lombok.Data;
 
 /**

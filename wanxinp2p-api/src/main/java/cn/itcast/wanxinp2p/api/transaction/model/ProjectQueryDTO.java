@@ -5,6 +5,7 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.math.BigDecimal;
+
 /**
  * <P>
  * 标的信息查询对象
@@ -12,7 +13,7 @@ import java.math.BigDecimal;
  */
 @Data
 @ApiModel(value = "ProjectQueryDTO", description = "标的信息查询对象")
-public class ProjectQueryDTO   {
+public class ProjectQueryDTO {
 
     @ApiModelProperty("标的类型")
     private String type;

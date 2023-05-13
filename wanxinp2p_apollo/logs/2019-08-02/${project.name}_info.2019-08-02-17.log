@@ -1,0 +1,82 @@
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:11,200 INFO [main][DefaultApplicationProvider.java:85] - App ID is set to gateway-server by app.id property from System Property
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:11,207 INFO [main][DefaultServerProvider.java:108] - Environment is set to [dev] by JVM system property 'env'.
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:11,253 WARN [main][DefaultMetaServerProvider.java:39] - Could not find meta server address, because it is not available in neither (1) JVM system property 'apollo.meta', (2) OS env variable 'APOLLO_META' (3) property 'apollo.meta' from server.properties nor (4) property 'apollo.meta' from app.properties
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:11,259 INFO [main][MetaDomainConsts.java:93] - Located meta server address http://localhost:8080 for env DEV from com.ctrip.framework.apollo.core.internals.LegacyMetaServerProvider
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:11,464 INFO [main][SpringApplication.java:675] - No active profile set, falling back to default profiles: default
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:12,519 INFO [main][RepositoryConfigurationDelegate.java:244] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:12,523 INFO [main][RepositoryConfigurationDelegate.java:126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:12,559 INFO [main][RepositoryConfigurationDelegate.java:182] - Finished Spring Data repository scanning in 20ms. Found 0 repository interfaces.
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:12,793 WARN [main][EndpointId.java:135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:12,806 WARN [main][EndpointId.java:135] - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:12,909 INFO [main][ConfigurationClassPostProcessor.java:380] - Cannot enhance @Configuration bean definition 'com.ctrip.framework.apollo.spring.boot.ApolloAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:13,088 INFO [main][GenericScope.java:294] - BeanFactory id=c909118e-f5ea-36ae-a580-3fa5668bf914
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:13,109 WARN [main][PropertySourcesDeducer.java:75] - Multiple PropertySourcesPlaceholderConfigurer beans registered [propertySourcesPlaceholderConfigurer, org.springframework.context.support.PropertySourcesPlaceholderConfigurer], falling back to Environment
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:13,336 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$850e50e7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:13,752 INFO [main][TomcatWebServer.java:90] - Tomcat initialized with port(s): 53010 (http)
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:13,771 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-53010"]
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:13,782 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:13,783 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:13,793 INFO [main][DirectJDKLog.java:173] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files\Java\jdk1.8.0_171\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Users\apple\AppData\Local\Microsoft\WindowsApps;E:\apache-maven-3.5.4\bin;;.]
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:13,974 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:13,975 INFO [main][ServletWebServerApplicationContext.java:296] - Root WebApplicationContext: initialization completed in 2493 ms
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:14,126 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:14,127 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:14,143 INFO [main][DynamicPropertyFactory.java:281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@7da1e005
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:15,415 WARN [main][JwtAccessTokenConverter.java:302] - Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:15,530 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:15,531 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:15,799 INFO [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService 'applicationTaskExecutor'
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:16,233 INFO [main][UserDetailsServiceAutoConfiguration.java:86] - 
+
+Using generated security password: 518a35d8-c582-4765-8317-9a8e30756f00
+
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:16,367 INFO [main][DefaultSecurityFilterChain.java:43] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3fe98084, org.springframework.security.web.context.SecurityContextPersistenceFilter@578b2dec, org.springframework.security.web.header.HeaderWriterFilter@3a3316b6, org.springframework.security.web.authentication.logout.LogoutFilter@3578a45b, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@5256fbc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@39f4a7c4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d9af731, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5f33e6d, org.springframework.security.web.session.SessionManagementFilter@4fafd27e, org.springframework.security.web.access.ExceptionTranslationFilter@2d73767e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@14239223]
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:16,548 INFO [main][EndpointLinksResolver.java:59] - Exposing 2 endpoint(s) beneath base path '/actuator'
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:17,147 INFO [main][ZuulFilterInitializer.java:65] - Starting filter initializer
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:17,257 INFO [main][InstanceInfoFactory.java:71] - Setting initial instance status as: STARTING
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:17,299 INFO [main][DiscoveryClient.java:349] - Initializing Eureka in region us-east-1
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:17,354 INFO [main][DiscoveryJerseyProvider.java:70] - Using JSON encoding codec LegacyJacksonJson
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:17,354 INFO [main][DiscoveryJerseyProvider.java:71] - Using JSON decoding codec LegacyJacksonJson
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:17,495 INFO [main][DiscoveryJerseyProvider.java:80] - Using XML encoding codec XStreamXml
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:17,495 INFO [main][DiscoveryJerseyProvider.java:81] - Using XML decoding codec XStreamXml
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:17,763 INFO [main][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:17,833 INFO [main][DiscoveryClient.java:958] - Disable delta property : false
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:17,834 INFO [main][DiscoveryClient.java:959] - Single vip registry refresh property : null
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:17,835 INFO [main][DiscoveryClient.java:960] - Force full registry fetch : false
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:17,835 INFO [main][DiscoveryClient.java:961] - Application is null : false
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:17,835 INFO [main][DiscoveryClient.java:962] - Registered Applications size is zero : true
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:17,836 INFO [main][DiscoveryClient.java:964] - Application version is -1: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:17,837 INFO [main][DiscoveryClient.java:1047] - Getting all instance registry info from the eureka server
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:18,036 INFO [main][DiscoveryClient.java:1056] - The response status is 200
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:18,042 INFO [main][DiscoveryClient.java:1270] - Starting heartbeat executor: renew interval is: 30
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:18,045 INFO [main][InstanceInfoReplicator.java:60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:18,049 INFO [main][DiscoveryClient.java:449] - Discovery Client initialized at timestamp 1564740138048 with initial instances count: 4
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:18,051 INFO [main][EurekaServiceRegistry.java:42] - Registering application GATEWAY-SERVER with eureka with status UP
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:18,052 INFO [main][DiscoveryClient.java:1305] - Saw local status change event StatusChangeEvent [timestamp=1564740138052, current=UP, previous=STARTING]
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:18,055 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:826] - DiscoveryClient_GATEWAY-SERVER/gateway-server:192.168.2.153:53010: registering service...
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:18,088 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-53010"]
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:18,105 INFO [http-nio-53000-exec-2][AbstractInstanceRegistry.java:266] - Registered instance GATEWAY-SERVER/gateway-server:192.168.2.153:53010 with status UP (replication=false)
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:18,107 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:835] - DiscoveryClient_GATEWAY-SERVER/gateway-server:192.168.2.153:53010 - registration status: 204
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:18,116 INFO [main][TomcatWebServer.java:204] - Tomcat started on port(s): 53010 (http) with context path ''
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:18,117 INFO [main][EurekaAutoServiceRegistration.java:141] - Updating port to 53010
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:18,120 INFO [main][StartupInfoLogger.java:59] - Started GatewayServer in 8.324 seconds (JVM running for 9.956)
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:18,436 INFO [RMI TCP Connection(2)-127.0.0.1][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:18,436 INFO [RMI TCP Connection(2)-127.0.0.1][FrameworkServlet.java:524] - Initializing Servlet 'dispatcherServlet'
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:18,452 INFO [RMI TCP Connection(2)-127.0.0.1][FrameworkServlet.java:546] - Completed initialization in 16 ms
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:18,567 INFO [RMI TCP Connection(4)-127.0.0.1][EpollProvider.java:68] - Starting without optional epoll library
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:18,570 INFO [RMI TCP Connection(4)-127.0.0.1][KqueueProvider.java:70] - Starting without optional kqueue library
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:18,617 INFO [http-nio-53000-exec-9][AbstractInstanceRegistry.java:266] - Registered instance GATEWAY-SERVER/gateway-server:192.168.2.153:53010 with status UP (replication=true)
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:19,406 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:26,074 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:26,169 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:29,407 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:29,659 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:30,208 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:39,407 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:49,408 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:56,004 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:56,134 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:59,409 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:02:59,655 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:03:00,204 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-08-02 18:03:04,815 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration

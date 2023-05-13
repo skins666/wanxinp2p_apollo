@@ -1,0 +1,14 @@
+[${project.name}][${env:SERVER_PORT}] 2019-09-24 17:05:43,971 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-09-24 17:05:44,086 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-09-24 17:05:44,847 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-09-24 17:05:45,239 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-09-24 17:05:45,851 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-09-24 17:05:46,690 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2019-09-24 17:05:46,859 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-09-24 17:05:47,980 INFO [hmilyTransaction-hmily-transaction-self-recovery-2][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-09-24 17:05:48,002 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-09-24 17:05:48,002 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:611] - Evicting 2 items (expired=2, evictionLimit=2)
+[${project.name}][${env:SERVER_PORT}] 2019-09-24 17:05:48,002 WARN [Eureka-EvictionTimer][AbstractInstanceRegistry.java:623] - DS: Registry: expired lease for UAA-SERVICE/uaa-service:192.168.2.153:53020
+[${project.name}][${env:SERVER_PORT}] 2019-09-24 17:05:48,002 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:330] - Cancelled instance UAA-SERVICE/uaa-service:192.168.2.153:53020 (replication=false)
+[${project.name}][${env:SERVER_PORT}] 2019-09-24 17:05:48,003 WARN [Eureka-EvictionTimer][AbstractInstanceRegistry.java:623] - DS: Registry: expired lease for ACCOUNT-SERVICE/account-service:192.168.2.153:53030
+[${project.name}][${env:SERVER_PORT}] 2019-09-24 17:05:48,003 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:330] - Cancelled instance ACCOUNT-SERVICE/account-service:192.168.2.153:53030 (replication=false)

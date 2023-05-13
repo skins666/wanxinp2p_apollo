@@ -5,29 +5,48 @@ import cn.itcast.wanxinp2p.api.transaction.model.ProjectQueryDTO;
 import cn.itcast.wanxinp2p.common.domain.PageVO;
 import cn.itcast.wanxinp2p.common.domain.RestResponse;
 
+/**
+ * <P>
+ * 交易中心服务API
+ * </p>
+ */
 public interface TransactionApi {
-
-
     /**
-     * 创建标的(借款人发标)
-     * @param project
+     * 借款人发标
+     * @param projectDTO
      * @return
      */
-    RestResponse<ProjectDTO> createProject(ProjectDTO project) ;
+    RestResponse<ProjectDTO> createProject(ProjectDTO projectDTO);
 
     /**
-     * 查询标的列表
-     * @param projectQueryDTO
+     * 检索标的信息
+     * @param projectQueryDTO 封装查询条件
      * @param order
      * @param pageNo
      * @param pageSize
      * @param sortBy
      * @return
      */
-    RestResponse<PageVO<ProjectDTO>> queryProjects(ProjectQueryDTO projectQueryDTO, String order, Integer pageNo, Integer pageSize, String sortBy);
+    RestResponse<PageVO<ProjectDTO>> queryProjects(ProjectQueryDTO projectQueryDTO,
+                                                   String order, Integer pageNo,
+                                                   Integer pageSize, String sortBy);
 
     /**
-     * 审核标的信息
+        * 管理员审核标的信息
+        * @param id
+        * @param approveStatus
+        * @return
      */
-    RestResponse<String> confirmProject(Long id, String approvalStatus);
+    RestResponse<String> projectsApprovalStatus(Long id, String approveStatus);
+
+    /**
+     * 标的信息快速检索
+     * @param projectQueryDTO
+     * @param pageNo
+     * @param pageSize
+     * @param sortBy
+     * @param order
+     * @return
+     */
+    RestResponse<PageVO<ProjectDTO>> queryProjects(ProjectQueryDTO projectQueryDTO, Integer pageNo, Integer pageSize, String sortBy,String order);
 }

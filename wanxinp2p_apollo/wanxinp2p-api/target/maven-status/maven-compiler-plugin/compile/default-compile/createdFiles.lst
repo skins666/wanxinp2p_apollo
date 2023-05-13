@@ -1,0 +1,14 @@
+cn\itcast\wanxinp2p\api\account\model\AccountRegisterDTO.class
+cn\itcast\wanxinp2p\api\AccountAPI.class
+cn\itcast\wanxinp2p\api\depository\model\DepositoryConsumerResponse.class
+cn\itcast\wanxinp2p\api\account\model\AccountDTO.class
+cn\itcast\wanxinp2p\api\account\model\AccountLoginDTO.class
+cn\itcast\wanxinp2p\api\depository\DepositoryAgentApi.class
+cn\itcast\wanxinp2p\api\depository\GatewayRequest.class
+cn\itcast\wanxinp2p\api\account\model\LoginUser.class
+cn\itcast\wanxinp2p\api\consumer\ConsumerAPI.class
+cn\itcast\wanxinp2p\api\consumer\model\ConsumerRegisterDTO.class
+cn\itcast\wanxinp2p\api\depository\model\DepositoryBaseResponse.class
+cn\itcast\wanxinp2p\api\consumer\model\ConsumerRequest.class
+cn\itcast\wanxinp2p\api\consumer\model\BankCardDTO.class
+cn\itcast\wanxinp2p\api\consumer\model\ConsumerDTO.class
