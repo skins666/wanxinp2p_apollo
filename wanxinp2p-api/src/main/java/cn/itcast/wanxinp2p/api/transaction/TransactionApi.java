@@ -15,6 +15,19 @@ public interface TransactionApi {
      */
     RestResponse<ProjectDTO> createProject(ProjectDTO project) ;
 
-
+    /**
+     * 查询标的列表
+     * @param projectQueryDTO
+     * @param order
+     * @param pageNo
+     * @param pageSize
+     * @param sortBy
+     * @return
+     */
     RestResponse<PageVO<ProjectDTO>> queryProjects(ProjectQueryDTO projectQueryDTO, String order, Integer pageNo, Integer pageSize, String sortBy);
+
+    /**
+     * 审核标的信息
+     */
+    RestResponse<String> confirmProject(Long id, String approvalStatus);
 }

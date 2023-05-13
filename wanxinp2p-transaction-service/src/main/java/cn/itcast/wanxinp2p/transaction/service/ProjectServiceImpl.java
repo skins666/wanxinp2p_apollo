@@ -6,11 +6,15 @@ import cn.itcast.wanxinp2p.api.transaction.model.ProjectQueryDTO;
 import cn.itcast.wanxinp2p.common.domain.*;
 import cn.itcast.wanxinp2p.common.util.CodeNoUtil;
 import cn.itcast.wanxinp2p.transaction.agent.ConsumerApiAgent;
+import cn.itcast.wanxinp2p.transaction.agent.DepositoryAgentApi;
+import cn.itcast.wanxinp2p.transaction.common.constant.TransactionErrorCode;
 import cn.itcast.wanxinp2p.transaction.common.utils.SecurityUtil;
 import cn.itcast.wanxinp2p.transaction.entity.Project;
 import cn.itcast.wanxinp2p.transaction.mapper.ProjectMapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import groovy.util.logging.Slf4j;
@@ -30,7 +34,9 @@ public class ProjectServiceImpl extends ServiceImpl<ProjectMapper, Project> impl
 
 
     @Resource
-    private ConsumerApiAgent  consumerApiAgent;
+    private DepositoryAgentApi depositoryAgentApi;
+    @Resource
+    private ConsumerApiAgent consumerApiAgent;
 
     @Resource
     private ConfigService configService;
@@ -136,30 +142,30 @@ public class ProjectServiceImpl extends ServiceImpl<ProjectMapper, Project> impl
         QueryWrapper<Project> queryWrapper = new QueryWrapper<>();
 
         //搜索条件是标的状态
-        queryWrapper.lambda().eq(Objects.nonNull(projectQueryDTO.getProjectStatus()),Project::getProjectStatus, projectQueryDTO.getProjectStatus());
+        queryWrapper.lambda().eq(Objects.nonNull(projectQueryDTO.getProjectStatus()), Project::getProjectStatus, projectQueryDTO.getProjectStatus());
         //搜索条件是标的名称
-        queryWrapper.lambda().eq(Objects.nonNull(projectQueryDTO.getName()),Project::getName, projectQueryDTO.getName());
+        queryWrapper.lambda().eq(Objects.nonNull(projectQueryDTO.getName()), Project::getName, projectQueryDTO.getName());
         //搜索条件是标的类型
-        queryWrapper.lambda().eq(StringUtils.isNotBlank(projectQueryDTO.getType()),Project::getType, projectQueryDTO.getType());
+        queryWrapper.lambda().eq(StringUtils.isNotBlank(projectQueryDTO.getType()), Project::getType, projectQueryDTO.getType());
         //搜索条件是年化利率区间
-        if (Objects.nonNull(projectQueryDTO.getStartAnnualRate())){
+        if (Objects.nonNull(projectQueryDTO.getStartAnnualRate())) {
             queryWrapper.lambda().ge(Project::getAnnualRate, projectQueryDTO.getStartAnnualRate());
         }
-        if (Objects.nonNull(projectQueryDTO.getEndAnnualRate())){
+        if (Objects.nonNull(projectQueryDTO.getEndAnnualRate())) {
             queryWrapper.lambda().le(Project::getAnnualRate, projectQueryDTO.getEndAnnualRate());
         }
         //搜索条件是借款期限区间
-        if (Objects.nonNull(projectQueryDTO.getStartPeriod())){
+        if (Objects.nonNull(projectQueryDTO.getStartPeriod())) {
             queryWrapper.lambda().ge(Project::getPeriod, projectQueryDTO.getStartPeriod());
         }
-        if (Objects.nonNull(projectQueryDTO.getEndPeriod())){
+        if (Objects.nonNull(projectQueryDTO.getEndPeriod())) {
             queryWrapper.lambda().le(Project::getPeriod, projectQueryDTO.getEndPeriod());
         }
         //构造分页对象
         Page<Project> objectPage = new Page<>(pageNo, pageSize);
 
         //排序
-        if (StringUtils.isNotBlank(sortBy)&&StringUtils.isNotBlank(order)) {
+        if (StringUtils.isNotBlank(sortBy) && StringUtils.isNotBlank(order)) {
             if (order.toLowerCase().equals("desc")) {
                 queryWrapper.orderByDesc(sortBy);
             }
@@ -167,7 +173,7 @@ public class ProjectServiceImpl extends ServiceImpl<ProjectMapper, Project> impl
                 queryWrapper.orderByAsc(sortBy);
             }
 
-        }else {//如果客户不打算排序，都按照时间倒叙排序
+        } else {//如果客户不打算排序，都按照时间倒叙排序
             queryWrapper.lambda().orderByDesc(Project::getCreateDate);
 
         }
@@ -186,8 +192,34 @@ public class ProjectServiceImpl extends ServiceImpl<ProjectMapper, Project> impl
         PageVO<ProjectDTO> projectDTOS = new PageVO<>(convert.getRecords(), convert.getTotal(), pageNo, pageSize);
 
 
-
         return projectDTOS;
+    }
+
+    @Override
+    public String confirmProject(Long id, String approvalStatus) {
+//1.根据id查询标的信息并转换成DTO对象
+        Project project = getById(id);
+        ProjectDTO projectDTO = new ProjectDTO();
+        BeanUtils.copyProperties(project, projectDTO);
+
+
+        //2.生成流水号
+        projectDTO.setProjectNo(CodeNoUtil.getNo(CodePrefixCode.CODE_REQUEST_PREFIX));
+        //3.远程调用
+        RestResponse<String> response = depositoryAgentApi.createProject(projectDTO);
+        //4.根据结果修改标的状态
+        if (response.getResult().equals(DepositoryReturnCode.RETURN_CODE_00000)) {
+            //修改状态
+            LambdaUpdateWrapper<Project> wrapper = Wrappers.<Project>lambdaUpdate().set(Project::getStatus, Integer.parseInt(approvalStatus))
+                    .eq(Project::getId, id);
+
+            update(wrapper);
+            //返回结果
+            return "success";
+        }
+        //5.返回结果 ，失败就抛异常
+
+        throw new BusinessException(TransactionErrorCode.E_150113);
     }
 
 

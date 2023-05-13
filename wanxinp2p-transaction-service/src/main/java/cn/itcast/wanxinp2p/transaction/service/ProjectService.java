@@ -36,6 +36,23 @@ public interface ProjectService extends IService<Project> {
     String getProjectName(String sax, Integer count, ConsumerDTO consumer);
 
 
-
+    /**
+     * 查询标的列表
+     * @param projectQueryDTO
+     * @param order
+     * @param pageNo
+     * @param pageSize
+     * @param sortBy
+     * @return
+     */
     PageVO<ProjectDTO> queryProjects(@RequestBody ProjectQueryDTO projectQueryDTO, String order, Integer pageNo, Integer pageSize, String sortBy) ;
+
+
+    /**
+     * 审核标的信息
+     * @param id
+     * @param approvalStatus
+     * @return
+     */
+    String confirmProject( Long id,  String approvalStatus) ;
 }

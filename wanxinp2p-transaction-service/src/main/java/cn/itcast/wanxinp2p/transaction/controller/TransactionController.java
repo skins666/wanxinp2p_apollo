@@ -9,8 +9,10 @@ import cn.itcast.wanxinp2p.transaction.service.ProjectService;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.annotation.Resource;
 
@@ -45,11 +47,32 @@ public class TransactionController implements TransactionApi {
     })
     @PostMapping(value = "/projects/q")
     @Override
-    public RestResponse<PageVO<ProjectDTO>> queryProjects(@RequestBody ProjectQueryDTO projectQueryDTO, String order, Integer pageNo, Integer pageSize, String sortBy) {
+    public RestResponse<PageVO<ProjectDTO>> queryProjects(@RequestBody ProjectQueryDTO projectQueryDTO, @RequestParam String order, @RequestParam Integer pageNo, @RequestParam Integer pageSize,@RequestParam String sortBy) {
 
              //执行查询
         PageVO<ProjectDTO> pageVO = projectService.queryProjects(projectQueryDTO, order, pageNo, pageSize, sortBy);
 
         return RestResponse.success(pageVO);
+    }
+
+
+    /**
+     * 审核标的信息
+     * @param id
+     * @param approvalStatus
+     * @return
+     */
+    @ApiOperation("审核标的信息")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "id", value = "标的id", required = true,
+                    dataType = "Long", paramType = "path"),
+            @ApiImplicitParam(name = "approvalStatus", value = "审核状态", required = true,
+                    dataType = "String", paramType = "path")
+    })
+    @PostMapping(value = "/projects/{id}/audit/{approvalStatus}")
+    @Override
+    public RestResponse<String> confirmProject(@PathVariable Long id, @PathVariable String approvalStatus) {
+
+        return null;
     }
 }

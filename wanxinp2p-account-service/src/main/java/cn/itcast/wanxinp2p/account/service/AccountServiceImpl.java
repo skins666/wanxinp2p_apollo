@@ -41,7 +41,7 @@ public class AccountServiceImpl extends ServiceImpl<AccountMapper, Account> impl
         QueryWrapper<Account> wrapper=new QueryWrapper<>();
         //wrapper.eq("mobile",mobile);
         wrapper.lambda().eq(Account::getMobile,mobile);
-        int count=count(wrapper);
+        long count = count(wrapper);
         return count>0?1:0;
     }
 

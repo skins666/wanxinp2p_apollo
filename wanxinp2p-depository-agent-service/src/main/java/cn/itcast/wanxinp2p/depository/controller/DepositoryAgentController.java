@@ -3,6 +3,7 @@ package cn.itcast.wanxinp2p.depository.controller;
 import cn.itcast.wanxinp2p.api.consumer.model.ConsumerRequest;
 import cn.itcast.wanxinp2p.api.depository.DepositoryAgentApi;
 import cn.itcast.wanxinp2p.api.depository.model.GatewayRequest;
+import cn.itcast.wanxinp2p.api.transaction.model.ProjectDTO;
 import cn.itcast.wanxinp2p.common.domain.RestResponse;
 import cn.itcast.wanxinp2p.depository.service.DepositoryRecordService;
 import io.swagger.annotations.ApiImplicitParam;
@@ -31,5 +32,18 @@ public class DepositoryAgentController implements DepositoryAgentApi {
     @PostMapping(value = "/l/consumers")
     public RestResponse<GatewayRequest> createConsumer(@RequestBody ConsumerRequest consumerRequest) {
         return RestResponse.success(depositoryRecordService.createConsumer(consumerRequest));
+    }
+
+    /**
+     * 向银行存管发送标的信息
+     * @param projectDTO
+     * @return
+     */
+    @ApiOperation("向银行存管发送标的信息")
+    @ApiImplicitParam(name = "projectDTO", value = "标的信息", required = true, dataType = "ProjectDTO", paramType = "body")
+    @PostMapping(value = "/l/creatProject")
+    @Override
+    public RestResponse<String> createProject(@RequestBody ProjectDTO projectDTO) {
+        return null;
     }
 }
