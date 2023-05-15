@@ -1,52 +1,116 @@
-[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-25 15:00:12,275 DEBUG [http-nio-53060-exec-4][BaseJdbcLogger.java:159] - ==>  Preparing: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT,REQUEST_NO FROM project WHERE ID=? 
-[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-25 15:00:12,287 DEBUG [http-nio-53060-exec-4][BaseJdbcLogger.java:159] - ==> Parameters: 2144527401414811650(Long)
-[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-25 15:00:12,472 INFO [http-nio-53060-exec-4][SQLLogger.java:89] - Rule Type: sharding
-[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-25 15:00:12,474 INFO [http-nio-53060-exec-4][SQLLogger.java:89] - Logic SQL: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT,REQUEST_NO FROM project WHERE ID=?
-[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-25 15:00:12,475 INFO [http-nio-53060-exec-4][SQLLogger.java:89] - SQLStatement: SelectStatement(super=DQLStatement(super=AbstractSQLStatement(type=DQL, tables=Tables(tables=[Table(name=project, alias=Optional.absent())]), routeConditions=Conditions(orCondition=OrCondition(andConditions=[AndCondition(conditions=[Condition(column=Column(name=ID, tableName=project), operator=EQUAL, compareOperator==, positionValueMap={}, positionIndexMap={0=0})])])), encryptConditions=Conditions(orCondition=OrCondition(andConditions=[])), sqlTokens=[TableToken(tableName=project, quoteCharacter=NONE, schemaNameLength=0)], parametersIndex=1, logicSQL=SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT,REQUEST_NO FROM project WHERE ID=?)), containStar=false, firstSelectItemStartIndex=7, selectListStopIndex=204, groupByLastIndex=0, items=[CommonSelectItem(expression=ID, alias=Optional.absent()), CommonSelectItem(expression=CONSUMER_ID, alias=Optional.absent()), CommonSelectItem(expression=USER_NO, alias=Optional.absent()), CommonSelectItem(expression=PROJECT_NO, alias=Optional.absent()), CommonSelectItem(expression=NAME, alias=Optional.absent()), CommonSelectItem(expression=DESCRIPTION, alias=Optional.absent()), CommonSelectItem(expression=TYPE, alias=Optional.absent()), CommonSelectItem(expression=PERIOD, alias=Optional.absent()), CommonSelectItem(expression=ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=BORROWER_ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=COMMISSION_ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=REPAYMENT_WAY, alias=Optional.absent()), CommonSelectItem(expression=AMOUNT, alias=Optional.absent()), CommonSelectItem(expression=PROJECT_STATUS, alias=Optional.absent()), CommonSelectItem(expression=CREATE_DATE, alias=Optional.absent()), CommonSelectItem(expression=STATUS, alias=Optional.absent()), CommonSelectItem(expression=IS_ASSIGNMENT, alias=Optional.absent()), CommonSelectItem(expression=REQUEST_NO, alias=Optional.absent())], groupByItems=[], orderByItems=[], limit=null, subqueryStatement=null, subqueryStatements=[], subqueryConditions=[])
-[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-25 15:00:12,477 INFO [http-nio-53060-exec-4][SQLLogger.java:89] - Actual SQL: ds0 ::: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT,REQUEST_NO FROM project_0 WHERE ID=? ::: [2144527401414811650]
-[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-25 15:00:12,478 INFO [http-nio-53060-exec-4][SQLLogger.java:89] - Actual SQL: ds1 ::: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT,REQUEST_NO FROM project_0 WHERE ID=? ::: [2144527401414811650]
-[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-25 15:00:12,505 DEBUG [http-nio-53060-exec-4][BaseJdbcLogger.java:159] - <==      Total: 1
-[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-25 15:00:12,559 DEBUG [http-nio-53060-exec-4][BaseJdbcLogger.java:159] - ==>  Preparing: UPDATE project SET REQUEST_NO=? WHERE ID = ? 
-[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-25 15:00:12,569 DEBUG [http-nio-53060-exec-4][BaseJdbcLogger.java:159] - ==> Parameters: null, 2144527401414811650(Long)
-[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-25 15:00:12,599 INFO [http-nio-53060-exec-4][SQLLogger.java:89] - Rule Type: sharding
-[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-25 15:00:12,600 INFO [http-nio-53060-exec-4][SQLLogger.java:89] - Logic SQL: UPDATE project  SET REQUEST_NO=?  
- 
- WHERE ID = ?
-[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-25 15:00:12,601 INFO [http-nio-53060-exec-4][SQLLogger.java:89] - SQLStatement: DMLStatement(super=AbstractSQLStatement(type=DML, tables=Tables(tables=[Table(name=project, alias=Optional.absent())]), routeConditions=Conditions(orCondition=OrCondition(andConditions=[AndCondition(conditions=[Condition(column=Column(name=ID, tableName=project), operator=EQUAL, compareOperator==, positionValueMap={}, positionIndexMap={0=1})])])), encryptConditions=Conditions(orCondition=OrCondition(andConditions=[])), sqlTokens=[TableToken(tableName=project, quoteCharacter=NONE, schemaNameLength=0)], parametersIndex=2, logicSQL=UPDATE project  SET REQUEST_NO=?  
- 
- WHERE ID = ?), deleteStatement=false, updateTableAlias={project=project}, updateColumnValues={Column(name=REQUEST_NO, tableName=project)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@79244bf4}, whereStartIndex=38, whereStopIndex=49, whereParameterStartIndex=1, whereParameterEndIndex=1)
-[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-25 15:00:12,602 INFO [http-nio-53060-exec-4][SQLLogger.java:89] - Actual SQL: ds0 ::: UPDATE project_0  SET REQUEST_NO=?  
- 
- WHERE ID = ? ::: [null, 2144527401414811650]
-[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-25 15:00:12,603 INFO [http-nio-53060-exec-4][SQLLogger.java:89] - Actual SQL: ds1 ::: UPDATE project_0  SET REQUEST_NO=?  
- 
- WHERE ID = ? ::: [null, 2144527401414811650]
-[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-25 15:00:12,606 DEBUG [http-nio-53060-exec-4][BaseJdbcLogger.java:159] - <==    Updates: 1
-[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-25 15:00:12,640 WARN [http-nio-53060-exec-4][DefaultConfig.java:95] - Could not load config for namespace micro_service.spring-cloud-feign from Apollo, please check whether the configs are released in Apollo! Return default value now!
-[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-25 15:00:12,931 INFO [http-nio-53060-exec-4][ChainedDynamicProperty.java:115] - Flipping property: depository-agent-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
-[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-25 15:00:12,961 INFO [http-nio-53060-exec-4][ShutdownEnabledTimer.java:58] - Shutdown hook installed for: NFLoadBalancer-PingTimer-depository-agent-service
-[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-25 15:00:12,962 INFO [http-nio-53060-exec-4][BaseLoadBalancer.java:197] - Client: depository-agent-service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=depository-agent-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
-[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-25 15:00:12,970 INFO [http-nio-53060-exec-4][DynamicServerListLoadBalancer.java:222] - Using serverListUpdater PollingServerListUpdater
-[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-25 15:00:12,993 INFO [http-nio-53060-exec-4][ChainedDynamicProperty.java:115] - Flipping property: depository-agent-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
-[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-25 15:00:12,996 INFO [http-nio-53060-exec-4][DynamicServerListLoadBalancer.java:150] - DynamicServerListLoadBalancer for client depository-agent-service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=depository-agent-service,current list of Servers=[192.168.2.153:53072, 192.168.2.153:53070, 192.168.2.153:53071],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:3;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
-},Server stats: [[Server:192.168.2.153:53070;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
-, [Server:192.168.2.153:53071;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
-, [Server:192.168.2.153:53072;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
-]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@8c38409
-[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-25 15:00:13,976 INFO [PollingServerListUpdater-0][ChainedDynamicProperty.java:115] - Flipping property: depository-agent-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
-[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-25 15:00:33,147 ERROR [http-nio-53060-exec-4][GlobalExceptionHandler.java:45] - 【系统异常】{}
-feign.RetryableException: Read timed out executing POST http://depository-agent-service/depository-agent/l/createProject
-	at feign.FeignException.errorExecuting(FeignException.java:84)
-	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:113)
-	at feign.SynchronousMethodHandler.invoke(SynchronousMethodHandler.java:78)
-	at feign.ReflectiveFeign$FeignInvocationHandler.invoke(ReflectiveFeign.java:103)
-	at com.sun.proxy.$Proxy158.createProject(Unknown Source)
-	at cn.itcast.wanxinp2p.transaction.service.ProjectServiceImpl.projectsApprovalStatus(ProjectServiceImpl.java:155)
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:20,153 INFO [main][DefaultApplicationProvider.java:85] - App ID is set to transaction-service by app.id property from System Property
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:20,160 INFO [main][DefaultServerProvider.java:108] - Environment is set to [dev] by JVM system property 'env'.
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:20,224 WARN [main][DefaultMetaServerProvider.java:39] - Could not find meta server address, because it is not available in neither (1) JVM system property 'apollo.meta', (2) OS env variable 'APOLLO_META' (3) property 'apollo.meta' from server.properties nor (4) property 'apollo.meta' from app.properties
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:20,231 INFO [main][MetaDomainConsts.java:93] - Located meta server address http://localhost:8080 for env DEV from com.ctrip.framework.apollo.core.internals.LegacyMetaServerProvider
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:20,489 WARN [main][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:21,498 WARN [main][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/transaction-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153 [Cause: [status code: 404] Could not find config for namespace - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:21,505 WARN [main][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:22,514 WARN [main][LocalFileConfigRepository.java:167] - Sync config from upstream repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository failed, reason: Load Apollo Config failed - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/transaction-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22transaction-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A285%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:22,521 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:23,528 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:24,533 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/transaction-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22transaction-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A285%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:24,539 WARN [main][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:25,547 WARN [main][LocalFileConfigRepository.java:167] - Sync config from upstream repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository failed, reason: Load Apollo Config failed - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/transaction-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22transaction-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A285%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:25,547 WARN [main][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.LocalFileConfigRepository, reason: Load config from local config failed! [Cause: Cannot read from local cache file C:\opt\data\transaction-service\config-cache\transaction-service+DEFAULT+micro_service.spring-cloud-feign.properties]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:25,553 WARN [main][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:26,560 WARN [main][LocalFileConfigRepository.java:167] - Sync config from upstream repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository failed, reason: Load Apollo Config failed - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/transaction-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22transaction-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A285%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:26,560 WARN [main][DefaultConfig.java:61] - Init Apollo Local Config failed - namespace: micro_service.spring-cloud-feign, reason: Load config from local config failed! [Cause: Cannot read from local cache file C:\opt\data\transaction-service\config-cache\transaction-service+DEFAULT+micro_service.spring-cloud-feign.properties].
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:26,582 WARN [main][DefaultConfig.java:95] - Could not load config for namespace micro_service.spring-cloud-feign from Apollo, please check whether the configs are released in Apollo! Return default value now!
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:26,583 INFO [main][SpringApplication.java:675] - No active profile set, falling back to default profiles: default
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:28,834 WARN [main][EndpointId.java:135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:29,134 INFO [main][GenericScope.java:294] - BeanFactory id=4ff5fc92-ce0a-3b9a-a5b6-b64b5cd0bb79
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:29,200 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'cn.itcast.wanxinp2p.transaction.agent.ConsumerApiAgent' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:29,202 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'cn.itcast.wanxinp2p.transaction.agent.ContentSearchApiAgent' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:29,204 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'cn.itcast.wanxinp2p.transaction.agent.DepositoryAgentApiAgent' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:29,320 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a5de8a00] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:29,362 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c1f88cfd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:29,764 INFO [main][TomcatWebServer.java:90] - Tomcat initialized with port(s): 53060 (http)
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:29,787 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-53060"]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:29,797 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:29,798 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:29,806 INFO [main][DirectJDKLog.java:173] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\nodejs\;C:\Ruby26-x64\bin;C:\Users\apple\AppData\Local\Microsoft\WindowsApps;E:\apache-maven-3.5.4\bin;C:\Users\apple\AppData\Roaming\npm;.]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:29,986 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:29,987 INFO [main][ServletWebServerApplicationContext.java:296] - Root WebApplicationContext: initialization completed in 3385 ms
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:30,162 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:30,163 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:30,179 INFO [main][DynamicPropertyFactory.java:281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@5ba63110
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:30,879 INFO [main][DruidDataSource.java:1002] - {dataSource-1} inited
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:31,012 INFO [main][DruidDataSource.java:1002] - {dataSource-2} inited
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:32,792 INFO [main][EndpointLinksResolver.java:59] - Exposing 2 endpoint(s) beneath base path '/actuator'
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:32,898 INFO [main][PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:32,921 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:32,922 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:33,337 INFO [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService 'applicationTaskExecutor'
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:33,859 INFO [main][StdSchedulerFactory.java:1208] - Using default implementation for ThreadExecutor
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:33,876 INFO [main][SchedulerSignalerImpl.java:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:33,876 INFO [main][QuartzScheduler.java:229] - Quartz Scheduler v.2.3.0 created.
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:33,877 INFO [main][RAMJobStore.java:155] - RAMJobStore initialized.
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:33,878 INFO [main][QuartzScheduler.java:294] - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:33,878 INFO [main][StdSchedulerFactory.java:1362] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:33,878 INFO [main][StdSchedulerFactory.java:1366] - Quartz scheduler version: 2.3.0
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:33,878 INFO [main][QuartzScheduler.java:2287] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3358805a
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:34,294 INFO [main][InstanceInfoFactory.java:71] - Setting initial instance status as: STARTING
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:34,344 INFO [main][DiscoveryClient.java:349] - Initializing Eureka in region us-east-1
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:34,629 INFO [main][DiscoveryJerseyProvider.java:70] - Using JSON encoding codec LegacyJacksonJson
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:34,629 INFO [main][DiscoveryJerseyProvider.java:71] - Using JSON decoding codec LegacyJacksonJson
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:34,797 INFO [main][DiscoveryJerseyProvider.java:80] - Using XML encoding codec XStreamXml
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:34,798 INFO [main][DiscoveryJerseyProvider.java:81] - Using XML decoding codec XStreamXml
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:35,138 INFO [main][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:35,221 INFO [main][DiscoveryClient.java:958] - Disable delta property : false
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:35,221 INFO [main][DiscoveryClient.java:959] - Single vip registry refresh property : null
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:35,222 INFO [main][DiscoveryClient.java:960] - Force full registry fetch : false
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:35,222 INFO [main][DiscoveryClient.java:961] - Application is null : false
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:35,222 INFO [main][DiscoveryClient.java:962] - Registered Applications size is zero : true
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:35,222 INFO [main][DiscoveryClient.java:964] - Application version is -1: true
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:35,223 INFO [main][DiscoveryClient.java:1047] - Getting all instance registry info from the eureka server
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:35,599 INFO [main][DiscoveryClient.java:1056] - The response status is 200
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:35,604 INFO [main][DiscoveryClient.java:1270] - Starting heartbeat executor: renew interval is: 30
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:35,610 INFO [main][InstanceInfoReplicator.java:60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:35,617 INFO [main][DiscoveryClient.java:449] - Discovery Client initialized at timestamp 1567156955615 with initial instances count: 1
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:35,620 INFO [main][EurekaServiceRegistry.java:42] - Registering application TRANSACTION-SERVICE with eureka with status UP
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:35,621 INFO [main][DiscoveryClient.java:1305] - Saw local status change event StatusChangeEvent [timestamp=1567156955621, current=UP, previous=STARTING]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:35,624 INFO [main][DocumentationPluginsBootstrapper.java:160] - Context refreshed
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:35,625 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:826] - DiscoveryClient_TRANSACTION-SERVICE/transaction-service:192.168.2.153:53060: registering service...
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:35,640 INFO [main][DocumentationPluginsBootstrapper.java:163] - Found 1 custom documentation plugin(s)
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:35,680 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:835] - DiscoveryClient_TRANSACTION-SERVICE/transaction-service:192.168.2.153:53060 - registration status: 204
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:35,691 INFO [main][ApiListingReferenceScanner.java:41] - Scanning for api listing references
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:35,859 INFO [main][CachingOperationNameGenerator.java:40] - Generating unique operation named: queryProjectsUsingPOST_1
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:35,885 INFO [main][SchedulerFactoryBean.java:726] - Starting Quartz Scheduler now
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:35,885 INFO [main][QuartzScheduler.java:547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:35,907 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-53060"]
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:35,942 INFO [main][TomcatWebServer.java:204] - Tomcat started on port(s): 53060 (http) with context path '/transaction'
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:35,943 INFO [main][EurekaAutoServiceRegistration.java:141] - Updating port to 53060
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:35,946 INFO [main][StartupInfoLogger.java:59] - Started TransactionService in 18.258 seconds (JVM running for 21.92)
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:36,357 INFO [RMI TCP Connection(18)-127.0.0.1][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:36,358 INFO [RMI TCP Connection(18)-127.0.0.1][FrameworkServlet.java:524] - Initializing Servlet 'dispatcherServlet'
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:36,375 INFO [RMI TCP Connection(18)-127.0.0.1][FrameworkServlet.java:546] - Completed initialization in 17 ms
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:37,491 INFO [RMI TCP Connection(16)-127.0.0.1][SQLLogger.java:89] - Rule Type: sharding
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:37,492 INFO [RMI TCP Connection(16)-127.0.0.1][SQLLogger.java:89] - Logic SQL: /* ping */ SELECT 1
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:37,492 INFO [RMI TCP Connection(16)-127.0.0.1][SQLLogger.java:89] - SQLStatement: SelectStatement(super=DQLStatement(super=AbstractSQLStatement(type=DQL, tables=Tables(tables=[]), routeConditions=Conditions(orCondition=OrCondition(andConditions=[])), encryptConditions=Conditions(orCondition=OrCondition(andConditions=[])), sqlTokens=[], parametersIndex=0, logicSQL=/* ping */ SELECT 1)), containStar=false, firstSelectItemStartIndex=18, selectListStopIndex=18, groupByLastIndex=0, items=[CommonSelectItem(expression=1, alias=Optional.absent())], groupByItems=[], orderByItems=[], limit=null, subqueryStatement=null, subqueryStatements=[], subqueryConditions=[])
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:37,492 INFO [RMI TCP Connection(16)-127.0.0.1][SQLLogger.java:89] - Actual SQL: ds0 ::: /* ping */ SELECT 1
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:54,967 INFO [http-nio-53060-exec-2][ChainedDynamicProperty.java:115] - Flipping property: content-search-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:54,998 INFO [http-nio-53060-exec-2][ShutdownEnabledTimer.java:58] - Shutdown hook installed for: NFLoadBalancer-PingTimer-content-search-service
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:55,000 INFO [http-nio-53060-exec-2][BaseLoadBalancer.java:197] - Client: content-search-service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=content-search-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:55,010 INFO [http-nio-53060-exec-2][DynamicServerListLoadBalancer.java:222] - Using serverListUpdater PollingServerListUpdater
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:55,038 INFO [http-nio-53060-exec-2][ChainedDynamicProperty.java:115] - Flipping property: content-search-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:55,041 INFO [http-nio-53060-exec-2][DynamicServerListLoadBalancer.java:150] - DynamicServerListLoadBalancer for client content-search-service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=content-search-service,current list of Servers=[192.168.2.153:53090],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.2.153:53090;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@67bd7e68
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:55,419 ERROR [http-nio-53060-exec-2][GlobalExceptionHandler.java:45] - 【系统异常】{}
+java.lang.NullPointerException
+	at cn.itcast.wanxinp2p.transaction.service.ProjectServiceImpl.queryProjects(ProjectServiceImpl.java:197)
 	at cn.itcast.wanxinp2p.transaction.service.ProjectServiceImpl$$FastClassBySpringCGLIB$$997f0e9f.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
-	at cn.itcast.wanxinp2p.transaction.service.ProjectServiceImpl$$EnhancerBySpringCGLIB$$649f0bce.projectsApprovalStatus(<generated>)
-	at cn.itcast.wanxinp2p.transaction.controller.TransactionController.projectsApprovalStatus(TransactionController.java:67)
+	at cn.itcast.wanxinp2p.transaction.service.ProjectServiceImpl$$EnhancerBySpringCGLIB$$91c6ff2a.queryProjects(<generated>)
+	at cn.itcast.wanxinp2p.transaction.controller.TransactionController.queryProjects(TransactionController.java:86)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -60,8 +124,8 @@ feign.RetryableException: Read timed out executing POST http://depository-agent-
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
-	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:919)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:663)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
@@ -110,76 +174,4 @@ feign.RetryableException: Read timed out executing POST http://depository-agent-
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.SocketTimeoutException: Read timed out
-	at java.net.SocketInputStream.socketRead0(Native Method)
-	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
-	at java.net.SocketInputStream.read(SocketInputStream.java:171)
-	at java.net.SocketInputStream.read(SocketInputStream.java:141)
-	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
-	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
-	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
-	at sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:735)
-	at sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:678)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1587)
-	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1492)
-	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
-	at feign.Client$Default.convertResponse(Client.java:143)
-	at feign.Client$Default.execute(Client.java:68)
-	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer$1.doWithRetry(RetryableFeignLoadBalancer.java:103)
-	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer$1.doWithRetry(RetryableFeignLoadBalancer.java:88)
-	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:287)
-	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:180)
-	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer.execute(RetryableFeignLoadBalancer.java:88)
-	at org.springframework.cloud.openfeign.ribbon.RetryableFeignLoadBalancer.execute(RetryableFeignLoadBalancer.java:54)
-	at com.netflix.client.AbstractLoadBalancerAwareClient$1.call(AbstractLoadBalancerAwareClient.java:104)
-	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:303)
-	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$3$1.call(LoadBalancerCommand.java:287)
-	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:231)
-	at rx.internal.util.ScalarSynchronousObservable$3.call(ScalarSynchronousObservable.java:228)
-	at rx.Observable.unsafeSubscribe(Observable.java:10327)
-	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127)
-	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73)
-	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52)
-	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79)
-	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45)
-	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276)
-	at rx.Subscriber.setProducer(Subscriber.java:209)
-	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138)
-	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129)
-	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
-	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
-	at rx.Observable.unsafeSubscribe(Observable.java:10327)
-	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.drain(OnSubscribeConcatMap.java:286)
-	at rx.internal.operators.OnSubscribeConcatMap$ConcatMapSubscriber.onNext(OnSubscribeConcatMap.java:144)
-	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:185)
-	at com.netflix.loadbalancer.reactive.LoadBalancerCommand$1.call(LoadBalancerCommand.java:180)
-	at rx.Observable.unsafeSubscribe(Observable.java:10327)
-	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:94)
-	at rx.internal.operators.OnSubscribeConcatMap.call(OnSubscribeConcatMap.java:42)
-	at rx.Observable.unsafeSubscribe(Observable.java:10327)
-	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber$1.call(OperatorRetryWithPredicate.java:127)
-	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.enqueue(TrampolineScheduler.java:73)
-	at rx.internal.schedulers.TrampolineScheduler$InnerCurrentThreadScheduler.schedule(TrampolineScheduler.java:52)
-	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:79)
-	at rx.internal.operators.OperatorRetryWithPredicate$SourceSubscriber.onNext(OperatorRetryWithPredicate.java:45)
-	at rx.internal.util.ScalarSynchronousObservable$WeakSingleProducer.request(ScalarSynchronousObservable.java:276)
-	at rx.Subscriber.setProducer(Subscriber.java:209)
-	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:138)
-	at rx.internal.util.ScalarSynchronousObservable$JustOnSubscribe.call(ScalarSynchronousObservable.java:129)
-	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
-	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
-	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
-	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
-	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:48)
-	at rx.internal.operators.OnSubscribeLift.call(OnSubscribeLift.java:30)
-	at rx.Observable.subscribe(Observable.java:10423)
-	at rx.Observable.subscribe(Observable.java:10390)
-	at rx.observables.BlockingObservable.blockForSingle(BlockingObservable.java:443)
-	at rx.observables.BlockingObservable.single(BlockingObservable.java:340)
-	at com.netflix.client.AbstractLoadBalancerAwareClient.executeWithLoadBalancer(AbstractLoadBalancerAwareClient.java:112)
-	at org.springframework.cloud.openfeign.ribbon.LoadBalancerFeignClient.execute(LoadBalancerFeignClient.java:65)
-	at feign.SynchronousMethodHandler.executeAndDecode(SynchronousMethodHandler.java:108)
-	... 72 more
-[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-25 15:01:42,151 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
-[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-25 15:01:43,159 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/transaction-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22transaction-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A285%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
-[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-09-25 15:01:57,485 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[wanxinp2p-transaction-service][${env:SERVER_PORT}] 2019-08-30 17:22:56,018 INFO [PollingServerListUpdater-0][ChainedDynamicProperty.java:115] - Flipping property: content-search-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647

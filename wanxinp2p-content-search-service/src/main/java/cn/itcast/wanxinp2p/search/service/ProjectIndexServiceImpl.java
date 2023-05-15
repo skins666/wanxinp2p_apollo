@@ -94,13 +94,14 @@ public class ProjectIndexServiceImpl implements ProjectIndexService{
                 Integer period = Integer.parseInt(sourceAsMap.get("period").toString());
                 String name = (String) sourceAsMap.get("name");
                 String description = (String) sourceAsMap.get("description");
-                BigDecimal annualRate=new BigDecimal(sourceAsMap.get("annualrate").toString());
+				BigDecimal annualRate=new BigDecimal(sourceAsMap.get("annualrate").toString());
                 projectDTO.setAmount(new BigDecimal(amount));
                 projectDTO.setProjectStatus(projectstatus);
                 projectDTO.setPeriod(period);
                 projectDTO.setName(name);
                 projectDTO.setDescription(description);
-                projectDTO.setAnnualRate(annualRate);
+				projectDTO.setAnnualRate(annualRate);
+                projectDTO.setId(Long.parseLong(sourceAsMap.get("id").toString()));
                 list.add(projectDTO);
             }
         }catch(Exception e){

@@ -1,6 +1,9 @@
 package cn.itcast.wanxinp2p.api.depository;
 
 import cn.itcast.wanxinp2p.api.consumer.model.ConsumerRequest;
+import cn.itcast.wanxinp2p.api.depository.model.LoanRequest;
+import cn.itcast.wanxinp2p.api.depository.model.UserAutoPreTransactionRequest;
+import cn.itcast.wanxinp2p.api.transaction.model.ModifyProjectStatusDTO;
 import cn.itcast.wanxinp2p.api.transaction.model.ProjectDTO;
 import cn.itcast.wanxinp2p.common.domain.RestResponse;
 
@@ -17,8 +20,32 @@ public interface DepositoryAgentApi {
 
     /**
      * 向银行存管系统发送标的信息
-    @param projectDTO
-* @return
+     @param projectDTO
+    * @return
         */
     RestResponse<String> createProject(ProjectDTO projectDTO);
+
+    /**
+     * 预授权处理
+     * @param userAutoPreTransactionRequest 预授权处理信息
+     * @return
+     */
+    RestResponse<String> userAutoPreTransaction(UserAutoPreTransactionRequest
+                                                        userAutoPreTransactionRequest);
+
+
+    /**
+       * 审核标的满标放款
+        * @param loanRequest
+        * @return
+        */
+    RestResponse<String> confirmLoan(LoanRequest loanRequest);
+
+    /**
+     * 修改标的状态
+     * @param modifyProjectStatusDTO
+     * @return
+     */
+    RestResponse<String> modifyProjectStatus(ModifyProjectStatusDTO
+                                                     modifyProjectStatusDTO);
 }

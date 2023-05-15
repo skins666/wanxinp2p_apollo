@@ -16,5 +16,9 @@ public class CommonUtil {
 		return mobile.replaceAll("(\\d{3})\\d{4}(\\d{4})","$1****$2");
 	}
 
+	public static void main(String[] args) {
+		System.out.println(hiddenMobile("15378791911"));
+	}
+
 }
 

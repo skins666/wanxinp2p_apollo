@@ -1,17 +1,24 @@
 package cn.itcast.wanxinp2p.transaction.service;
 
+import cn.itcast.wanxinp2p.api.consumer.model.BalanceDetailsDTO;
 import cn.itcast.wanxinp2p.api.consumer.model.ConsumerDTO;
-import cn.itcast.wanxinp2p.api.transaction.model.ProjectDTO;
-import cn.itcast.wanxinp2p.api.transaction.model.ProjectQueryDTO;
+import cn.itcast.wanxinp2p.api.depository.model.UserAutoPreTransactionRequest;
+import cn.itcast.wanxinp2p.api.transaction.model.*;
 import cn.itcast.wanxinp2p.common.domain.*;
 import cn.itcast.wanxinp2p.common.util.CodeNoUtil;
+import cn.itcast.wanxinp2p.common.util.CommonUtil;
 import cn.itcast.wanxinp2p.transaction.agent.ConsumerApiAgent;
 import cn.itcast.wanxinp2p.transaction.agent.ContentSearchApiAgent;
 import cn.itcast.wanxinp2p.transaction.agent.DepositoryAgentApiAgent;
+import cn.itcast.wanxinp2p.transaction.common.constant.TradingCode;
 import cn.itcast.wanxinp2p.transaction.common.constant.TransactionErrorCode;
+import cn.itcast.wanxinp2p.transaction.common.utils.IncomeCalcUtil;
 import cn.itcast.wanxinp2p.transaction.common.utils.SecurityUtil;
 import cn.itcast.wanxinp2p.transaction.entity.Project;
+import cn.itcast.wanxinp2p.transaction.entity.Tender;
 import cn.itcast.wanxinp2p.transaction.mapper.ProjectMapper;
+import cn.itcast.wanxinp2p.transaction.mapper.TenderMapper;
+import cn.itcast.wanxinp2p.transaction.model.LoginUser;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
@@ -23,8 +30,10 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 @Service
@@ -43,6 +52,10 @@ public class ProjectServiceImpl extends ServiceImpl<ProjectMapper, Project>
 
     @Autowired
     private ConfigService configService;
+
+    @Autowired
+    private TenderMapper tenderMapper;
+
 
     @Override
     public ProjectDTO createProject(ProjectDTO projectDTO) {
@@ -202,6 +215,192 @@ public class ProjectServiceImpl extends ServiceImpl<ProjectMapper, Project>
             throw new BusinessException(CommonErrorCode.UNKOWN);
         }
         return esResponse.getResult();
+    }
+
+    @Override
+    public List<ProjectDTO> queryProjectsIds(String ids) {
+        //1. 查询标的信息
+        QueryWrapper<Project> queryWrapper=new QueryWrapper<>();
+        List<Long> list=new ArrayList<>();
+        Arrays.asList(ids.split(",")).forEach(str->{
+            list.add(Long.parseLong(str));
+        });
+        queryWrapper.lambda().in(Project::getId,list); // .... where  id  in  (1,2,3,4,5)
+        List<Project> projects=list(queryWrapper);
+        List<ProjectDTO> dtos=new ArrayList<>();
+        //2.转换为DTO对象
+        for(Project project:projects){
+            ProjectDTO projectDTO=convertProjectEntityToDTO(project);
+            // 3. 获取剩余额度
+            projectDTO.setRemainingAmount(getProjectRemainingAmount(project));
+            //4. 查询出借人数
+            projectDTO.setTenderCount(tenderMapper.selectCount(Wrappers.<Tender>lambdaQuery().eq(Tender::getProjectId, project.getId())));
+            dtos.add(projectDTO);
+        }
+        return dtos;
+
+    }
+
+    @Override
+    public List<TenderOverviewDTO> queryTendersByProjectId(Long id) {
+        List<Tender> tenderList = tenderMapper.selectList(Wrappers.<Tender>lambdaQuery().eq(Tender::getProjectId,id));
+        List<TenderOverviewDTO> tenderOverviewDTOS=new ArrayList<>();
+        tenderList.forEach(tender -> {
+            TenderOverviewDTO tenderOverviewDTO=new TenderOverviewDTO();
+            BeanUtils.copyProperties(tender,tenderOverviewDTO);
+            tenderOverviewDTO.setConsumerUsername(CommonUtil.hiddenMobile(tenderOverviewDTO.getConsumerUsername()));
+            tenderOverviewDTOS.add(tenderOverviewDTO);
+        });
+        return tenderOverviewDTOS;
+    }
+
+    @Override
+    public TenderDTO createTender(ProjectInvestDTO projectInvestDTO) {
+        //1.前置条件判断
+        //1.1 判断投标金额是否大于最小投标金额
+        BigDecimal amount=new BigDecimal(projectInvestDTO.getAmount());
+        BigDecimal miniInvestmentAmount=configService.getMiniInvestmentAmount();
+        if(amount.compareTo(miniInvestmentAmount)<0){
+            throw  new BusinessException(TransactionErrorCode.E_150109);
+        }
+        //1.2 判断用户账户余额是否足够
+        LoginUser user=SecurityUtil.getUser();
+        RestResponse<ConsumerDTO> restResponse=consumerApiAgent.getCurrConsumer(user.getMobile());
+        RestResponse<BalanceDetailsDTO> balanceDetailsDTORestResponse=consumerApiAgent.getBalance(restResponse.getResult().getUserNo());
+        BigDecimal myBalance=balanceDetailsDTORestResponse.getResult().getBalance();
+        if(myBalance.compareTo(amount)<0){
+            throw  new BusinessException(TransactionErrorCode.E_150112);
+        }
+
+        //1.3 判断标的是否满标，标的状态为FULLY就表示满标
+       Project project = getById(projectInvestDTO.getId());
+        if(project.getProjectStatus().equalsIgnoreCase(ProjectCode.FULLY.getCode())){
+            throw  new BusinessException(TransactionErrorCode.E_150114);
+        }
+
+        //1.4 判断投标金额是否超过剩余未投金额
+        BigDecimal remainingAmount = getProjectRemainingAmount(project);
+        if(amount.compareTo(remainingAmount)<1){
+            //1.5 判断此次投标后的剩余未投金额是否满足最小投标金额
+            //借款人需要借1万   现在已经投标了8千   还剩2千   本次投标1950元
+            //公式：此次投标后的剩余未投金额 = 目前剩余未投金额 - 本次投标金额
+            BigDecimal subtract=remainingAmount.subtract(amount);
+            int result=subtract.compareTo(configService.getMiniInvestmentAmount());
+            if(result<0){
+                if(subtract.compareTo(new BigDecimal("0.0"))!=0){
+                    throw new BusinessException(TransactionErrorCode.E_150111);
+                }
+            }
+
+            //2. 保存投标信息并发送给存管代理服务
+            //2.1 保存投标信息
+            final Tender tender = new Tender();
+            // 投资人投标金额( 投标冻结金额 )
+            tender.setAmount(amount);
+            // 投标人用户标识
+            tender.setConsumerId(restResponse.getResult().getId());
+            tender.setConsumerUsername(restResponse.getResult().getUsername());
+            // 投标人用户编码
+            tender.setUserNo(restResponse.getResult().getUserNo());
+            // 标的标识
+            tender.setProjectId(projectInvestDTO.getId());
+            // 标的编码
+            tender.setProjectNo(project.getProjectNo());
+            // 投标状态
+            tender.setTenderStatus(TradingCode.FROZEN.getCode());
+            // 创建时间
+            tender.setCreateDate(LocalDateTime.now());
+            // 请求流水号
+            tender.setRequestNo(CodeNoUtil.getNo(CodePrefixCode.CODE_REQUEST_PREFIX));
+            // 可用状态
+            tender.setStatus(0);
+            tender.setProjectName(project.getName());
+            // 标的期限(单位:天)
+            tender.setProjectPeriod(project.getPeriod());
+            // 年化利率(投资人视图)
+            tender.setProjectAnnualRate(project.getAnnualRate());
+            // 保存到数据库
+            tenderMapper.insert(tender);
+
+            //2.2 发送数据给存管代理服务
+            // 构造请求数据
+            UserAutoPreTransactionRequest userAutoPreTransactionRequest = new
+                    UserAutoPreTransactionRequest();
+            // 冻结金额
+            userAutoPreTransactionRequest.setAmount(amount);
+            // 预处理业务类型
+            userAutoPreTransactionRequest.setBizType(PreprocessBusinessTypeCode.TENDER.getCode());
+            // 标的号
+            userAutoPreTransactionRequest.setProjectNo(project.getProjectNo());
+            // 请求流水号
+            userAutoPreTransactionRequest.setRequestNo(tender.getRequestNo());
+            // 投资人用户编码
+            userAutoPreTransactionRequest.setUserNo(restResponse.getResult().getUserNo());
+            // 设置 关联业务实体标识
+            userAutoPreTransactionRequest.setId(tender.getId());
+            // 远程调用存管代理服务
+            RestResponse<String> response = depositoryAgentApiAgent.userAutoPreTransaction(userAutoPreTransactionRequest);
+
+            //3.根据结果更新投标状态
+            //3.1 判断结果
+           if(response.getResult().equals(DepositoryReturnCode.RETURN_CODE_00000.getCode())) {
+               //3.2 修改状态为：已同步
+               tender.setStatus(1);
+               tenderMapper.updateById(tender);
+               //3.3 判断当前标的是否满标，如果满标，更新标的状态
+               BigDecimal remainAmont=getProjectRemainingAmount(project);
+               if(remainAmont.compareTo(new BigDecimal(0))==0){
+                    project.setProjectStatus(ProjectCode.FULLY.getCode());
+                    updateById(project);
+               }
+
+               //3.4 转换为DTO对象，并封装相关数据
+               TenderDTO tenderDTO=convertTenderEntityToDTO(tender);
+               // 封装标的信息
+               project.setRepaymentWay(RepaymentWayCode.FIXED_REPAYMENT.getDesc());
+               tenderDTO.setProject(convertProjectEntityToDTO(project));
+               // 封装预期收益
+               // 根据标的期限计算还款月数
+               final Double ceil = Math.ceil(project.getPeriod() / 30.0);
+               Integer month = ceil.intValue();
+               tenderDTO.setExpectedIncome(IncomeCalcUtil.getIncomeTotalInterest(new BigDecimal(projectInvestDTO.getAmount()),configService.getAnnualRate(),month));
+               return tenderDTO;
+           }
+           else{
+                throw  new BusinessException(TransactionErrorCode.E_150113);
+           }
+           
+        }else{
+            throw new BusinessException(TransactionErrorCode.E_150110);
+        }
+
+    }
+
+    private TenderDTO convertTenderEntityToDTO(Tender tender) {
+        if (tender == null) {
+            return null;
+        }
+        TenderDTO tenderDTO = new TenderDTO();
+        BeanUtils.copyProperties(tender, tenderDTO);
+        return tenderDTO;
+    }
+
+    /**
+     ** 获取标的剩余可投额度
+    * @param project
+    * @return
+    */
+    private BigDecimal getProjectRemainingAmount(Project project) {
+        // 根据标的id在投标表查询已投金额
+        List<BigDecimal> decimalList =
+                tenderMapper.selectAmountInvestedByProjectId(project.getId());
+        // 求和结果集
+        BigDecimal amountInvested = new BigDecimal("0.0");
+        for (BigDecimal d : decimalList) {
+            amountInvested = amountInvested.add(d);
+        }
+        // 得到剩余额度
+        return project.getAmount().subtract(amountInvested);
     }
 
 }
