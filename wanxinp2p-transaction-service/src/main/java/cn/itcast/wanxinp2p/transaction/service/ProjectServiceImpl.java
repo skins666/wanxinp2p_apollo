@@ -2,7 +2,10 @@ package cn.itcast.wanxinp2p.transaction.service;
 
 import cn.itcast.wanxinp2p.api.consumer.model.BalanceDetailsDTO;
 import cn.itcast.wanxinp2p.api.consumer.model.ConsumerDTO;
+import cn.itcast.wanxinp2p.api.depository.model.LoanDetailRequest;
+import cn.itcast.wanxinp2p.api.depository.model.LoanRequest;
 import cn.itcast.wanxinp2p.api.depository.model.UserAutoPreTransactionRequest;
+import cn.itcast.wanxinp2p.api.repayment.model.ProjectWithTendersDTO;
 import cn.itcast.wanxinp2p.api.transaction.model.*;
 import cn.itcast.wanxinp2p.common.domain.*;
 import cn.itcast.wanxinp2p.common.util.CodeNoUtil;
@@ -375,6 +378,107 @@ public class ProjectServiceImpl extends ServiceImpl<ProjectMapper, Project>
         }
 
     }
+
+    @Override
+    public String loansApprovalStatus(Long id, String approveStatus, String commission) {
+        //一：第一阶段
+        //1.生成放款明细
+        //标的信息
+        Project project = this.getById(id);
+        //投标信息
+List<Tender> tenderList = tenderMapper.selectList(new QueryWrapper<Tender>().eq("project_id", id).eq("status", 1));
+
+  //二：第二阶段
+        //生成放款明细
+        LoanRequest loanRequest = generateLoanRequest(project, tenderList, commission);
+        //2.放款
+        //调用存管代理服务
+        RestResponse<String> stringRestResponse = depositoryAgentApiAgent.confirmLoan(loanRequest);
+        if (stringRestResponse.getResult().equals(DepositoryReturnCode.RETURN_CODE_00000.getCode())){
+            //3.修改投标信息的装填为已放款
+            updateTenderStatus(tenderList);
+
+            ModifyProjectStatusDTO modifyProjectStatusDTO = new ModifyProjectStatusDTO();
+            modifyProjectStatusDTO.setId(id);
+            modifyProjectStatusDTO.setProjectStatus(ProjectCode.REPAYING.getCode());
+            modifyProjectStatusDTO.setRequestNo(loanRequest.getRequestNo());
+            //调用存管代理服务,如果成功，修改标的状态为还款中
+            RestResponse<String> modifyProjectStatus = depositoryAgentApiAgent.modifyProjectStatus(modifyProjectStatusDTO);
+            if (modifyProjectStatus.getResult().equals(DepositoryReturnCode.RETURN_CODE_00000.getCode())){
+                //
+                project.setProjectStatus(ProjectCode.REPAYING.getCode());
+                this.updateById(project);
+                //4.启动还款
+                //准备数据
+                ProjectWithTendersDTO projectWithTendersDTO = new ProjectWithTendersDTO();
+                projectWithTendersDTO.setProject(convertProjectEntityToDTO(project));
+                List<TenderDTO> tenderDTOList = new ArrayList<>();
+                for (Tender tender : tenderList) {
+                    tenderDTOList.add(convertTenderEntityToDTO(tender));
+                }
+                projectWithTendersDTO.setTenders(tenderDTOList);
+
+
+                projectWithTendersDTO.setCommissionInvestorAnnualRate(configService.getCommissionInvestorAnnualRate());
+                projectWithTendersDTO.setCommissionBorrowerAnnualRate(configService.getCommissionBorrowerAnnualRate());
+
+                //涉及分布式事务，用RocketMQ解决
+                //先放一下
+                // TODO: 2023/5/16 RocketMQ解决
+
+
+            }else {
+                    throw new BusinessException(TransactionErrorCode.E_150113);
+                }
+
+        }else {
+            throw new BusinessException(TransactionErrorCode.E_150113);
+        }
+        //3.修改状态
+        //4.启动还款
+
+        return "00000";
+    }
+    //修改投标信息的装填为已放款
+    private void updateTenderStatus(List<Tender> tenderList) {
+        for (Tender tender : tenderList) {
+            tender.setTenderStatus(TradingCode.LOAN.getCode());
+            tenderMapper.updateById(tender);
+        }
+
+
+    }
+
+    public LoanRequest generateLoanRequest(Project project, List<Tender> tenderList, String commission){
+        LoanRequest loanRequest = new LoanRequest();
+        //封装标的id
+        loanRequest.setId(project.getId());
+        //封装平台佣金
+        if (StringUtils.isEmpty(commission)){
+            BigDecimal commissionDecimal = new BigDecimal(commission);
+            loanRequest.setCommission(commissionDecimal);
+        }
+        //封装标的编码
+        loanRequest.setProjectNo(project.getProjectNo());
+        //封装请求流水号
+        loanRequest.setRequestNo(CodeNoUtil.getNo(CodePrefixCode.CODE_REQUEST_PREFIX));
+        //遍历tenderList，封装请求流水号
+        List<LoanDetailRequest> loanDetailRequests = new ArrayList<>();
+        for (Tender tender : tenderList) {
+            LoanDetailRequest loanDetailRequest = new LoanDetailRequest();
+           loanDetailRequest.setPreRequestNo(tender.getRequestNo());
+              loanDetailRequest.setAmount(tender.getAmount());
+            loanDetailRequests.add(loanDetailRequest);
+        }
+        loanRequest.setDetails(loanDetailRequests);
+
+
+
+
+        return loanRequest;
+    }
+
+
 
     private TenderDTO convertTenderEntityToDTO(Tender tender) {
         if (tender == null) {

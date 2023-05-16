@@ -1,0 +1,20 @@
+[${project.name}][${env:SERVER_PORT}] 2019-09-20 17:04:37,981 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: uaa-service, cluster: DEFAULT, namespaces: application
+[${project.name}][${env:SERVER_PORT}] 2019-09-20 17:04:38,173 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-09-20 17:04:38,294 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-09-20 17:04:38,390 INFO [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService 'applicationTaskExecutor'
+[${project.name}][${env:SERVER_PORT}] 2019-09-20 17:04:38,884 INFO [main][StdSchedulerFactory.java:1208] - Using default implementation for ThreadExecutor
+[${project.name}][${env:SERVER_PORT}] 2019-09-20 17:04:38,901 INFO [main][SchedulerSignalerImpl.java:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[${project.name}][${env:SERVER_PORT}] 2019-09-20 17:04:38,901 INFO [main][QuartzScheduler.java:229] - Quartz Scheduler v.2.3.0 created.
+[${project.name}][${env:SERVER_PORT}] 2019-09-20 17:04:38,902 INFO [main][RAMJobStore.java:155] - RAMJobStore initialized.
+[${project.name}][${env:SERVER_PORT}] 2019-09-20 17:04:38,903 INFO [main][QuartzScheduler.java:294] - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[${project.name}][${env:SERVER_PORT}] 2019-09-20 17:04:38,903 INFO [main][StdSchedulerFactory.java:1362] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[${project.name}][${env:SERVER_PORT}] 2019-09-20 17:04:38,904 INFO [main][StdSchedulerFactory.java:1366] - Quartz scheduler version: 2.3.0
+[${project.name}][${env:SERVER_PORT}] 2019-09-20 17:04:38,904 INFO [main][QuartzScheduler.java:2287] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@376bae20
+[${project.name}][${env:SERVER_PORT}] 2019-09-20 17:04:38,987 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: uaa-service, cluster: DEFAULT, namespace: application, url: http://192.168.2.153:8080/configs/uaa-service/DEFAULT/application?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22uaa-service%2Bdefault%2Bapplication%22%3A308%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: uaa-service, cluster: DEFAULT, namespace: application, please check whether the configs are released in Apollo!]

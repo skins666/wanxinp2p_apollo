@@ -1,0 +1,17 @@
+[${project.name}][${env:SERVER_PORT}] 2019-09-20 11:00:07,434 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 1ms
+[${project.name}][${env:SERVER_PORT}] 2019-09-20 11:00:11,145 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-09-20 11:00:11,250 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-09-20 11:00:12,148 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-09-20 11:00:13,152 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-09-20 11:00:14,526 INFO [hmilyTransaction-hmily-transaction-self-recovery-14][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-09-20 11:00:14,673 INFO [hmilyTransaction-hmily-transaction-self-recovery-28][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-09-20 11:00:17,434 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-09-20 11:00:20,234 INFO [hmilyTransaction-hmily-transaction-self-recovery-42][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-09-20 11:00:27,435 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-09-20 11:00:28,185 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-09-20 11:00:29,190 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-09-20 11:00:37,436 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-09-20 11:00:41,144 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-09-20 11:00:41,248 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-09-20 11:00:42,148 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-09-20 11:00:43,152 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true

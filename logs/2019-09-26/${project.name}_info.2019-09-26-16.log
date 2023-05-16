@@ -1,0 +1,4 @@
+[${project.name}][${env:SERVER_PORT}] 2019-09-26 17:00:11,751 INFO [lettuce-eventExecutorLoop-1-1][AbstractInternalLogger.java:173] - Reconnecting, last destination was localhost:6379
+[${project.name}][${env:SERVER_PORT}] 2019-09-26 17:00:12,755 WARN [lettuce-nioEventLoop-4-4][AbstractInternalLogger.java:176] - Cannot reconnect: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:6379
+[${project.name}][${env:SERVER_PORT}] 2019-09-26 17:00:21,106 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-09-26 17:00:31,107 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms

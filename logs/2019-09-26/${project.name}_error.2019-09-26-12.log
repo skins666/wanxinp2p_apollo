@@ -1,0 +1,2 @@
+[${project.name}][${env:SERVER_PORT}] 2019-09-26 14:21:01,056 ERROR [http-nio-53050-exec-4][GlobalExceptionHandler.java:47] - 【系统异常】null
+[${project.name}][${env:SERVER_PORT}] 2019-09-26 14:24:20,526 ERROR [http-nio-53050-exec-5][GlobalExceptionHandler.java:47] - 【系统异常】null

@@ -1,6 +1,8 @@
 package cn.itcast.wanxinp2p.transaction.agent;
 
+import cn.itcast.wanxinp2p.api.depository.model.LoanRequest;
 import cn.itcast.wanxinp2p.api.depository.model.UserAutoPreTransactionRequest;
+import cn.itcast.wanxinp2p.api.transaction.model.ModifyProjectStatusDTO;
 import cn.itcast.wanxinp2p.api.transaction.model.ProjectDTO;
 import cn.itcast.wanxinp2p.common.domain.RestResponse;
 import org.springframework.cloud.openfeign.FeignClient;
@@ -15,4 +17,18 @@ public interface DepositoryAgentApiAgent {
     @PostMapping("/depository-agent/l/user-auto-pre-transaction")
     RestResponse<String> userAutoPreTransaction(
             UserAutoPreTransactionRequest userAutoPreTransactionRequest);
+
+
+    @PostMapping("/depository-agent/l/confirm-loan")
+    RestResponse<String> confirmLoan(LoanRequest loanRequest);
+
+
+    /**
+     * 修改标的状态
+     * @param modifyProjectStatusDTO
+     * @return
+     */
+    @PostMapping("/depository-agent/l/modify-project-status")
+    RestResponse<String> modifyProjectStatus(ModifyProjectStatusDTO modifyProjectStatusDTO);
+
 }

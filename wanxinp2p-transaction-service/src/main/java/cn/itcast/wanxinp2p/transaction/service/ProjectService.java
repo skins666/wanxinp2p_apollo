@@ -72,4 +72,7 @@ public interface ProjectService {
         */
     TenderDTO createTender(ProjectInvestDTO projectInvestDTO);
 
+
+    String loansApprovalStatus(Long id, String approveStatus,String commission);
+
 }

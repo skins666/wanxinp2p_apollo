@@ -1,0 +1,12 @@
+[${project.name}][${env:SERVER_PORT}] 2019-11-22 20:37:29,684 INFO [DiscoveryClient-HeartbeatExecutor-0][DiscoveryClient.java:850] - DiscoveryClient_TRANSACTION-SERVICE/transaction-service:192.168.232.1:53060 - Re-registering apps/TRANSACTION-SERVICE
+[${project.name}][${env:SERVER_PORT}] 2019-11-22 20:37:29,685 INFO [DiscoveryClient-HeartbeatExecutor-0][DiscoveryClient.java:826] - DiscoveryClient_TRANSACTION-SERVICE/transaction-service:192.168.232.1:53060: registering service...
+[${project.name}][${env:SERVER_PORT}] 2019-11-22 20:37:29,688 INFO [DiscoveryClient-HeartbeatExecutor-0][DiscoveryClient.java:835] - DiscoveryClient_TRANSACTION-SERVICE/transaction-service:192.168.232.1:53060 - registration status: 204
+[${project.name}][${env:SERVER_PORT}] 2019-11-22 20:37:30,192 INFO [http-nio-53000-exec-10][AbstractInstanceRegistry.java:266] - Registered instance TRANSACTION-SERVICE/transaction-service:192.168.232.1:53060 with status UP (replication=true)
+[${project.name}][${env:SERVER_PORT}] 2019-11-22 20:37:31,065 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-11-22 20:37:33,071 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-11-22 20:37:33,455 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-11-22 20:37:33,661 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-11-22 20:37:36,384 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-11-22 20:37:36,384 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:611] - Evicting 1 items (expired=2, evictionLimit=1)
+[${project.name}][${env:SERVER_PORT}] 2019-11-22 20:37:36,384 WARN [Eureka-EvictionTimer][AbstractInstanceRegistry.java:623] - DS: Registry: expired lease for UAA-SERVICE/uaa-service:192.168.232.1:53020
+[${project.name}][${env:SERVER_PORT}] 2019-11-22 20:37:36,384 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:330] - Cancelled instance UAA-SERVICE/uaa-service:192.168.232.1:53020 (replication=false)

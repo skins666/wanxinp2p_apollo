@@ -133,6 +133,8 @@ public class TransactionController implements TransactionApi {
     })
     @PutMapping("/m/loans/{id}/projectStatus/{approveStatus}")
     public RestResponse<String> loansApprovalStatus(@PathVariable("id") Long id, @PathVariable("approveStatus") String approveStatus, String commission) {
-        return null;
+
+        String s = projectService.loansApprovalStatus(id, approveStatus, commission);
+        return RestResponse.success(s);
     }
 }

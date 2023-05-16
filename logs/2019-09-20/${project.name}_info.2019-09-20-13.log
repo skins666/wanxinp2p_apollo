@@ -1,0 +1,4 @@
+[${project.name}][${env:SERVER_PORT}] 2019-09-20 14:04:37,979 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: uaa-service, cluster: DEFAULT, namespaces: application
+[${project.name}][${env:SERVER_PORT}] 2019-09-20 14:04:38,170 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-09-20 14:04:38,250 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-09-20 14:04:38,294 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
