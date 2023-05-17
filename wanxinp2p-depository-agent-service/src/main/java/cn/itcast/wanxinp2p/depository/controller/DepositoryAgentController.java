@@ -46,7 +46,7 @@ public class DepositoryAgentController implements DepositoryAgentApi {
     public RestResponse<String> createProject(@RequestBody ProjectDTO projectDTO) {
         DepositoryResponseDTO<DepositoryBaseResponse> depositoryResponse =
                 depositoryRecordService.createProject(projectDTO);
-        RestResponse<String> restResponse=new RestResponse  <String >();
+        RestResponse<String> restResponse=new RestResponse<String>();
         restResponse.setResult(depositoryResponse.getRespData().getRespCode());
         restResponse.setMsg(depositoryResponse.getRespData().getRespMsg());
         return restResponse;
@@ -70,7 +70,7 @@ public class DepositoryAgentController implements DepositoryAgentApi {
             true, dataType = "LoanRequest", paramType = "body")
     @PostMapping("l/confirm-loan")
     public RestResponse<String> confirmLoan(@RequestBody LoanRequest loanRequest) {
-        DepositoryResponseDTO<DepositoryBaseResponse> depositoryResponse = depositoryRecordService.confirmLoan(loanRequest);
+        DepositoryResponseDTO<DepositoryBaseResponse> depositoryResponse =depositoryRecordService.confirmLoan(loanRequest);
         return getRestResponse(depositoryResponse);
     }
 
@@ -81,11 +81,8 @@ public class DepositoryAgentController implements DepositoryAgentApi {
             paramType = "body")
     @PostMapping("l/modify-project-status")
     public RestResponse<String> modifyProjectStatus(@RequestBody ModifyProjectStatusDTO modifyProjectStatusDTO) {
-
-        DepositoryResponseDTO<DepositoryBaseResponse> depositoryBaseResponseDepositoryResponseDTO = depositoryRecordService.modifyProjectStatus(modifyProjectStatusDTO);
-
-
-        return getRestResponse(depositoryBaseResponseDepositoryResponseDTO);
+        DepositoryResponseDTO<DepositoryBaseResponse> depositoryResponseDTO=depositoryRecordService.modifyProjectStatus(modifyProjectStatusDTO);
+        return getRestResponse(depositoryResponseDTO);
     }
 
     /**

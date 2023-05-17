@@ -21,6 +21,7 @@ import cn.itcast.wanxinp2p.transaction.entity.Project;
 import cn.itcast.wanxinp2p.transaction.entity.Tender;
 import cn.itcast.wanxinp2p.transaction.mapper.ProjectMapper;
 import cn.itcast.wanxinp2p.transaction.mapper.TenderMapper;
+import cn.itcast.wanxinp2p.transaction.message.P2pTransactionProducer;
 import cn.itcast.wanxinp2p.transaction.model.LoginUser;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
@@ -32,6 +33,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -58,6 +60,9 @@ public class ProjectServiceImpl extends ServiceImpl<ProjectMapper, Project>
 
     @Autowired
     private TenderMapper tenderMapper;
+
+    @Autowired
+    private P2pTransactionProducer p2pTransactionProducer;
 
 
     @Override
@@ -381,104 +386,124 @@ public class ProjectServiceImpl extends ServiceImpl<ProjectMapper, Project>
 
     @Override
     public String loansApprovalStatus(Long id, String approveStatus, String commission) {
-        //一：第一阶段
-        //1.生成放款明细
-        //标的信息
-        Project project = this.getById(id);
-        //投标信息
-List<Tender> tenderList = tenderMapper.selectList(new QueryWrapper<Tender>().eq("project_id", id).eq("status", 1));
+        //第一阶段：1. 生成放款明细
+        // 标的信息
+        Project project=getById(id);
+        // 投标信息
+        QueryWrapper<Tender> queryWrapper=new QueryWrapper<>();
+        queryWrapper.lambda().eq(Tender::getProjectId,id);
+        List<Tender> tenderList=tenderMapper.selectList(queryWrapper);
+        // 生成放款明细
+        LoanRequest loanRequest=generateLoanRequest(project,tenderList,commission);
 
-  //二：第二阶段
-        //生成放款明细
-        LoanRequest loanRequest = generateLoanRequest(project, tenderList, commission);
-        //2.放款
-        //调用存管代理服务
-        RestResponse<String> stringRestResponse = depositoryAgentApiAgent.confirmLoan(loanRequest);
-        if (stringRestResponse.getResult().equals(DepositoryReturnCode.RETURN_CODE_00000.getCode())){
-            //3.修改投标信息的装填为已放款
-            updateTenderStatus(tenderList);
-
-            ModifyProjectStatusDTO modifyProjectStatusDTO = new ModifyProjectStatusDTO();
-            modifyProjectStatusDTO.setId(id);
+        //第二阶段：2. 放款
+        RestResponse<String> restResponse=depositoryAgentApiAgent.confirmLoan(loanRequest);
+        if(restResponse.getResult().equals(DepositoryReturnCode.RETURN_CODE_00000.getCode())){
+            updateTenderStatusAlreadyLoan(tenderList);
+            //第三阶段3. 修改状态
+            //创建请求参数对象
+            ModifyProjectStatusDTO modifyProjectStatusDTO=new ModifyProjectStatusDTO();
+            modifyProjectStatusDTO.setId(project.getId());
             modifyProjectStatusDTO.setProjectStatus(ProjectCode.REPAYING.getCode());
             modifyProjectStatusDTO.setRequestNo(loanRequest.getRequestNo());
-            //调用存管代理服务,如果成功，修改标的状态为还款中
+            modifyProjectStatusDTO.setProjectNo(project.getProjectNo());
+
+            //向存管代理服务发起请求
             RestResponse<String> modifyProjectStatus = depositoryAgentApiAgent.modifyProjectStatus(modifyProjectStatusDTO);
-            if (modifyProjectStatus.getResult().equals(DepositoryReturnCode.RETURN_CODE_00000.getCode())){
-                //
-                project.setProjectStatus(ProjectCode.REPAYING.getCode());
-                this.updateById(project);
-                //4.启动还款
+            if(modifyProjectStatus.getResult().equals(DepositoryReturnCode.RETURN_CODE_00000.getCode())){
+                //4. 启动还款
                 //准备数据
-                ProjectWithTendersDTO projectWithTendersDTO = new ProjectWithTendersDTO();
+                ProjectWithTendersDTO projectWithTendersDTO=new ProjectWithTendersDTO();
+                //1.标的信息
                 projectWithTendersDTO.setProject(convertProjectEntityToDTO(project));
-                List<TenderDTO> tenderDTOList = new ArrayList<>();
-                for (Tender tender : tenderList) {
-                    tenderDTOList.add(convertTenderEntityToDTO(tender));
-                }
-                projectWithTendersDTO.setTenders(tenderDTOList);
-
-
+                //2.投标信息
+                projectWithTendersDTO.setTenders(convertTenderEntityListToDTOList(tenderList));
+                //3.投资人让利
                 projectWithTendersDTO.setCommissionInvestorAnnualRate(configService.getCommissionInvestorAnnualRate());
-                projectWithTendersDTO.setCommissionBorrowerAnnualRate(configService.getCommissionBorrowerAnnualRate());
+                //4.借款人让利
+                projectWithTendersDTO.setCommissionBorrowerAnnualRate(configService.getBorrowerAnnualRate());
 
-                //涉及分布式事务，用RocketMQ解决
-                //先放一下
-                // TODO: 2023/5/16 RocketMQ解决
+                //涉及到分布式事务  通过RocketMQ
+                p2pTransactionProducer.updateProjectStatusAndStartRepayment(project,projectWithTendersDTO);
 
+                return "审核成功";
 
-            }else {
-                    throw new BusinessException(TransactionErrorCode.E_150113);
-                }
+            }else{
+                throw  new BusinessException(TransactionErrorCode.E_150113);
+            }
 
-        }else {
-            throw new BusinessException(TransactionErrorCode.E_150113);
+        }else{
+            throw  new BusinessException(TransactionErrorCode.E_150113);
         }
-        //3.修改状态
-        //4.启动还款
 
-        return "00000";
+
+
     }
-    //修改投标信息的装填为已放款
-    private void updateTenderStatus(List<Tender> tenderList) {
-        for (Tender tender : tenderList) {
+
+    @Transactional(rollbackFor = BusinessException.class)
+    @Override
+    public Boolean updateProjectStatusAndStartRepayment(Project project) {
+        //如果处理成功，就修改标的状态为还款中
+        project.setProjectStatus(ProjectCode.REPAYING.getCode());
+        return updateById(project);
+    }
+
+    /**
+     * 修改投标信息的状态为：已放款
+     */
+    private void updateTenderStatusAlreadyLoan(List<Tender> tenderList){
+        tenderList.forEach(tender -> {
             tender.setTenderStatus(TradingCode.LOAN.getCode());
             tenderMapper.updateById(tender);
-        }
-
-
+        });
     }
 
+    /**
+     * 根据标的和投标信息生成放款明细
+     */
     public LoanRequest generateLoanRequest(Project project, List<Tender> tenderList, String commission){
-        LoanRequest loanRequest = new LoanRequest();
+        LoanRequest loanRequest=new LoanRequest();
+
         //封装标的id
         loanRequest.setId(project.getId());
+
         //封装平台佣金
-        if (StringUtils.isEmpty(commission)){
-            BigDecimal commissionDecimal = new BigDecimal(commission);
-            loanRequest.setCommission(commissionDecimal);
+        if(StringUtils.isNotBlank(commission)){
+            loanRequest.setCommission(new BigDecimal(commission));
         }
+
         //封装标的编码
         loanRequest.setProjectNo(project.getProjectNo());
+
         //封装请求流水号
         loanRequest.setRequestNo(CodeNoUtil.getNo(CodePrefixCode.CODE_REQUEST_PREFIX));
-        //遍历tenderList，封装请求流水号
-        List<LoanDetailRequest> loanDetailRequests = new ArrayList<>();
-        for (Tender tender : tenderList) {
-            LoanDetailRequest loanDetailRequest = new LoanDetailRequest();
-           loanDetailRequest.setPreRequestNo(tender.getRequestNo());
-              loanDetailRequest.setAmount(tender.getAmount());
-            loanDetailRequests.add(loanDetailRequest);
-        }
-        loanRequest.setDetails(loanDetailRequests);
 
+        List<LoanDetailRequest> details=new ArrayList<>();
+        tenderList.forEach(tender -> {
+            LoanDetailRequest loanDetailRequest=new LoanDetailRequest();
+            loanDetailRequest.setAmount(tender.getAmount());
+            loanDetailRequest.setPreRequestNo(tender.getRequestNo());
+            details.add(loanDetailRequest);
+        });
 
-
+        loanRequest.setDetails(details);
 
         return loanRequest;
+
     }
 
-
+    private List<TenderDTO> convertTenderEntityListToDTOList(List<Tender> records) {
+        if (records == null) {
+            return null;
+        }
+        List<TenderDTO> dtoList = new ArrayList<>();
+        records.forEach(tender -> {
+            TenderDTO tenderDTO = new TenderDTO();
+            BeanUtils.copyProperties(tender, tenderDTO);
+            dtoList.add(tenderDTO);
+        });
+        return dtoList;
+    }
 
     private TenderDTO convertTenderEntityToDTO(Tender tender) {
         if (tender == null) {

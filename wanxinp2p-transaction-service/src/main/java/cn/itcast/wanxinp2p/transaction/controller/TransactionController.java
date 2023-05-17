@@ -115,11 +115,6 @@ public class TransactionController implements TransactionApi {
         return RestResponse.success(tenderDTO);
     }
 
-
-
-
-
-
     @Override
     @ApiOperation("审核标的满标放款")
     @ApiImplicitParams({
@@ -133,8 +128,7 @@ public class TransactionController implements TransactionApi {
     })
     @PutMapping("/m/loans/{id}/projectStatus/{approveStatus}")
     public RestResponse<String> loansApprovalStatus(@PathVariable("id") Long id, @PathVariable("approveStatus") String approveStatus, String commission) {
-
-        String s = projectService.loansApprovalStatus(id, approveStatus, commission);
-        return RestResponse.success(s);
+        String result=projectService.loansApprovalStatus(id,approveStatus,commission);
+        return RestResponse.success(result);
     }
 }

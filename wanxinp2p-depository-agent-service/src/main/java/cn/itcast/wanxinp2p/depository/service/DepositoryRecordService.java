@@ -14,7 +14,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
 public interface DepositoryRecordService extends IService<DepositoryRecord> {
     /**
      * 开通存管账户
-     *
      * @param consumerRequest 开户信息
      * @return
      */
@@ -22,34 +21,40 @@ public interface DepositoryRecordService extends IService<DepositoryRecord> {
 
     /**
      * 根据请求流水号更新请求状态
-     *
-     * @param requestNo
-     * @param requestsStatus
-     * @return
-     */
+    * @param requestNo
+    * @param requestsStatus
+    * @return
+        */
     Boolean modifyRequestStatus(String requestNo, Integer requestsStatus);
 
     /**
-     * 保存标的
-     *
-     * @param projectDTO
-     * @return
-     */
+        * 保存标的
+        * @param projectDTO
+        * @return
+        */
     DepositoryResponseDTO<DepositoryBaseResponse> createProject(ProjectDTO
                                                                         projectDTO);
 
     /**
      * 投标预处理
-     *
      * @param userAutoPreTransactionRequest
      * @return
      */
     DepositoryResponseDTO<DepositoryBaseResponse>
-    userAutoPreTransaction(UserAutoPreTransactionRequest userAutoPreTransactionRequest);
+    userAutoPreTransaction(UserAutoPreTransactionRequest   userAutoPreTransactionRequest);
 
-    DepositoryResponseDTO confirmLoan(LoanRequest loanRequest);
+    /**
+       * 审核满标放款
+        * @param loanRequest
+        * @return
+        */
+    DepositoryResponseDTO<DepositoryBaseResponse> confirmLoan(LoanRequest  loanRequest);
 
-
-    DepositoryResponseDTO<DepositoryBaseResponse>   modifyProjectStatus(ModifyProjectStatusDTO modifyProjectStatusDTO);
-
+    /**
+     * 修改标的状态
+     * @param modifyProjectStatusDTO
+     * @return
+     */
+    DepositoryResponseDTO<DepositoryBaseResponse>
+    modifyProjectStatus(ModifyProjectStatusDTO modifyProjectStatusDTO);
 }

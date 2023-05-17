@@ -18,17 +18,9 @@ public interface DepositoryAgentApiAgent {
     RestResponse<String> userAutoPreTransaction(
             UserAutoPreTransactionRequest userAutoPreTransactionRequest);
 
-
     @PostMapping("/depository-agent/l/confirm-loan")
     RestResponse<String> confirmLoan(LoanRequest loanRequest);
 
-
-    /**
-     * 修改标的状态
-     * @param modifyProjectStatusDTO
-     * @return
-     */
     @PostMapping("/depository-agent/l/modify-project-status")
     RestResponse<String> modifyProjectStatus(ModifyProjectStatusDTO modifyProjectStatusDTO);
-
 }

@@ -26,7 +26,7 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDateTime;
 
 @Service
-public class DepositoryRecordServiceImpl extends ServiceImpl<DepositoryRecordMapper, DepositoryRecord> implements DepositoryRecordService {
+public class DepositoryRecordServiceImpl extends ServiceImpl<DepositoryRecordMapper, DepositoryRecord> implements DepositoryRecordService{
 
     @Autowired
     private ConfigService configService;
@@ -44,9 +44,9 @@ public class DepositoryRecordServiceImpl extends ServiceImpl<DepositoryRecordMap
         saveDepositoryRecord(consumerRequest);
 
         //2.签名数据并返回
-        String reqData = JSON.toJSONString(consumerRequest);
-        String sign = RSAUtil.sign(reqData, configService.getP2pPrivateKey(), "utf-8");
-        GatewayRequest gatewayRequest = new GatewayRequest();
+        String reqData=JSON.toJSONString(consumerRequest);
+        String sign=RSAUtil.sign(reqData,configService.getP2pPrivateKey(),"utf-8");
+        GatewayRequest gatewayRequest=new GatewayRequest();
         gatewayRequest.setServiceName("PERSONAL_REGISTER");
         gatewayRequest.setPlatformNo(configService.getP2pCode());
         gatewayRequest.setReqData(EncryptUtil.encodeURL(EncryptUtil
@@ -87,35 +87,31 @@ public class DepositoryRecordServiceImpl extends ServiceImpl<DepositoryRecordMap
                 convertProjectDTOToProjectRequestDataDTO(projectDTO,
                         depositoryRecord.getRequestNo());
         //转换为JSON
-        String jsonString = JSON.toJSONString(projectRequestDataDTO);
+        String jsonString=JSON.toJSONString(projectRequestDataDTO);
         //base64
-        String reqData = EncryptUtil.encodeUTF8StringBase64(jsonString);
+        String reqData=EncryptUtil.encodeUTF8StringBase64(jsonString);
 
         //3. 往银行存管系统发送数据(标的信息),根据结果修改状态并返回结果
         // url地址   发送哪些数据
-        String url = configService.getDepositoryUrl() + "/service";
+        String url=configService.getDepositoryUrl()+"/service";
         // 怎么发  OKHttpClient   发送Http请求
-        return sendHttpGet("CREATE_PROJECT", url, reqData, depositoryRecord);
+        return sendHttpGet("CREATE_PROJECT",url,reqData,depositoryRecord);
 
-    }
+      }
 
-    /**
-     * @param userAutoPreTransactionRequest
-     * @return
-     */
     @Override
     public DepositoryResponseDTO<DepositoryBaseResponse> userAutoPreTransaction(UserAutoPreTransactionRequest userAutoPreTransactionRequest) {
         //1. 保存交易记录（实现幂等性）
-        DepositoryRecord depositoryRecord = new DepositoryRecord(userAutoPreTransactionRequest.getRequestNo(), userAutoPreTransactionRequest.getBizType(), "UserAutoPreTransactionRequest", userAutoPreTransactionRequest.getId());
-        DepositoryResponseDTO<DepositoryBaseResponse> responseDTO = handleIdempotent(depositoryRecord);
-        if (responseDTO != null) {
+        DepositoryRecord depositoryRecord=new DepositoryRecord(userAutoPreTransactionRequest.getRequestNo(),userAutoPreTransactionRequest.getBizType(),"UserAutoPreTransactionRequest",userAutoPreTransactionRequest.getId());
+        DepositoryResponseDTO<DepositoryBaseResponse> responseDTO=handleIdempotent(depositoryRecord);
+        if(responseDTO!=null){
             return responseDTO;
         }
         depositoryRecord = getEntityByRequestNo(userAutoPreTransactionRequest.getRequestNo());
 
         //2. 签名
-        String jsonString = JSON.toJSONString(userAutoPreTransactionRequest);
-        String reqData = EncryptUtil.encodeUTF8StringBase64(jsonString);
+        String jsonString=JSON.toJSONString(userAutoPreTransactionRequest);
+        String reqData=EncryptUtil.encodeUTF8StringBase64(jsonString);
 
         //3. 发送数据到银行存管系统
         String url = configService.getDepositoryUrl() + "/service";
@@ -124,55 +120,51 @@ public class DepositoryRecordServiceImpl extends ServiceImpl<DepositoryRecordMap
     }
 
     @Override
-    public DepositoryResponseDTO confirmLoan(LoanRequest loanRequest) {
-        DepositoryRecord loanRequest1 = new DepositoryRecord(loanRequest.getRequestNo(),
-                DepositoryRequestTypeCode.FULL_LOAN.getCode(),
-                "LoanRequest",
-                loanRequest.getId());
-        //幂等性
-        DepositoryResponseDTO<DepositoryBaseResponse> responseDTO = handleIdempotent(loanRequest1);
-        if (responseDTO != null) {
+    public DepositoryResponseDTO<DepositoryBaseResponse> confirmLoan(LoanRequest loanRequest) {
+        DepositoryRecord depositoryRecord=new DepositoryRecord(loanRequest.getRequestNo(),DepositoryRequestTypeCode.FULL_LOAN.getCode(),"LoanRequest",loanRequest.getId());
+        //幂等性实现
+        DepositoryResponseDTO<DepositoryBaseResponse> responseDTO=handleIdempotent(depositoryRecord);
+        if(responseDTO!=null){
             return responseDTO;
         }
-        //根据requestNo获取交易记录
-        loanRequest1 = getEntityByRequestNo(loanRequest.getRequestNo());
+
+        depositoryRecord=getEntityByRequestNo(loanRequest.getRequestNo());
+
         //准备签名
-        String jsonString = JSON.toJSONString(loanRequest);
-        String reqData = EncryptUtil.encodeUTF8StringBase64(jsonString);
+        String jsonString=JSON.toJSONString(loanRequest);
+        String reqData=EncryptUtil.encodeUTF8StringBase64(jsonString);
+
         //发送数据到银行存管系统
-        return sendHttpGet("CONFIRM_LOAN", configService.getDepositoryUrl() + "/service", reqData, loanRequest1);
-
-
+        String url = configService.getDepositoryUrl() + "/service";
+        return sendHttpGet("CONFIRM_LOAN",url,reqData,depositoryRecord);
     }
 
     @Override
     public DepositoryResponseDTO<DepositoryBaseResponse> modifyProjectStatus(ModifyProjectStatusDTO modifyProjectStatusDTO) {
-        DepositoryRecord depositoryRecord = new DepositoryRecord();
-        depositoryRecord.setRequestNo(modifyProjectStatusDTO.getRequestNo());
-        depositoryRecord.setRequestType(DepositoryRequestTypeCode.MODIFY_STATUS.getCode());
-        depositoryRecord.setObjectType("Project");
-        depositoryRecord.setObjectId(modifyProjectStatusDTO.getId());
-        //幂等性
-        DepositoryResponseDTO<DepositoryBaseResponse> responseDTO = handleIdempotent(depositoryRecord);
-        if (responseDTO != null) {
-            return responseDTO;
+        DepositoryRecord depositoryRecord=new DepositoryRecord(modifyProjectStatusDTO.getRequestNo(),DepositoryRequestTypeCode.MODIFY_STATUS.getCode(),"Project",modifyProjectStatusDTO.getId());
+
+        //幂等性实现
+        DepositoryResponseDTO<DepositoryBaseResponse> responseDTO=handleIdempotent(depositoryRecord);
+
+        if(responseDTO!=null){
+          return responseDTO;
         }
-        //根据requestNo获取交易记录
-        depositoryRecord = getEntityByRequestNo(modifyProjectStatusDTO.getRequestNo());
+
+        depositoryRecord=getEntityByRequestNo(modifyProjectStatusDTO.getRequestNo());
+
         //准备签名
-        String jsonString = JSON.toJSONString(modifyProjectStatusDTO);
-        String reqData = EncryptUtil.encodeUTF8StringBase64(jsonString);
+        String jsonString=JSON.toJSONString(modifyProjectStatusDTO);
+        String reqData=EncryptUtil.encodeUTF8StringBase64(jsonString);
+
         //发送数据到银行存管系统
-        return sendHttpGet("MODIFY_PROJECT", configService.getDepositoryUrl() + "/service", reqData, depositoryRecord);
+        String url = configService.getDepositoryUrl() + "/service";
+        return sendHttpGet("MODIFY_PROJECT",url,reqData,depositoryRecord);
     }
-
-
-
 
 
     private DepositoryResponseDTO<DepositoryBaseResponse> sendHttpGet(
             String serviceName, String url, String reqData,
-            DepositoryRecord depositoryRecord) {
+            DepositoryRecord depositoryRecord){
         // 银行存管系统接收的4大参数: serviceName, platformNo, reqData, signature
         // signature会在okHttp拦截器(SignatureInterceptor)中处理
         // 平台编号
@@ -184,8 +176,7 @@ public class DepositoryRecordServiceImpl extends ServiceImpl<DepositoryRecordMap
                         platformNo + "&reqData=" + reqData);
         DepositoryResponseDTO<DepositoryBaseResponse> depositoryResponse = JSON
                 .parseObject(responseBody,
-                        new TypeReference<DepositoryResponseDTO<DepositoryBaseResponse>>() {
-                        });
+                        new TypeReference<DepositoryResponseDTO<DepositoryBaseResponse>>(){});
 
         //封装返回的处理结果
         depositoryRecord.setResponseData(responseBody);
@@ -214,18 +205,17 @@ public class DepositoryRecordServiceImpl extends ServiceImpl<DepositoryRecordMap
 
     private ProjectRequestDataDTO convertProjectDTOToProjectRequestDataDTO(
             ProjectDTO projectDTO, String requestNo) {
-        if (projectDTO == null) {
+        if(projectDTO==null){
             return null;
         }
         ProjectRequestDataDTO requestDataDTO = new ProjectRequestDataDTO();
-        BeanUtils.copyProperties(projectDTO, requestDataDTO);
+        BeanUtils.copyProperties(projectDTO,requestDataDTO);
         requestDataDTO.setRequestNo(requestNo);
         return requestDataDTO;
     }
-
     /**
      * 保存交易记录
-     */
+    */
     private DepositoryRecord saveDepositoryRecord(String requestNo,
                                                   String requestType,
                                                   String objectType,
@@ -262,8 +252,8 @@ public class DepositoryRecordServiceImpl extends ServiceImpl<DepositoryRecordMap
         return depositoryRecord;
     }
 
-    private void saveDepositoryRecord(ConsumerRequest consumerRequest) {
-        DepositoryRecord depositoryRecord = new DepositoryRecord();
+    private void saveDepositoryRecord(ConsumerRequest consumerRequest){
+        DepositoryRecord depositoryRecord=new DepositoryRecord();
         depositoryRecord.setRequestNo(consumerRequest.getRequestNo());
         depositoryRecord.setRequestType(DepositoryRequestTypeCode.CONSUMER_CREATE.getCode());
         depositoryRecord.setObjectType("Consumer");
@@ -275,17 +265,16 @@ public class DepositoryRecordServiceImpl extends ServiceImpl<DepositoryRecordMap
 
     /**
      * 实现幂等性
-     *
      * @param depositoryRecord
      * @return
      */
     private DepositoryResponseDTO<DepositoryBaseResponse> handleIdempotent(DepositoryRecord depositoryRecord) {
         // 根据requestNo进行查询
-        String requestNo = depositoryRecord.getRequestNo();
-        DepositoryRecordDTO depositoryRecordDTO = getByRequestNo(requestNo);
+        String requestNo=depositoryRecord.getRequestNo();
+        DepositoryRecordDTO depositoryRecordDTO=getByRequestNo(requestNo);
 
         //1. 交易记录不存在,保存交易记录
-        if (null == depositoryRecordDTO) {
+        if(null==depositoryRecordDTO){
             saveDepositoryRecord(depositoryRecord);
             return null;
         }
@@ -307,7 +296,7 @@ public class DepositoryRecordServiceImpl extends ServiceImpl<DepositoryRecordMap
 
         //3. 交易记录已经存在，并且状态是“已同步”
         return JSON.parseObject(depositoryRecordDTO.getResponseData(),
-                new TypeReference<DepositoryResponseDTO<DepositoryBaseResponse>>() {
+                new TypeReference<DepositoryResponseDTO<DepositoryBaseResponse>>(){
                 });
     }
 
