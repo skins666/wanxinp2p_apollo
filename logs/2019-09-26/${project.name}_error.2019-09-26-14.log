@@ -1,11 +1,11 @@
-[${project.name}][${env:SERVER_PORT}] 2019-11-22 16:04:34,548 ERROR [http-nio-53060-exec-4][GlobalExceptionHandler.java:45] - 【系统异常】{}
+[${project.name}][${env:SERVER_PORT}] 2019-09-26 14:25:51,398 ERROR [http-nio-53060-exec-1][GlobalExceptionHandler.java:45] - 【系统异常】{}
 java.lang.NullPointerException
-	at cn.itcast.wanxinp2p.transaction.service.ProjectServiceImpl.createTender(ProjectServiceImpl.java:270)
+	at cn.itcast.wanxinp2p.transaction.service.ProjectServiceImpl.queryProjectsByQueryDTO(ProjectServiceImpl.java:130)
 	at cn.itcast.wanxinp2p.transaction.service.ProjectServiceImpl$$FastClassBySpringCGLIB$$997f0e9f.invoke(<generated>)
 	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
 	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:684)
-	at cn.itcast.wanxinp2p.transaction.service.ProjectServiceImpl$$EnhancerBySpringCGLIB$$867ed46.createTender(<generated>)
-	at cn.itcast.wanxinp2p.transaction.controller.TransactionController.createTender(TransactionController.java:114)
+	at cn.itcast.wanxinp2p.transaction.service.ProjectServiceImpl$$EnhancerBySpringCGLIB$$419bde52.queryProjectsByQueryDTO(<generated>)
+	at cn.itcast.wanxinp2p.transaction.controller.TransactionController.queryProjects(TransactionController.java:52)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

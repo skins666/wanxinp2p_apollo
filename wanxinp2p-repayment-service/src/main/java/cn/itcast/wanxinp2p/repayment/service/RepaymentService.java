@@ -1,8 +1,7 @@
 package cn.itcast.wanxinp2p.repayment.service;
 
-import cn.itcast.wanxinp2p.api.depository.model.UserAutoPreTransactionRequest;
+import cn.itcast.wanxinp2p.api.depository.model.RepaymentRequest;
 import cn.itcast.wanxinp2p.api.repayment.model.ProjectWithTendersDTO;
-import cn.itcast.wanxinp2p.api.repayment.model.RepaymentRequest;
 import cn.itcast.wanxinp2p.repayment.entity.RepaymentDetail;
 import cn.itcast.wanxinp2p.repayment.entity.RepaymentPlan;
 
@@ -17,44 +16,49 @@ public interface RepaymentService {
      */
     String startRepayment(ProjectWithTendersDTO projectWithTendersDTO);
 
-
     /**
-     * 查询到期还款计划
-     * @param date
+     * 查询所有到期的还款计划
+     * @param  date 格式：yyyy-MM-dd
      * @return
      */
-    List<RepaymentPlan>  SelectDueRepayment(String date);
-
+    List<RepaymentPlan> selectDueRepayment(String date);
 
     /**
-     * 根据保存计划保存还款明细
+     * 根据还款计划生成还款明细并保存
+     * @param repaymentPlan
+     * @return
      */
     RepaymentDetail saveRepaymentDetail(RepaymentPlan repaymentPlan);
 
-
-    UserAutoPreTransactionRequest generateUserAutoTranactionRequest(RepaymentPlan repaymentDetail, String requestNo);
-
-
     /**
-     * 执行还款
+     * 执行用户还款
      */
     void executeRepayment(String date);
 
     /**
-     * 预处理还款
-     * @param repaymentPlan 还款计划
-     * @param preRequestNo 预处理请求流水号
-     * @return
-     */
-
+         * 还款预处理：冻结借款人应还金额
+        * @param repaymentPlan
+        * @param preRequestNo
+        * @return
+        */
     Boolean preRepayment(RepaymentPlan repaymentPlan, String preRequestNo);
 
-
     /**
-     * .处理本地事务做更新
+     * 确认还款处理
      * @param repaymentPlan
      * @param repaymentRequest
      * @return
      */
-    Boolean confirmRepayment(RepaymentPlan repaymentPlan, RepaymentRequest repaymentRequest);
+    Boolean  confirmRepayment(RepaymentPlan repaymentPlan, RepaymentRequest
+            repaymentRequest);
+
+
+    /**
+     * 远程调用确认还款接口
+     * @param repaymentPlan
+     * @param repaymentRequest
+     */
+    void invokeConfirmRepayment(RepaymentPlan repaymentPlan, RepaymentRequest
+            repaymentRequest);
+
 }

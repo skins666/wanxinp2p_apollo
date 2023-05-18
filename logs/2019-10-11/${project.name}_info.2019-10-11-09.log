@@ -1,0 +1,1078 @@
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:16,929 INFO [main][DefaultApplicationProvider.java:85] - App ID is set to transaction-service by app.id property from System Property
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:16,937 INFO [main][DefaultServerProvider.java:108] - Environment is set to [dev] by JVM system property 'env'.
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:17,013 WARN [main][DefaultMetaServerProvider.java:39] - Could not find meta server address, because it is not available in neither (1) JVM system property 'apollo.meta', (2) OS env variable 'APOLLO_META' (3) property 'apollo.meta' from server.properties nor (4) property 'apollo.meta' from app.properties
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:17,019 INFO [main][MetaDomainConsts.java:93] - Located meta server address http://localhost:8080 for env DEV from com.ctrip.framework.apollo.core.internals.LegacyMetaServerProvider
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:17,157 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:17,271 WARN [main][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:18,279 WARN [main][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/transaction-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153 [Cause: [status code: 404] Could not find config for namespace - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:18,285 WARN [main][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:18,865 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:19,293 WARN [main][LocalFileConfigRepository.java:167] - Sync config from upstream repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository failed, reason: Load Apollo Config failed - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/transaction-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22transaction-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A285%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:19,299 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:19,607 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:20,304 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:20,613 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:21,313 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/transaction-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22transaction-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A285%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:21,318 WARN [main][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:22,333 WARN [main][LocalFileConfigRepository.java:167] - Sync config from upstream repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository failed, reason: Load Apollo Config failed - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/transaction-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22transaction-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A285%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:22,334 WARN [main][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.LocalFileConfigRepository, reason: Load config from local config failed! [Cause: Cannot read from local cache file C:\opt\data\transaction-service\config-cache\transaction-service+DEFAULT+micro_service.spring-cloud-feign.properties]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:22,338 WARN [main][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:23,346 WARN [main][LocalFileConfigRepository.java:167] - Sync config from upstream repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository failed, reason: Load Apollo Config failed - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/transaction-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22transaction-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A285%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:23,346 WARN [main][DefaultConfig.java:61] - Init Apollo Local Config failed - namespace: micro_service.spring-cloud-feign, reason: Load config from local config failed! [Cause: Cannot read from local cache file C:\opt\data\transaction-service\config-cache\transaction-service+DEFAULT+micro_service.spring-cloud-feign.properties].
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:23,376 WARN [main][DefaultConfig.java:95] - Could not load config for namespace micro_service.spring-cloud-feign from Apollo, please check whether the configs are released in Apollo! Return default value now!
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:23,377 INFO [main][SpringApplication.java:675] - No active profile set, falling back to default profiles: default
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:24,567 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:24,812 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:25,507 WARN [main][EndpointId.java:135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:25,580 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:26,016 INFO [main][GenericScope.java:294] - BeanFactory id=f157e5a2-1fbb-3c5c-8bee-cad928217bd5
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:26,097 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'cn.itcast.wanxinp2p.transaction.agent.ConsumerApiAgent' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:26,099 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'cn.itcast.wanxinp2p.transaction.agent.ContentSearchApiAgent' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:26,101 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'cn.itcast.wanxinp2p.transaction.agent.DepositoryAgentApiAgent' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:26,238 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$53df1432] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:26,290 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$6ff9172f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:26,585 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:26,811 INFO [main][TomcatWebServer.java:90] - Tomcat initialized with port(s): 53060 (http)
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:26,833 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-53060"]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:26,847 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:26,848 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:26,867 INFO [main][DirectJDKLog.java:173] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;C:\Program Files\nodejs\;C:\Ruby26-x64\bin;C:\Users\apple\AppData\Local\Microsoft\WindowsApps;E:\apache-maven-3.5.4\bin;C:\Users\apple\AppData\Roaming\npm;.]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:27,088 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:27,088 INFO [main][ServletWebServerApplicationContext.java:296] - Root WebApplicationContext: initialization completed in 3678 ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:27,282 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:27,284 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:27,297 INFO [main][DynamicPropertyFactory.java:281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4e6280de
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:28,300 INFO [main][DruidDataSource.java:1002] - {dataSource-1} inited
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:28,499 INFO [main][DruidDataSource.java:1002] - {dataSource-2} inited
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:28,866 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:30,903 INFO [main][EndpointLinksResolver.java:59] - Exposing 2 endpoint(s) beneath base path '/actuator'
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:31,069 INFO [main][PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:31,092 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:31,092 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:31,343 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:31,459 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:31,530 INFO [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService 'applicationTaskExecutor'
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:32,116 INFO [main][StdSchedulerFactory.java:1208] - Using default implementation for ThreadExecutor
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:32,135 INFO [main][SchedulerSignalerImpl.java:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:32,135 INFO [main][QuartzScheduler.java:229] - Quartz Scheduler v.2.3.0 created.
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:32,136 INFO [main][RAMJobStore.java:155] - RAMJobStore initialized.
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:32,137 INFO [main][QuartzScheduler.java:294] - Scheduler meta-data: Quartz Scheduler (v2.3.0) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:32,138 INFO [main][StdSchedulerFactory.java:1362] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:32,138 INFO [main][StdSchedulerFactory.java:1366] - Quartz scheduler version: 2.3.0
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:32,139 INFO [main][QuartzScheduler.java:2287] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@24bc06dd
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:32,683 INFO [main][InstanceInfoFactory.java:71] - Setting initial instance status as: STARTING
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:32,756 INFO [main][DiscoveryClient.java:349] - Initializing Eureka in region us-east-1
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:32,897 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:33,128 INFO [main][DiscoveryJerseyProvider.java:70] - Using JSON encoding codec LegacyJacksonJson
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:33,129 INFO [main][DiscoveryJerseyProvider.java:71] - Using JSON decoding codec LegacyJacksonJson
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:33,272 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:33,325 INFO [main][DiscoveryJerseyProvider.java:80] - Using XML encoding codec XStreamXml
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:33,325 INFO [main][DiscoveryJerseyProvider.java:81] - Using XML decoding codec XStreamXml
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:33,754 INFO [main][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:33,864 INFO [main][DiscoveryClient.java:958] - Disable delta property : false
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:33,864 INFO [main][DiscoveryClient.java:959] - Single vip registry refresh property : null
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:33,864 INFO [main][DiscoveryClient.java:960] - Force full registry fetch : false
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:33,865 INFO [main][DiscoveryClient.java:961] - Application is null : false
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:33,865 INFO [main][DiscoveryClient.java:962] - Registered Applications size is zero : true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:33,865 INFO [main][DiscoveryClient.java:964] - Application version is -1: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:33,865 INFO [main][DiscoveryClient.java:1047] - Getting all instance registry info from the eureka server
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:33,961 INFO [hmilyTransaction-hmily-transaction-self-recovery-14][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:34,027 INFO [hmilyTransaction-hmily-transaction-self-recovery-28][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:34,244 INFO [main][DiscoveryClient.java:1056] - The response status is 200
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:34,252 INFO [main][DiscoveryClient.java:1270] - Starting heartbeat executor: renew interval is: 30
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:34,268 INFO [main][InstanceInfoReplicator.java:60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:34,276 INFO [main][DiscoveryClient.java:449] - Discovery Client initialized at timestamp 1570544074273 with initial instances count: 8
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:34,282 INFO [main][EurekaServiceRegistry.java:42] - Registering application TRANSACTION-SERVICE with eureka with status UP
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:34,282 INFO [main][DiscoveryClient.java:1305] - Saw local status change event StatusChangeEvent [timestamp=1570544074282, current=UP, previous=STARTING]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:34,285 INFO [main][DocumentationPluginsBootstrapper.java:160] - Context refreshed
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:34,286 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:826] - DiscoveryClient_TRANSACTION-SERVICE/transaction-service:192.168.2.153:53060: registering service...
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:34,320 INFO [main][DocumentationPluginsBootstrapper.java:163] - Found 1 custom documentation plugin(s)
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:34,356 INFO [http-nio-53000-exec-9][AbstractInstanceRegistry.java:266] - Registered instance TRANSACTION-SERVICE/transaction-service:192.168.2.153:53060 with status UP (replication=false)
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:34,358 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:835] - DiscoveryClient_TRANSACTION-SERVICE/transaction-service:192.168.2.153:53060 - registration status: 204
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:34,367 INFO [main][ApiListingReferenceScanner.java:41] - Scanning for api listing references
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:34,620 INFO [main][CachingOperationNameGenerator.java:40] - Generating unique operation named: queryProjectsUsingPOST_1
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:34,664 INFO [main][SchedulerFactoryBean.java:726] - Starting Quartz Scheduler now
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:34,664 INFO [main][QuartzScheduler.java:547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:34,678 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-53060"]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:34,723 INFO [main][TomcatWebServer.java:204] - Tomcat started on port(s): 53060 (http) with context path '/transaction'
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:34,725 INFO [main][EurekaAutoServiceRegistration.java:141] - Updating port to 53060
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:34,728 INFO [main][StartupInfoLogger.java:59] - Started TransactionService in 19.824 seconds (JVM running for 23.498)
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:34,870 INFO [http-nio-53000-exec-8][AbstractInstanceRegistry.java:266] - Registered instance TRANSACTION-SERVICE/transaction-service:192.168.2.153:53060 with status UP (replication=true)
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:34,972 INFO [RMI TCP Connection(6)-127.0.0.1][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:34,973 INFO [RMI TCP Connection(6)-127.0.0.1][FrameworkServlet.java:524] - Initializing Servlet 'dispatcherServlet'
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:34,999 INFO [RMI TCP Connection(6)-127.0.0.1][FrameworkServlet.java:546] - Completed initialization in 25 ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:36,121 INFO [RMI TCP Connection(8)-127.0.0.1][SQLLogger.java:89] - Rule Type: sharding
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:36,122 INFO [RMI TCP Connection(8)-127.0.0.1][SQLLogger.java:89] - Logic SQL: /* ping */ SELECT 1
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:36,123 INFO [RMI TCP Connection(8)-127.0.0.1][SQLLogger.java:89] - SQLStatement: SelectStatement(super=DQLStatement(super=AbstractSQLStatement(type=DQL, tables=Tables(tables=[]), routeConditions=Conditions(orCondition=OrCondition(andConditions=[])), encryptConditions=Conditions(orCondition=OrCondition(andConditions=[])), sqlTokens=[], parametersIndex=0, logicSQL=/* ping */ SELECT 1)), containStar=false, firstSelectItemStartIndex=18, selectListStopIndex=18, groupByLastIndex=0, items=[CommonSelectItem(expression=1, alias=Optional.absent())], groupByItems=[], orderByItems=[], limit=null, subqueryStatement=null, subqueryStatements=[], subqueryConditions=[])
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:36,132 INFO [RMI TCP Connection(8)-127.0.0.1][SQLLogger.java:89] - Actual SQL: ds0 ::: /* ping */ SELECT 1
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:38,866 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:41,617 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:42,623 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:46,888 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:47,011 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:48,276 INFO [hmilyTransaction-hmily-transaction-self-recovery-42][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:48,867 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:51,069 INFO [hmilyTransaction-hmily-transaction-self-recovery-2][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:54,570 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:54,805 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:55,577 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:55,939 DEBUG [http-nio-53060-exec-1][BaseJdbcLogger.java:159] - ==>  Preparing: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT,REQUEST_NO FROM project WHERE ID=? 
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:55,989 DEBUG [http-nio-53060-exec-1][BaseJdbcLogger.java:159] - ==> Parameters: 2139483643803590657(Long)
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:56,177 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Rule Type: sharding
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:56,178 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Logic SQL: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT,REQUEST_NO FROM project WHERE ID=?
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:56,179 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - SQLStatement: SelectStatement(super=DQLStatement(super=AbstractSQLStatement(type=DQL, tables=Tables(tables=[Table(name=project, alias=Optional.absent())]), routeConditions=Conditions(orCondition=OrCondition(andConditions=[AndCondition(conditions=[Condition(column=Column(name=ID, tableName=project), operator=EQUAL, compareOperator==, positionValueMap={}, positionIndexMap={0=0})])])), encryptConditions=Conditions(orCondition=OrCondition(andConditions=[])), sqlTokens=[TableToken(tableName=project, quoteCharacter=NONE, schemaNameLength=0)], parametersIndex=1, logicSQL=SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT,REQUEST_NO FROM project WHERE ID=?)), containStar=false, firstSelectItemStartIndex=7, selectListStopIndex=204, groupByLastIndex=0, items=[CommonSelectItem(expression=ID, alias=Optional.absent()), CommonSelectItem(expression=CONSUMER_ID, alias=Optional.absent()), CommonSelectItem(expression=USER_NO, alias=Optional.absent()), CommonSelectItem(expression=PROJECT_NO, alias=Optional.absent()), CommonSelectItem(expression=NAME, alias=Optional.absent()), CommonSelectItem(expression=DESCRIPTION, alias=Optional.absent()), CommonSelectItem(expression=TYPE, alias=Optional.absent()), CommonSelectItem(expression=PERIOD, alias=Optional.absent()), CommonSelectItem(expression=ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=BORROWER_ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=COMMISSION_ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=REPAYMENT_WAY, alias=Optional.absent()), CommonSelectItem(expression=AMOUNT, alias=Optional.absent()), CommonSelectItem(expression=PROJECT_STATUS, alias=Optional.absent()), CommonSelectItem(expression=CREATE_DATE, alias=Optional.absent()), CommonSelectItem(expression=STATUS, alias=Optional.absent()), CommonSelectItem(expression=IS_ASSIGNMENT, alias=Optional.absent()), CommonSelectItem(expression=REQUEST_NO, alias=Optional.absent())], groupByItems=[], orderByItems=[], limit=null, subqueryStatement=null, subqueryStatements=[], subqueryConditions=[])
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:56,181 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds0 ::: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT,REQUEST_NO FROM project_1 WHERE ID=? ::: [2139483643803590657]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:56,182 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds1 ::: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT,REQUEST_NO FROM project_1 WHERE ID=? ::: [2139483643803590657]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:56,274 DEBUG [http-nio-53060-exec-1][BaseJdbcLogger.java:159] - <==      Total: 1
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:56,392 DEBUG [http-nio-53060-exec-1][BaseJdbcLogger.java:159] - ==>  Preparing: SELECT ID,CONSUMER_ID,CONSUMER_USERNAME,USER_NO,PROJECT_ID,PROJECT_NO,AMOUNT,TENDER_STATUS,CREATE_DATE,REQUEST_NO,STATUS,PROJECT_NAME,PROJECT_PERIOD,PROJECT_ANNUAL_RATE FROM tender WHERE PROJECT_ID = ? 
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:56,396 DEBUG [http-nio-53060-exec-1][BaseJdbcLogger.java:159] - ==> Parameters: 2139483643803590657(Long)
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:56,419 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Rule Type: sharding
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:56,420 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Logic SQL: SELECT  ID,CONSUMER_ID,CONSUMER_USERNAME,USER_NO,PROJECT_ID,PROJECT_NO,AMOUNT,TENDER_STATUS,CREATE_DATE,REQUEST_NO,STATUS,PROJECT_NAME,PROJECT_PERIOD,PROJECT_ANNUAL_RATE  FROM tender 
+ 
+ WHERE PROJECT_ID = ?
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:56,421 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - SQLStatement: SelectStatement(super=DQLStatement(super=AbstractSQLStatement(type=DQL, tables=Tables(tables=[Table(name=tender, alias=Optional.absent())]), routeConditions=Conditions(orCondition=OrCondition(andConditions=[AndCondition(conditions=[Condition(column=Column(name=PROJECT_ID, tableName=tender), operator=EQUAL, compareOperator==, positionValueMap={}, positionIndexMap={0=0})])])), encryptConditions=Conditions(orCondition=OrCondition(andConditions=[])), sqlTokens=[TableToken(tableName=tender, quoteCharacter=NONE, schemaNameLength=0)], parametersIndex=1, logicSQL=SELECT  ID,CONSUMER_ID,CONSUMER_USERNAME,USER_NO,PROJECT_ID,PROJECT_NO,AMOUNT,TENDER_STATUS,CREATE_DATE,REQUEST_NO,STATUS,PROJECT_NAME,PROJECT_PERIOD,PROJECT_ANNUAL_RATE  FROM tender 
+ 
+ WHERE PROJECT_ID = ?)), containStar=false, firstSelectItemStartIndex=8, selectListStopIndex=168, groupByLastIndex=0, items=[CommonSelectItem(expression=ID, alias=Optional.absent()), CommonSelectItem(expression=CONSUMER_ID, alias=Optional.absent()), CommonSelectItem(expression=CONSUMER_USERNAME, alias=Optional.absent()), CommonSelectItem(expression=USER_NO, alias=Optional.absent()), CommonSelectItem(expression=PROJECT_ID, alias=Optional.absent()), CommonSelectItem(expression=PROJECT_NO, alias=Optional.absent()), CommonSelectItem(expression=AMOUNT, alias=Optional.absent()), CommonSelectItem(expression=TENDER_STATUS, alias=Optional.absent()), CommonSelectItem(expression=CREATE_DATE, alias=Optional.absent()), CommonSelectItem(expression=REQUEST_NO, alias=Optional.absent()), CommonSelectItem(expression=STATUS, alias=Optional.absent()), CommonSelectItem(expression=PROJECT_NAME, alias=Optional.absent()), CommonSelectItem(expression=PROJECT_PERIOD, alias=Optional.absent()), CommonSelectItem(expression=PROJECT_ANNUAL_RATE, alias=Optional.absent())], groupByItems=[], orderByItems=[], limit=null, subqueryStatement=null, subqueryStatements=[], subqueryConditions=[])
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:56,422 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds0 ::: SELECT  ID,CONSUMER_ID,CONSUMER_USERNAME,USER_NO,PROJECT_ID,PROJECT_NO,AMOUNT,TENDER_STATUS,CREATE_DATE,REQUEST_NO,STATUS,PROJECT_NAME,PROJECT_PERIOD,PROJECT_ANNUAL_RATE  FROM tender_1 
+ 
+ WHERE PROJECT_ID = ? ::: [2139483643803590657]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:56,422 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds1 ::: SELECT  ID,CONSUMER_ID,CONSUMER_USERNAME,USER_NO,PROJECT_ID,PROJECT_NO,AMOUNT,TENDER_STATUS,CREATE_DATE,REQUEST_NO,STATUS,PROJECT_NAME,PROJECT_PERIOD,PROJECT_ANNUAL_RATE  FROM tender_1 
+ 
+ WHERE PROJECT_ID = ? ::: [2139483643803590657]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:56,433 DEBUG [http-nio-53060-exec-1][BaseJdbcLogger.java:159] - <==      Total: 5
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:56,587 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:56,810 INFO [http-nio-53060-exec-1][ChainedDynamicProperty.java:115] - Flipping property: depository-agent-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:56,849 INFO [http-nio-53060-exec-1][ShutdownEnabledTimer.java:58] - Shutdown hook installed for: NFLoadBalancer-PingTimer-depository-agent-service
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:56,850 INFO [http-nio-53060-exec-1][BaseLoadBalancer.java:197] - Client: depository-agent-service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=depository-agent-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:56,858 INFO [http-nio-53060-exec-1][DynamicServerListLoadBalancer.java:222] - Using serverListUpdater PollingServerListUpdater
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:56,880 INFO [http-nio-53060-exec-1][ChainedDynamicProperty.java:115] - Flipping property: depository-agent-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:56,884 INFO [http-nio-53060-exec-1][DynamicServerListLoadBalancer.java:150] - DynamicServerListLoadBalancer for client depository-agent-service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=depository-agent-service,current list of Servers=[192.168.2.153:53070],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.2.153:53070;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@63fbe610
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,652 DEBUG [http-nio-53060-exec-1][BaseJdbcLogger.java:159] - ==>  Preparing: UPDATE tender SET CONSUMER_ID=?, CONSUMER_USERNAME=?, USER_NO=?, PROJECT_ID=?, PROJECT_NO=?, AMOUNT=?, TENDER_STATUS=?, CREATE_DATE=?, REQUEST_NO=?, STATUS=?, PROJECT_NAME=?, PROJECT_PERIOD=?, PROJECT_ANNUAL_RATE=? WHERE ID=? 
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,657 DEBUG [http-nio-53060-exec-1][BaseJdbcLogger.java:159] - ==> Parameters: 1005(Long), 15378791985(String), USR_4DA8A46387E84B0DAC336317FB495F2E(String), 2139483643803590657(Long), PRO_B9825398446041CC9A22DFE6AA6F670B(String), 2000(BigDecimal), LOAN(String), 2019-10-08 20:15:51.0(Timestamp), REQ_4E58B03F6E5346DEA7414F9A093C58F9(String), 1(Integer), 左丘先生第1次借款(String), 360(Integer), 0.10(BigDecimal), 1(Long)
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,682 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Rule Type: sharding
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,682 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Logic SQL: UPDATE tender  SET CONSUMER_ID=?,
+CONSUMER_USERNAME=?,
+USER_NO=?,
+PROJECT_ID=?,
+PROJECT_NO=?,
+AMOUNT=?,
+TENDER_STATUS=?,
+CREATE_DATE=?,
+REQUEST_NO=?,
+STATUS=?,
+PROJECT_NAME=?,
+PROJECT_PERIOD=?,
+PROJECT_ANNUAL_RATE=?  WHERE ID=?
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,683 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - SQLStatement: DMLStatement(super=AbstractSQLStatement(type=DML, tables=Tables(tables=[Table(name=tender, alias=Optional.absent())]), routeConditions=Conditions(orCondition=OrCondition(andConditions=[])), encryptConditions=Conditions(orCondition=OrCondition(andConditions=[])), sqlTokens=[TableToken(tableName=tender, quoteCharacter=NONE, schemaNameLength=0)], parametersIndex=14, logicSQL=UPDATE tender  SET CONSUMER_ID=?,
+CONSUMER_USERNAME=?,
+USER_NO=?,
+PROJECT_ID=?,
+PROJECT_NO=?,
+AMOUNT=?,
+TENDER_STATUS=?,
+CREATE_DATE=?,
+REQUEST_NO=?,
+STATUS=?,
+PROJECT_NAME=?,
+PROJECT_PERIOD=?,
+PROJECT_ANNUAL_RATE=?  WHERE ID=?), deleteStatement=false, updateTableAlias={tender=tender}, updateColumnValues={Column(name=CONSUMER_ID, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@7650b15a, Column(name=CONSUMER_USERNAME, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@478c54ee, Column(name=USER_NO, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@56d1c972, Column(name=PROJECT_ID, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@6d80d719, Column(name=PROJECT_NO, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@1e297192, Column(name=AMOUNT, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@3ba76d9d, Column(name=TENDER_STATUS, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@63e5a9c2, Column(name=CREATE_DATE, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@83692b8, Column(name=REQUEST_NO, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@5d46d7cd, Column(name=STATUS, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@5d8d827d, Column(name=PROJECT_NAME, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@13e88bb7, Column(name=PROJECT_PERIOD, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@2ff77820, Column(name=PROJECT_ANNUAL_RATE, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@44e42aac}, whereStartIndex=217, whereStopIndex=226, whereParameterStartIndex=13, whereParameterEndIndex=13)
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,683 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds0 ::: UPDATE tender_0  SET CONSUMER_ID=?,
+CONSUMER_USERNAME=?,
+USER_NO=?,
+PROJECT_ID=?,
+PROJECT_NO=?,
+AMOUNT=?,
+TENDER_STATUS=?,
+CREATE_DATE=?,
+REQUEST_NO=?,
+STATUS=?,
+PROJECT_NAME=?,
+PROJECT_PERIOD=?,
+PROJECT_ANNUAL_RATE=?  WHERE ID=? ::: [1005, 15378791985, USR_4DA8A46387E84B0DAC336317FB495F2E, 2139483643803590657, PRO_B9825398446041CC9A22DFE6AA6F670B, 2000, LOAN, 2019-10-08T20:15:51.000+0800, REQ_4E58B03F6E5346DEA7414F9A093C58F9, 1, 左丘先生第1次借款, 360, 0.10, 1]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,684 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds0 ::: UPDATE tender_1  SET CONSUMER_ID=?,
+CONSUMER_USERNAME=?,
+USER_NO=?,
+PROJECT_ID=?,
+PROJECT_NO=?,
+AMOUNT=?,
+TENDER_STATUS=?,
+CREATE_DATE=?,
+REQUEST_NO=?,
+STATUS=?,
+PROJECT_NAME=?,
+PROJECT_PERIOD=?,
+PROJECT_ANNUAL_RATE=?  WHERE ID=? ::: [1005, 15378791985, USR_4DA8A46387E84B0DAC336317FB495F2E, 2139483643803590657, PRO_B9825398446041CC9A22DFE6AA6F670B, 2000, LOAN, 2019-10-08T20:15:51.000+0800, REQ_4E58B03F6E5346DEA7414F9A093C58F9, 1, 左丘先生第1次借款, 360, 0.10, 1]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,687 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds1 ::: UPDATE tender_0  SET CONSUMER_ID=?,
+CONSUMER_USERNAME=?,
+USER_NO=?,
+PROJECT_ID=?,
+PROJECT_NO=?,
+AMOUNT=?,
+TENDER_STATUS=?,
+CREATE_DATE=?,
+REQUEST_NO=?,
+STATUS=?,
+PROJECT_NAME=?,
+PROJECT_PERIOD=?,
+PROJECT_ANNUAL_RATE=?  WHERE ID=? ::: [1005, 15378791985, USR_4DA8A46387E84B0DAC336317FB495F2E, 2139483643803590657, PRO_B9825398446041CC9A22DFE6AA6F670B, 2000, LOAN, 2019-10-08T20:15:51.000+0800, REQ_4E58B03F6E5346DEA7414F9A093C58F9, 1, 左丘先生第1次借款, 360, 0.10, 1]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,687 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds1 ::: UPDATE tender_1  SET CONSUMER_ID=?,
+CONSUMER_USERNAME=?,
+USER_NO=?,
+PROJECT_ID=?,
+PROJECT_NO=?,
+AMOUNT=?,
+TENDER_STATUS=?,
+CREATE_DATE=?,
+REQUEST_NO=?,
+STATUS=?,
+PROJECT_NAME=?,
+PROJECT_PERIOD=?,
+PROJECT_ANNUAL_RATE=?  WHERE ID=? ::: [1005, 15378791985, USR_4DA8A46387E84B0DAC336317FB495F2E, 2139483643803590657, PRO_B9825398446041CC9A22DFE6AA6F670B, 2000, LOAN, 2019-10-08T20:15:51.000+0800, REQ_4E58B03F6E5346DEA7414F9A093C58F9, 1, 左丘先生第1次借款, 360, 0.10, 1]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,698 DEBUG [http-nio-53060-exec-1][BaseJdbcLogger.java:159] - <==    Updates: 1
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,702 DEBUG [http-nio-53060-exec-1][BaseJdbcLogger.java:159] - ==>  Preparing: UPDATE tender SET CONSUMER_ID=?, CONSUMER_USERNAME=?, USER_NO=?, PROJECT_ID=?, PROJECT_NO=?, AMOUNT=?, TENDER_STATUS=?, CREATE_DATE=?, REQUEST_NO=?, STATUS=?, PROJECT_NAME=?, PROJECT_PERIOD=?, PROJECT_ANNUAL_RATE=? WHERE ID=? 
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,708 DEBUG [http-nio-53060-exec-1][BaseJdbcLogger.java:159] - ==> Parameters: 7(Long), 18688886666(String), USR_F1B4FF5E1CD34FA680415162D548453C(String), 2139483643803590657(Long), PRO_B9825398446041CC9A22DFE6AA6F670B(String), 5000(BigDecimal), LOAN(String), 2019-09-01 21:11:50.0(Timestamp), REQ_4E58B03F6E5346DEA7414F9A093C58F6(String), 1(Integer), 左丘先生第1次借款(String), 360(Integer), 0.10(BigDecimal), 3(Long)
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,709 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Rule Type: sharding
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,709 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Logic SQL: UPDATE tender  SET CONSUMER_ID=?,
+CONSUMER_USERNAME=?,
+USER_NO=?,
+PROJECT_ID=?,
+PROJECT_NO=?,
+AMOUNT=?,
+TENDER_STATUS=?,
+CREATE_DATE=?,
+REQUEST_NO=?,
+STATUS=?,
+PROJECT_NAME=?,
+PROJECT_PERIOD=?,
+PROJECT_ANNUAL_RATE=?  WHERE ID=?
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,710 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - SQLStatement: DMLStatement(super=AbstractSQLStatement(type=DML, tables=Tables(tables=[Table(name=tender, alias=Optional.absent())]), routeConditions=Conditions(orCondition=OrCondition(andConditions=[])), encryptConditions=Conditions(orCondition=OrCondition(andConditions=[])), sqlTokens=[TableToken(tableName=tender, quoteCharacter=NONE, schemaNameLength=0)], parametersIndex=14, logicSQL=UPDATE tender  SET CONSUMER_ID=?,
+CONSUMER_USERNAME=?,
+USER_NO=?,
+PROJECT_ID=?,
+PROJECT_NO=?,
+AMOUNT=?,
+TENDER_STATUS=?,
+CREATE_DATE=?,
+REQUEST_NO=?,
+STATUS=?,
+PROJECT_NAME=?,
+PROJECT_PERIOD=?,
+PROJECT_ANNUAL_RATE=?  WHERE ID=?), deleteStatement=false, updateTableAlias={tender=tender}, updateColumnValues={Column(name=CONSUMER_ID, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@7650b15a, Column(name=CONSUMER_USERNAME, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@478c54ee, Column(name=USER_NO, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@56d1c972, Column(name=PROJECT_ID, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@6d80d719, Column(name=PROJECT_NO, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@1e297192, Column(name=AMOUNT, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@3ba76d9d, Column(name=TENDER_STATUS, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@63e5a9c2, Column(name=CREATE_DATE, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@83692b8, Column(name=REQUEST_NO, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@5d46d7cd, Column(name=STATUS, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@5d8d827d, Column(name=PROJECT_NAME, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@13e88bb7, Column(name=PROJECT_PERIOD, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@2ff77820, Column(name=PROJECT_ANNUAL_RATE, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@44e42aac}, whereStartIndex=217, whereStopIndex=226, whereParameterStartIndex=13, whereParameterEndIndex=13)
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,717 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds0 ::: UPDATE tender_0  SET CONSUMER_ID=?,
+CONSUMER_USERNAME=?,
+USER_NO=?,
+PROJECT_ID=?,
+PROJECT_NO=?,
+AMOUNT=?,
+TENDER_STATUS=?,
+CREATE_DATE=?,
+REQUEST_NO=?,
+STATUS=?,
+PROJECT_NAME=?,
+PROJECT_PERIOD=?,
+PROJECT_ANNUAL_RATE=?  WHERE ID=? ::: [7, 18688886666, USR_F1B4FF5E1CD34FA680415162D548453C, 2139483643803590657, PRO_B9825398446041CC9A22DFE6AA6F670B, 5000, LOAN, 2019-09-01T21:11:50.000+0800, REQ_4E58B03F6E5346DEA7414F9A093C58F6, 1, 左丘先生第1次借款, 360, 0.10, 3]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,718 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds0 ::: UPDATE tender_1  SET CONSUMER_ID=?,
+CONSUMER_USERNAME=?,
+USER_NO=?,
+PROJECT_ID=?,
+PROJECT_NO=?,
+AMOUNT=?,
+TENDER_STATUS=?,
+CREATE_DATE=?,
+REQUEST_NO=?,
+STATUS=?,
+PROJECT_NAME=?,
+PROJECT_PERIOD=?,
+PROJECT_ANNUAL_RATE=?  WHERE ID=? ::: [7, 18688886666, USR_F1B4FF5E1CD34FA680415162D548453C, 2139483643803590657, PRO_B9825398446041CC9A22DFE6AA6F670B, 5000, LOAN, 2019-09-01T21:11:50.000+0800, REQ_4E58B03F6E5346DEA7414F9A093C58F6, 1, 左丘先生第1次借款, 360, 0.10, 3]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,719 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds1 ::: UPDATE tender_0  SET CONSUMER_ID=?,
+CONSUMER_USERNAME=?,
+USER_NO=?,
+PROJECT_ID=?,
+PROJECT_NO=?,
+AMOUNT=?,
+TENDER_STATUS=?,
+CREATE_DATE=?,
+REQUEST_NO=?,
+STATUS=?,
+PROJECT_NAME=?,
+PROJECT_PERIOD=?,
+PROJECT_ANNUAL_RATE=?  WHERE ID=? ::: [7, 18688886666, USR_F1B4FF5E1CD34FA680415162D548453C, 2139483643803590657, PRO_B9825398446041CC9A22DFE6AA6F670B, 5000, LOAN, 2019-09-01T21:11:50.000+0800, REQ_4E58B03F6E5346DEA7414F9A093C58F6, 1, 左丘先生第1次借款, 360, 0.10, 3]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,720 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds1 ::: UPDATE tender_1  SET CONSUMER_ID=?,
+CONSUMER_USERNAME=?,
+USER_NO=?,
+PROJECT_ID=?,
+PROJECT_NO=?,
+AMOUNT=?,
+TENDER_STATUS=?,
+CREATE_DATE=?,
+REQUEST_NO=?,
+STATUS=?,
+PROJECT_NAME=?,
+PROJECT_PERIOD=?,
+PROJECT_ANNUAL_RATE=?  WHERE ID=? ::: [7, 18688886666, USR_F1B4FF5E1CD34FA680415162D548453C, 2139483643803590657, PRO_B9825398446041CC9A22DFE6AA6F670B, 5000, LOAN, 2019-09-01T21:11:50.000+0800, REQ_4E58B03F6E5346DEA7414F9A093C58F6, 1, 左丘先生第1次借款, 360, 0.10, 3]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,727 DEBUG [http-nio-53060-exec-1][BaseJdbcLogger.java:159] - <==    Updates: 1
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,730 DEBUG [http-nio-53060-exec-1][BaseJdbcLogger.java:159] - ==>  Preparing: UPDATE tender SET CONSUMER_ID=?, CONSUMER_USERNAME=?, USER_NO=?, PROJECT_ID=?, PROJECT_NO=?, AMOUNT=?, TENDER_STATUS=?, CREATE_DATE=?, REQUEST_NO=?, STATUS=?, PROJECT_NAME=?, PROJECT_PERIOD=?, PROJECT_ANNUAL_RATE=? WHERE ID=? 
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,733 DEBUG [http-nio-53060-exec-1][BaseJdbcLogger.java:159] - ==> Parameters: 1003(Long), 15378791983(String), USR_056F993E477147B88FA66E79A90BB500(String), 2139483643803590657(Long), PRO_B9825398446041CC9A22DFE6AA6F670B(String), 1000(BigDecimal), LOAN(String), 2019-09-26 15:32:04.0(Timestamp), REQ_4E58B03F6E5346DEA7414F9A093C58F8(String), 1(Integer), 左丘先生第1次借款(String), 360(Integer), 0.10(BigDecimal), 1177123657139892226(Long)
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,734 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Rule Type: sharding
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,735 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Logic SQL: UPDATE tender  SET CONSUMER_ID=?,
+CONSUMER_USERNAME=?,
+USER_NO=?,
+PROJECT_ID=?,
+PROJECT_NO=?,
+AMOUNT=?,
+TENDER_STATUS=?,
+CREATE_DATE=?,
+REQUEST_NO=?,
+STATUS=?,
+PROJECT_NAME=?,
+PROJECT_PERIOD=?,
+PROJECT_ANNUAL_RATE=?  WHERE ID=?
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,735 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - SQLStatement: DMLStatement(super=AbstractSQLStatement(type=DML, tables=Tables(tables=[Table(name=tender, alias=Optional.absent())]), routeConditions=Conditions(orCondition=OrCondition(andConditions=[])), encryptConditions=Conditions(orCondition=OrCondition(andConditions=[])), sqlTokens=[TableToken(tableName=tender, quoteCharacter=NONE, schemaNameLength=0)], parametersIndex=14, logicSQL=UPDATE tender  SET CONSUMER_ID=?,
+CONSUMER_USERNAME=?,
+USER_NO=?,
+PROJECT_ID=?,
+PROJECT_NO=?,
+AMOUNT=?,
+TENDER_STATUS=?,
+CREATE_DATE=?,
+REQUEST_NO=?,
+STATUS=?,
+PROJECT_NAME=?,
+PROJECT_PERIOD=?,
+PROJECT_ANNUAL_RATE=?  WHERE ID=?), deleteStatement=false, updateTableAlias={tender=tender}, updateColumnValues={Column(name=CONSUMER_ID, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@7650b15a, Column(name=CONSUMER_USERNAME, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@478c54ee, Column(name=USER_NO, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@56d1c972, Column(name=PROJECT_ID, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@6d80d719, Column(name=PROJECT_NO, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@1e297192, Column(name=AMOUNT, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@3ba76d9d, Column(name=TENDER_STATUS, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@63e5a9c2, Column(name=CREATE_DATE, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@83692b8, Column(name=REQUEST_NO, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@5d46d7cd, Column(name=STATUS, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@5d8d827d, Column(name=PROJECT_NAME, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@13e88bb7, Column(name=PROJECT_PERIOD, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@2ff77820, Column(name=PROJECT_ANNUAL_RATE, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@44e42aac}, whereStartIndex=217, whereStopIndex=226, whereParameterStartIndex=13, whereParameterEndIndex=13)
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,736 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds0 ::: UPDATE tender_0  SET CONSUMER_ID=?,
+CONSUMER_USERNAME=?,
+USER_NO=?,
+PROJECT_ID=?,
+PROJECT_NO=?,
+AMOUNT=?,
+TENDER_STATUS=?,
+CREATE_DATE=?,
+REQUEST_NO=?,
+STATUS=?,
+PROJECT_NAME=?,
+PROJECT_PERIOD=?,
+PROJECT_ANNUAL_RATE=?  WHERE ID=? ::: [1003, 15378791983, USR_056F993E477147B88FA66E79A90BB500, 2139483643803590657, PRO_B9825398446041CC9A22DFE6AA6F670B, 1000, LOAN, 2019-09-26T15:32:04.000+0800, REQ_4E58B03F6E5346DEA7414F9A093C58F8, 1, 左丘先生第1次借款, 360, 0.10, 1177123657139892226]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,738 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds0 ::: UPDATE tender_1  SET CONSUMER_ID=?,
+CONSUMER_USERNAME=?,
+USER_NO=?,
+PROJECT_ID=?,
+PROJECT_NO=?,
+AMOUNT=?,
+TENDER_STATUS=?,
+CREATE_DATE=?,
+REQUEST_NO=?,
+STATUS=?,
+PROJECT_NAME=?,
+PROJECT_PERIOD=?,
+PROJECT_ANNUAL_RATE=?  WHERE ID=? ::: [1003, 15378791983, USR_056F993E477147B88FA66E79A90BB500, 2139483643803590657, PRO_B9825398446041CC9A22DFE6AA6F670B, 1000, LOAN, 2019-09-26T15:32:04.000+0800, REQ_4E58B03F6E5346DEA7414F9A093C58F8, 1, 左丘先生第1次借款, 360, 0.10, 1177123657139892226]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,738 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds1 ::: UPDATE tender_0  SET CONSUMER_ID=?,
+CONSUMER_USERNAME=?,
+USER_NO=?,
+PROJECT_ID=?,
+PROJECT_NO=?,
+AMOUNT=?,
+TENDER_STATUS=?,
+CREATE_DATE=?,
+REQUEST_NO=?,
+STATUS=?,
+PROJECT_NAME=?,
+PROJECT_PERIOD=?,
+PROJECT_ANNUAL_RATE=?  WHERE ID=? ::: [1003, 15378791983, USR_056F993E477147B88FA66E79A90BB500, 2139483643803590657, PRO_B9825398446041CC9A22DFE6AA6F670B, 1000, LOAN, 2019-09-26T15:32:04.000+0800, REQ_4E58B03F6E5346DEA7414F9A093C58F8, 1, 左丘先生第1次借款, 360, 0.10, 1177123657139892226]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,739 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds1 ::: UPDATE tender_1  SET CONSUMER_ID=?,
+CONSUMER_USERNAME=?,
+USER_NO=?,
+PROJECT_ID=?,
+PROJECT_NO=?,
+AMOUNT=?,
+TENDER_STATUS=?,
+CREATE_DATE=?,
+REQUEST_NO=?,
+STATUS=?,
+PROJECT_NAME=?,
+PROJECT_PERIOD=?,
+PROJECT_ANNUAL_RATE=?  WHERE ID=? ::: [1003, 15378791983, USR_056F993E477147B88FA66E79A90BB500, 2139483643803590657, PRO_B9825398446041CC9A22DFE6AA6F670B, 1000, LOAN, 2019-09-26T15:32:04.000+0800, REQ_4E58B03F6E5346DEA7414F9A093C58F8, 1, 左丘先生第1次借款, 360, 0.10, 1177123657139892226]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,743 DEBUG [http-nio-53060-exec-1][BaseJdbcLogger.java:159] - <==    Updates: 1
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,749 DEBUG [http-nio-53060-exec-1][BaseJdbcLogger.java:159] - ==>  Preparing: UPDATE tender SET CONSUMER_ID=?, CONSUMER_USERNAME=?, USER_NO=?, PROJECT_ID=?, PROJECT_NO=?, AMOUNT=?, TENDER_STATUS=?, CREATE_DATE=?, REQUEST_NO=?, STATUS=?, PROJECT_NAME=?, PROJECT_PERIOD=?, PROJECT_ANNUAL_RATE=? WHERE ID=? 
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,752 DEBUG [http-nio-53060-exec-1][BaseJdbcLogger.java:159] - ==> Parameters: 1003(Long), 15378791983(String), USR_056F993E477147B88FA66E79A90BB500(String), 2139483643803590657(Long), PRO_B9825398446041CC9A22DFE6AA6F670B(String), 3550(BigDecimal), LOAN(String), 2019-09-26 15:48:26.0(Timestamp), REQ_28DE6CD60A9C49ABA2868830BDC07E42(String), 1(Integer), 左丘先生第1次借款(String), 360(Integer), 0.10(BigDecimal), 1177127772913938433(Long)
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,753 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Rule Type: sharding
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,754 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Logic SQL: UPDATE tender  SET CONSUMER_ID=?,
+CONSUMER_USERNAME=?,
+USER_NO=?,
+PROJECT_ID=?,
+PROJECT_NO=?,
+AMOUNT=?,
+TENDER_STATUS=?,
+CREATE_DATE=?,
+REQUEST_NO=?,
+STATUS=?,
+PROJECT_NAME=?,
+PROJECT_PERIOD=?,
+PROJECT_ANNUAL_RATE=?  WHERE ID=?
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,755 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - SQLStatement: DMLStatement(super=AbstractSQLStatement(type=DML, tables=Tables(tables=[Table(name=tender, alias=Optional.absent())]), routeConditions=Conditions(orCondition=OrCondition(andConditions=[])), encryptConditions=Conditions(orCondition=OrCondition(andConditions=[])), sqlTokens=[TableToken(tableName=tender, quoteCharacter=NONE, schemaNameLength=0)], parametersIndex=14, logicSQL=UPDATE tender  SET CONSUMER_ID=?,
+CONSUMER_USERNAME=?,
+USER_NO=?,
+PROJECT_ID=?,
+PROJECT_NO=?,
+AMOUNT=?,
+TENDER_STATUS=?,
+CREATE_DATE=?,
+REQUEST_NO=?,
+STATUS=?,
+PROJECT_NAME=?,
+PROJECT_PERIOD=?,
+PROJECT_ANNUAL_RATE=?  WHERE ID=?), deleteStatement=false, updateTableAlias={tender=tender}, updateColumnValues={Column(name=CONSUMER_ID, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@7650b15a, Column(name=CONSUMER_USERNAME, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@478c54ee, Column(name=USER_NO, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@56d1c972, Column(name=PROJECT_ID, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@6d80d719, Column(name=PROJECT_NO, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@1e297192, Column(name=AMOUNT, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@3ba76d9d, Column(name=TENDER_STATUS, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@63e5a9c2, Column(name=CREATE_DATE, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@83692b8, Column(name=REQUEST_NO, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@5d46d7cd, Column(name=STATUS, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@5d8d827d, Column(name=PROJECT_NAME, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@13e88bb7, Column(name=PROJECT_PERIOD, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@2ff77820, Column(name=PROJECT_ANNUAL_RATE, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@44e42aac}, whereStartIndex=217, whereStopIndex=226, whereParameterStartIndex=13, whereParameterEndIndex=13)
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,755 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds0 ::: UPDATE tender_0  SET CONSUMER_ID=?,
+CONSUMER_USERNAME=?,
+USER_NO=?,
+PROJECT_ID=?,
+PROJECT_NO=?,
+AMOUNT=?,
+TENDER_STATUS=?,
+CREATE_DATE=?,
+REQUEST_NO=?,
+STATUS=?,
+PROJECT_NAME=?,
+PROJECT_PERIOD=?,
+PROJECT_ANNUAL_RATE=?  WHERE ID=? ::: [1003, 15378791983, USR_056F993E477147B88FA66E79A90BB500, 2139483643803590657, PRO_B9825398446041CC9A22DFE6AA6F670B, 3550, LOAN, 2019-09-26T15:48:26.000+0800, REQ_28DE6CD60A9C49ABA2868830BDC07E42, 1, 左丘先生第1次借款, 360, 0.10, 1177127772913938433]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,757 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds0 ::: UPDATE tender_1  SET CONSUMER_ID=?,
+CONSUMER_USERNAME=?,
+USER_NO=?,
+PROJECT_ID=?,
+PROJECT_NO=?,
+AMOUNT=?,
+TENDER_STATUS=?,
+CREATE_DATE=?,
+REQUEST_NO=?,
+STATUS=?,
+PROJECT_NAME=?,
+PROJECT_PERIOD=?,
+PROJECT_ANNUAL_RATE=?  WHERE ID=? ::: [1003, 15378791983, USR_056F993E477147B88FA66E79A90BB500, 2139483643803590657, PRO_B9825398446041CC9A22DFE6AA6F670B, 3550, LOAN, 2019-09-26T15:48:26.000+0800, REQ_28DE6CD60A9C49ABA2868830BDC07E42, 1, 左丘先生第1次借款, 360, 0.10, 1177127772913938433]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,758 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds1 ::: UPDATE tender_0  SET CONSUMER_ID=?,
+CONSUMER_USERNAME=?,
+USER_NO=?,
+PROJECT_ID=?,
+PROJECT_NO=?,
+AMOUNT=?,
+TENDER_STATUS=?,
+CREATE_DATE=?,
+REQUEST_NO=?,
+STATUS=?,
+PROJECT_NAME=?,
+PROJECT_PERIOD=?,
+PROJECT_ANNUAL_RATE=?  WHERE ID=? ::: [1003, 15378791983, USR_056F993E477147B88FA66E79A90BB500, 2139483643803590657, PRO_B9825398446041CC9A22DFE6AA6F670B, 3550, LOAN, 2019-09-26T15:48:26.000+0800, REQ_28DE6CD60A9C49ABA2868830BDC07E42, 1, 左丘先生第1次借款, 360, 0.10, 1177127772913938433]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,758 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds1 ::: UPDATE tender_1  SET CONSUMER_ID=?,
+CONSUMER_USERNAME=?,
+USER_NO=?,
+PROJECT_ID=?,
+PROJECT_NO=?,
+AMOUNT=?,
+TENDER_STATUS=?,
+CREATE_DATE=?,
+REQUEST_NO=?,
+STATUS=?,
+PROJECT_NAME=?,
+PROJECT_PERIOD=?,
+PROJECT_ANNUAL_RATE=?  WHERE ID=? ::: [1003, 15378791983, USR_056F993E477147B88FA66E79A90BB500, 2139483643803590657, PRO_B9825398446041CC9A22DFE6AA6F670B, 3550, LOAN, 2019-09-26T15:48:26.000+0800, REQ_28DE6CD60A9C49ABA2868830BDC07E42, 1, 左丘先生第1次借款, 360, 0.10, 1177127772913938433]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,764 DEBUG [http-nio-53060-exec-1][BaseJdbcLogger.java:159] - <==    Updates: 1
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,768 DEBUG [http-nio-53060-exec-1][BaseJdbcLogger.java:159] - ==>  Preparing: UPDATE tender SET CONSUMER_ID=?, CONSUMER_USERNAME=?, USER_NO=?, PROJECT_ID=?, PROJECT_NO=?, AMOUNT=?, TENDER_STATUS=?, CREATE_DATE=?, REQUEST_NO=?, STATUS=?, PROJECT_NAME=?, PROJECT_PERIOD=?, PROJECT_ANNUAL_RATE=? WHERE ID=? 
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,774 DEBUG [http-nio-53060-exec-1][BaseJdbcLogger.java:159] - ==> Parameters: 1003(Long), 15378791983(String), USR_056F993E477147B88FA66E79A90BB500(String), 2139483643803590657(Long), PRO_B9825398446041CC9A22DFE6AA6F670B(String), 450(BigDecimal), LOAN(String), 2019-09-26 15:58:32.0(Timestamp), REQ_79E41F22D0ED44208B0E2B345253E3B7(String), 1(Integer), 左丘先生第1次借款(String), 360(Integer), 0.10(BigDecimal), 1177130315421409282(Long)
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,775 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Rule Type: sharding
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,776 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Logic SQL: UPDATE tender  SET CONSUMER_ID=?,
+CONSUMER_USERNAME=?,
+USER_NO=?,
+PROJECT_ID=?,
+PROJECT_NO=?,
+AMOUNT=?,
+TENDER_STATUS=?,
+CREATE_DATE=?,
+REQUEST_NO=?,
+STATUS=?,
+PROJECT_NAME=?,
+PROJECT_PERIOD=?,
+PROJECT_ANNUAL_RATE=?  WHERE ID=?
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,776 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - SQLStatement: DMLStatement(super=AbstractSQLStatement(type=DML, tables=Tables(tables=[Table(name=tender, alias=Optional.absent())]), routeConditions=Conditions(orCondition=OrCondition(andConditions=[])), encryptConditions=Conditions(orCondition=OrCondition(andConditions=[])), sqlTokens=[TableToken(tableName=tender, quoteCharacter=NONE, schemaNameLength=0)], parametersIndex=14, logicSQL=UPDATE tender  SET CONSUMER_ID=?,
+CONSUMER_USERNAME=?,
+USER_NO=?,
+PROJECT_ID=?,
+PROJECT_NO=?,
+AMOUNT=?,
+TENDER_STATUS=?,
+CREATE_DATE=?,
+REQUEST_NO=?,
+STATUS=?,
+PROJECT_NAME=?,
+PROJECT_PERIOD=?,
+PROJECT_ANNUAL_RATE=?  WHERE ID=?), deleteStatement=false, updateTableAlias={tender=tender}, updateColumnValues={Column(name=CONSUMER_ID, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@7650b15a, Column(name=CONSUMER_USERNAME, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@478c54ee, Column(name=USER_NO, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@56d1c972, Column(name=PROJECT_ID, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@6d80d719, Column(name=PROJECT_NO, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@1e297192, Column(name=AMOUNT, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@3ba76d9d, Column(name=TENDER_STATUS, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@63e5a9c2, Column(name=CREATE_DATE, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@83692b8, Column(name=REQUEST_NO, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@5d46d7cd, Column(name=STATUS, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@5d8d827d, Column(name=PROJECT_NAME, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@13e88bb7, Column(name=PROJECT_PERIOD, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@2ff77820, Column(name=PROJECT_ANNUAL_RATE, tableName=tender)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@44e42aac}, whereStartIndex=217, whereStopIndex=226, whereParameterStartIndex=13, whereParameterEndIndex=13)
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,777 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds0 ::: UPDATE tender_0  SET CONSUMER_ID=?,
+CONSUMER_USERNAME=?,
+USER_NO=?,
+PROJECT_ID=?,
+PROJECT_NO=?,
+AMOUNT=?,
+TENDER_STATUS=?,
+CREATE_DATE=?,
+REQUEST_NO=?,
+STATUS=?,
+PROJECT_NAME=?,
+PROJECT_PERIOD=?,
+PROJECT_ANNUAL_RATE=?  WHERE ID=? ::: [1003, 15378791983, USR_056F993E477147B88FA66E79A90BB500, 2139483643803590657, PRO_B9825398446041CC9A22DFE6AA6F670B, 450, LOAN, 2019-09-26T15:58:32.000+0800, REQ_79E41F22D0ED44208B0E2B345253E3B7, 1, 左丘先生第1次借款, 360, 0.10, 1177130315421409282]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,778 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds0 ::: UPDATE tender_1  SET CONSUMER_ID=?,
+CONSUMER_USERNAME=?,
+USER_NO=?,
+PROJECT_ID=?,
+PROJECT_NO=?,
+AMOUNT=?,
+TENDER_STATUS=?,
+CREATE_DATE=?,
+REQUEST_NO=?,
+STATUS=?,
+PROJECT_NAME=?,
+PROJECT_PERIOD=?,
+PROJECT_ANNUAL_RATE=?  WHERE ID=? ::: [1003, 15378791983, USR_056F993E477147B88FA66E79A90BB500, 2139483643803590657, PRO_B9825398446041CC9A22DFE6AA6F670B, 450, LOAN, 2019-09-26T15:58:32.000+0800, REQ_79E41F22D0ED44208B0E2B345253E3B7, 1, 左丘先生第1次借款, 360, 0.10, 1177130315421409282]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,781 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds1 ::: UPDATE tender_0  SET CONSUMER_ID=?,
+CONSUMER_USERNAME=?,
+USER_NO=?,
+PROJECT_ID=?,
+PROJECT_NO=?,
+AMOUNT=?,
+TENDER_STATUS=?,
+CREATE_DATE=?,
+REQUEST_NO=?,
+STATUS=?,
+PROJECT_NAME=?,
+PROJECT_PERIOD=?,
+PROJECT_ANNUAL_RATE=?  WHERE ID=? ::: [1003, 15378791983, USR_056F993E477147B88FA66E79A90BB500, 2139483643803590657, PRO_B9825398446041CC9A22DFE6AA6F670B, 450, LOAN, 2019-09-26T15:58:32.000+0800, REQ_79E41F22D0ED44208B0E2B345253E3B7, 1, 左丘先生第1次借款, 360, 0.10, 1177130315421409282]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,787 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds1 ::: UPDATE tender_1  SET CONSUMER_ID=?,
+CONSUMER_USERNAME=?,
+USER_NO=?,
+PROJECT_ID=?,
+PROJECT_NO=?,
+AMOUNT=?,
+TENDER_STATUS=?,
+CREATE_DATE=?,
+REQUEST_NO=?,
+STATUS=?,
+PROJECT_NAME=?,
+PROJECT_PERIOD=?,
+PROJECT_ANNUAL_RATE=?  WHERE ID=? ::: [1003, 15378791983, USR_056F993E477147B88FA66E79A90BB500, 2139483643803590657, PRO_B9825398446041CC9A22DFE6AA6F670B, 450, LOAN, 2019-09-26T15:58:32.000+0800, REQ_79E41F22D0ED44208B0E2B345253E3B7, 1, 左丘先生第1次借款, 360, 0.10, 1177130315421409282]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,792 DEBUG [http-nio-53060-exec-1][BaseJdbcLogger.java:159] - <==    Updates: 1
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,822 DEBUG [http-nio-53060-exec-1][BaseJdbcLogger.java:159] - ==>  Preparing: UPDATE project SET CONSUMER_ID=?, USER_NO=?, PROJECT_NO=?, NAME=?, DESCRIPTION=?, TYPE=?, PERIOD=?, ANNUAL_RATE=?, BORROWER_ANNUAL_RATE=?, COMMISSION_ANNUAL_RATE=?, REPAYMENT_WAY=?, AMOUNT=?, PROJECT_STATUS=?, CREATE_DATE=?, STATUS=?, IS_ASSIGNMENT=? WHERE ID=? 
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,827 DEBUG [http-nio-53060-exec-1][BaseJdbcLogger.java:159] - ==> Parameters: 27(Long), USR_2576E18E1EB0437BB3CF7AD1858ED6FC(String), PRO_B9825398446041CC9A22DFE6AA6F670B(String), 左丘先生第1次借款(String), 个人生活消费(String), NEW(String), 360(Integer), 0.10(BigDecimal), 0.15(BigDecimal), 0.05(BigDecimal), FIXED_REPAYMENT(String), 12000.00(BigDecimal), REPAYING(String), 2019-06-14 05:44:06.0(Timestamp), 1(Integer), 0(Integer), 2139483643803590657(Long)
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,844 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Rule Type: sharding
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,845 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Logic SQL: UPDATE project  SET CONSUMER_ID=?,
+USER_NO=?,
+PROJECT_NO=?,
+NAME=?,
+DESCRIPTION=?,
+TYPE=?,
+PERIOD=?,
+ANNUAL_RATE=?,
+BORROWER_ANNUAL_RATE=?,
+COMMISSION_ANNUAL_RATE=?,
+REPAYMENT_WAY=?,
+AMOUNT=?,
+PROJECT_STATUS=?,
+CREATE_DATE=?,
+STATUS=?,
+IS_ASSIGNMENT=?  WHERE ID=?
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,846 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - SQLStatement: DMLStatement(super=AbstractSQLStatement(type=DML, tables=Tables(tables=[Table(name=project, alias=Optional.absent())]), routeConditions=Conditions(orCondition=OrCondition(andConditions=[AndCondition(conditions=[Condition(column=Column(name=ID, tableName=project), operator=EQUAL, compareOperator==, positionValueMap={}, positionIndexMap={0=16})])])), encryptConditions=Conditions(orCondition=OrCondition(andConditions=[])), sqlTokens=[TableToken(tableName=project, quoteCharacter=NONE, schemaNameLength=0)], parametersIndex=17, logicSQL=UPDATE project  SET CONSUMER_ID=?,
+USER_NO=?,
+PROJECT_NO=?,
+NAME=?,
+DESCRIPTION=?,
+TYPE=?,
+PERIOD=?,
+ANNUAL_RATE=?,
+BORROWER_ANNUAL_RATE=?,
+COMMISSION_ANNUAL_RATE=?,
+REPAYMENT_WAY=?,
+AMOUNT=?,
+PROJECT_STATUS=?,
+CREATE_DATE=?,
+STATUS=?,
+IS_ASSIGNMENT=?  WHERE ID=?), deleteStatement=false, updateTableAlias={project=project}, updateColumnValues={Column(name=CONSUMER_ID, tableName=project)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@7f784057, Column(name=USER_NO, tableName=project)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@61f82668, Column(name=PROJECT_NO, tableName=project)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@3ac5bb23, Column(name=NAME, tableName=project)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@106dbbd5, Column(name=DESCRIPTION, tableName=project)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@2daa2b77, Column(name=TYPE, tableName=project)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@d4183cc, Column(name=PERIOD, tableName=project)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@1a4a3de4, Column(name=ANNUAL_RATE, tableName=project)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@67049e6b, Column(name=BORROWER_ANNUAL_RATE, tableName=project)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@1b89e06f, Column(name=COMMISSION_ANNUAL_RATE, tableName=project)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@1ad74f31, Column(name=REPAYMENT_WAY, tableName=project)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@5139e492, Column(name=AMOUNT, tableName=project)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@120dcf18, Column(name=PROJECT_STATUS, tableName=project)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@4653dfae, Column(name=CREATE_DATE, tableName=project)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@66ddae92, Column(name=STATUS, tableName=project)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@78dedbaf, Column(name=IS_ASSIGNMENT, tableName=project)=org.apache.shardingsphere.core.parse.old.parser.expression.SQLPlaceholderExpression@4d7bea3}, whereStartIndex=253, whereStopIndex=262, whereParameterStartIndex=16, whereParameterEndIndex=16)
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,847 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds0 ::: UPDATE project_1  SET CONSUMER_ID=?,
+USER_NO=?,
+PROJECT_NO=?,
+NAME=?,
+DESCRIPTION=?,
+TYPE=?,
+PERIOD=?,
+ANNUAL_RATE=?,
+BORROWER_ANNUAL_RATE=?,
+COMMISSION_ANNUAL_RATE=?,
+REPAYMENT_WAY=?,
+AMOUNT=?,
+PROJECT_STATUS=?,
+CREATE_DATE=?,
+STATUS=?,
+IS_ASSIGNMENT=?  WHERE ID=? ::: [27, USR_2576E18E1EB0437BB3CF7AD1858ED6FC, PRO_B9825398446041CC9A22DFE6AA6F670B, 左丘先生第1次借款, 个人生活消费, NEW, 360, 0.10, 0.15, 0.05, FIXED_REPAYMENT, 12000.00, REPAYING, 2019-06-14T05:44:06.000+0800, 1, 0, 2139483643803590657]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,848 INFO [http-nio-53060-exec-1][SQLLogger.java:89] - Actual SQL: ds1 ::: UPDATE project_1  SET CONSUMER_ID=?,
+USER_NO=?,
+PROJECT_NO=?,
+NAME=?,
+DESCRIPTION=?,
+TYPE=?,
+PERIOD=?,
+ANNUAL_RATE=?,
+BORROWER_ANNUAL_RATE=?,
+COMMISSION_ANNUAL_RATE=?,
+REPAYMENT_WAY=?,
+AMOUNT=?,
+PROJECT_STATUS=?,
+CREATE_DATE=?,
+STATUS=?,
+IS_ASSIGNMENT=?  WHERE ID=? ::: [27, USR_2576E18E1EB0437BB3CF7AD1858ED6FC, PRO_B9825398446041CC9A22DFE6AA6F670B, 左丘先生第1次借款, 个人生活消费, NEW, 360, 0.10, 0.15, 0.05, FIXED_REPAYMENT, 12000.00, REPAYING, 2019-06-14T05:44:06.000+0800, 1, 0, 2139483643803590657]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,852 DEBUG [http-nio-53060-exec-1][BaseJdbcLogger.java:159] - <==    Updates: 1
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:57,866 INFO [PollingServerListUpdater-0][ChainedDynamicProperty.java:115] - Flipping property: depository-agent-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:58,165 DEBUG [http-nio-53060-exec-2][BaseJdbcLogger.java:159] - ==>  Preparing: SELECT COUNT(1) FROM project WHERE PROJECT_STATUS = ? 
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:58,167 DEBUG [http-nio-53060-exec-2][BaseJdbcLogger.java:159] - ==> Parameters: FULLY(String)
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:58,225 INFO [http-nio-53060-exec-2][SQLLogger.java:89] - Rule Type: sharding
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:58,226 INFO [http-nio-53060-exec-2][SQLLogger.java:89] - Logic SQL: SELECT COUNT(1) FROM project WHERE PROJECT_STATUS = ?
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:58,229 INFO [http-nio-53060-exec-2][SQLLogger.java:89] - SQLStatement: SelectStatement(super=DQLStatement(super=AbstractSQLStatement(type=DQL, tables=Tables(tables=[Table(name=project, alias=Optional.absent())]), routeConditions=Conditions(orCondition=OrCondition(andConditions=[])), encryptConditions=Conditions(orCondition=OrCondition(andConditions=[])), sqlTokens=[TableToken(tableName=project, quoteCharacter=NONE, schemaNameLength=0)], parametersIndex=1, logicSQL=SELECT COUNT(1) FROM project WHERE PROJECT_STATUS = ?)), containStar=false, firstSelectItemStartIndex=7, selectListStopIndex=14, groupByLastIndex=0, items=[AggregationSelectItem(type=COUNT, innerExpression=(1), alias=Optional.absent(), derivedAggregationSelectItems=[], index=-1)], groupByItems=[], orderByItems=[], limit=null, subqueryStatement=null, subqueryStatements=[], subqueryConditions=[])
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:58,230 INFO [http-nio-53060-exec-2][SQLLogger.java:89] - Actual SQL: ds0 ::: SELECT COUNT(1) FROM project_0 WHERE PROJECT_STATUS = ? ::: [FULLY]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:58,231 INFO [http-nio-53060-exec-2][SQLLogger.java:89] - Actual SQL: ds0 ::: SELECT COUNT(1) FROM project_1 WHERE PROJECT_STATUS = ? ::: [FULLY]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:58,231 INFO [http-nio-53060-exec-2][SQLLogger.java:89] - Actual SQL: ds1 ::: SELECT COUNT(1) FROM project_0 WHERE PROJECT_STATUS = ? ::: [FULLY]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:58,232 INFO [http-nio-53060-exec-2][SQLLogger.java:89] - Actual SQL: ds1 ::: SELECT COUNT(1) FROM project_1 WHERE PROJECT_STATUS = ? ::: [FULLY]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:58,270 DEBUG [http-nio-53060-exec-2][BaseJdbcLogger.java:159] - ==>  Preparing: SELECT ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT,REQUEST_NO FROM project WHERE PROJECT_STATUS = ? ORDER BY CREATE_DATE DESC LIMIT ?,? 
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:58,275 DEBUG [http-nio-53060-exec-2][BaseJdbcLogger.java:159] - ==> Parameters: FULLY(String), 0(Long), 10(Long)
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:58,384 INFO [http-nio-53060-exec-2][SQLLogger.java:89] - Rule Type: sharding
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:58,385 INFO [http-nio-53060-exec-2][SQLLogger.java:89] - Logic SQL: SELECT  ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT,REQUEST_NO  FROM project 
+ 
+ WHERE PROJECT_STATUS = ? ORDER BY CREATE_DATE DESC LIMIT ?,?
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:58,387 INFO [http-nio-53060-exec-2][SQLLogger.java:89] - SQLStatement: SelectStatement(super=DQLStatement(super=AbstractSQLStatement(type=DQL, tables=Tables(tables=[Table(name=project, alias=Optional.absent())]), routeConditions=Conditions(orCondition=OrCondition(andConditions=[])), encryptConditions=Conditions(orCondition=OrCondition(andConditions=[])), sqlTokens=[TableToken(tableName=project, quoteCharacter=NONE, schemaNameLength=0)], parametersIndex=3, logicSQL=SELECT  ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT,REQUEST_NO  FROM project 
+ 
+ WHERE PROJECT_STATUS = ? ORDER BY CREATE_DATE DESC LIMIT ?,?)), containStar=false, firstSelectItemStartIndex=8, selectListStopIndex=205, groupByLastIndex=0, items=[CommonSelectItem(expression=ID, alias=Optional.absent()), CommonSelectItem(expression=CONSUMER_ID, alias=Optional.absent()), CommonSelectItem(expression=USER_NO, alias=Optional.absent()), CommonSelectItem(expression=PROJECT_NO, alias=Optional.absent()), CommonSelectItem(expression=NAME, alias=Optional.absent()), CommonSelectItem(expression=DESCRIPTION, alias=Optional.absent()), CommonSelectItem(expression=TYPE, alias=Optional.absent()), CommonSelectItem(expression=PERIOD, alias=Optional.absent()), CommonSelectItem(expression=ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=BORROWER_ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=COMMISSION_ANNUAL_RATE, alias=Optional.absent()), CommonSelectItem(expression=REPAYMENT_WAY, alias=Optional.absent()), CommonSelectItem(expression=AMOUNT, alias=Optional.absent()), CommonSelectItem(expression=PROJECT_STATUS, alias=Optional.absent()), CommonSelectItem(expression=CREATE_DATE, alias=Optional.absent()), CommonSelectItem(expression=STATUS, alias=Optional.absent()), CommonSelectItem(expression=IS_ASSIGNMENT, alias=Optional.absent()), CommonSelectItem(expression=REQUEST_NO, alias=Optional.absent())], groupByItems=[], orderByItems=[OrderItem(owner=Optional.absent(), name=Optional.of(CREATE_DATE), orderDirection=DESC, nullOrderDirection=ASC, index=-1, expression=null, alias=Optional.absent())], limit=Limit(offset=LimitValue(value=-1, index=1, boundOpened=false), rowCount=LimitValue(value=-1, index=2, boundOpened=false)), subqueryStatement=null, subqueryStatements=[], subqueryConditions=[])
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:58,389 INFO [http-nio-53060-exec-2][SQLLogger.java:89] - Actual SQL: ds0 ::: SELECT  ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT,REQUEST_NO  FROM project_0 
+ 
+ WHERE PROJECT_STATUS = ? ORDER BY CREATE_DATE DESC LIMIT ?,? ::: [FULLY, 0, 10]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:58,398 INFO [http-nio-53060-exec-2][SQLLogger.java:89] - Actual SQL: ds0 ::: SELECT  ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT,REQUEST_NO  FROM project_1 
+ 
+ WHERE PROJECT_STATUS = ? ORDER BY CREATE_DATE DESC LIMIT ?,? ::: [FULLY, 0, 10]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:58,399 INFO [http-nio-53060-exec-2][SQLLogger.java:89] - Actual SQL: ds1 ::: SELECT  ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT,REQUEST_NO  FROM project_0 
+ 
+ WHERE PROJECT_STATUS = ? ORDER BY CREATE_DATE DESC LIMIT ?,? ::: [FULLY, 0, 10]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:58,402 INFO [http-nio-53060-exec-2][SQLLogger.java:89] - Actual SQL: ds1 ::: SELECT  ID,CONSUMER_ID,USER_NO,PROJECT_NO,NAME,DESCRIPTION,TYPE,PERIOD,ANNUAL_RATE,BORROWER_ANNUAL_RATE,COMMISSION_ANNUAL_RATE,REPAYMENT_WAY,AMOUNT,PROJECT_STATUS,CREATE_DATE,STATUS,IS_ASSIGNMENT,REQUEST_NO  FROM project_1 
+ 
+ WHERE PROJECT_STATUS = ? ORDER BY CREATE_DATE DESC LIMIT ?,? ::: [FULLY, 0, 10]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:58,422 DEBUG [http-nio-53060-exec-2][BaseJdbcLogger.java:159] - <==      Total: 3
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:14:58,868 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:01,341 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:01,457 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:02,896 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:03,268 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:03,640 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:04,662 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:08,868 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:16,889 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:17,014 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:18,869 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:24,567 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:24,816 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:25,584 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:26,594 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:27,612 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:28,619 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:28,870 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:31,339 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:31,464 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:32,898 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:33,265 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:33,964 INFO [hmilyTransaction-hmily-transaction-self-recovery-14][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:34,031 INFO [hmilyTransaction-hmily-transaction-self-recovery-28][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:38,871 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 1ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:46,899 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:47,014 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:48,279 INFO [hmilyTransaction-hmily-transaction-self-recovery-42][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:48,872 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 1ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:49,626 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:50,633 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:51,073 INFO [hmilyTransaction-hmily-transaction-self-recovery-2][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:54,573 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:54,801 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:55,578 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:56,589 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:15:58,873 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:01,339 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:01,455 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:02,897 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:03,265 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:08,874 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:11,639 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:12,643 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:16,890 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:17,012 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:18,875 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:24,569 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:24,817 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:25,575 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:26,581 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:28,875 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:31,339 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:31,461 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:32,896 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:33,265 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:33,648 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:33,968 INFO [hmilyTransaction-hmily-transaction-self-recovery-14][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:34,034 INFO [hmilyTransaction-hmily-transaction-self-recovery-28][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:34,654 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:38,875 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:46,889 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:47,014 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:48,281 INFO [hmilyTransaction-hmily-transaction-self-recovery-42][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:48,876 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 1ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:51,077 INFO [hmilyTransaction-hmily-transaction-self-recovery-2][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:54,567 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:54,800 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:55,575 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:56,590 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:57,596 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:58,600 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:16:58,877 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:17:01,339 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:17:01,462 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:17:02,909 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:17:03,266 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:17:08,878 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:17:16,889 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:17:17,012 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:17:18,878 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:17:19,618 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:17:20,621 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:17:24,567 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:17:24,800 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:17:25,584 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:17:26,590 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:17:28,879 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:17:31,339 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:17:31,459 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:17:32,895 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:17:33,266 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:17:33,974 INFO [hmilyTransaction-hmily-transaction-self-recovery-14][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:17:34,038 INFO [hmilyTransaction-hmily-transaction-self-recovery-28][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:17:38,880 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:17:41,627 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:17:42,632 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:17:46,894 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:17:47,013 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:17:48,284 INFO [hmilyTransaction-hmily-transaction-self-recovery-42][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:17:48,881 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:17:51,081 INFO [hmilyTransaction-hmily-transaction-self-recovery-2][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:17:54,571 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:17:54,817 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:17:55,577 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:17:56,585 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:17:58,881 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:01,340 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:01,454 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:02,898 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:03,268 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:03,637 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:04,642 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:08,356 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: depository-agent-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:08,882 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:09,363 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: depository-agent-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/depository-agent-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%2C%22depository-agent-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A349%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: depository-agent-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:16,893 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:17,012 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:18,883 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:21,876 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:24,565 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:24,801 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:25,570 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:26,576 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:27,580 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:28,585 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:28,883 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:31,338 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:31,414 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: uaa-service, cluster: DEFAULT, namespaces: application
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:31,462 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:32,418 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: uaa-service, cluster: DEFAULT, namespace: application, url: http://192.168.2.153:8080/configs/uaa-service/DEFAULT/application?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22uaa-service%2Bdefault%2Bapplication%22%3A308%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: uaa-service, cluster: DEFAULT, namespace: application, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:32,895 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:33,263 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:33,981 INFO [hmilyTransaction-hmily-transaction-self-recovery-14][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:34,041 INFO [hmilyTransaction-hmily-transaction-self-recovery-28][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:37,018 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: uaa-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:37,446 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:38,024 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: uaa-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/uaa-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22uaa-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A313%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: uaa-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:38,884 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:46,026 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:46,893 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:47,011 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:48,287 INFO [hmilyTransaction-hmily-transaction-self-recovery-42][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:48,885 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:49,272 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:49,591 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:50,256 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: content-search-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:50,598 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:51,085 INFO [hmilyTransaction-hmily-transaction-self-recovery-2][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:51,264 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: content-search-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/content-search-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: content-search-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:51,516 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: repayment-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:52,522 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: repayment-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/repayment-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%2C%22repayment-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A323%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: repayment-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:53,658 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:54,568 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:54,799 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:55,572 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:56,578 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:18:58,885 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:01,344 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:01,456 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:02,895 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:03,264 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:04,116 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:07,094 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:08,886 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:11,601 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:12,605 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:16,890 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:17,011 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:18,288 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:18,887 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:19,293 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/transaction-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22transaction-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A285%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:24,565 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:24,801 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:25,570 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:26,579 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:28,887 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:31,339 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:31,454 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:32,897 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:33,268 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:33,608 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:33,869 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:33,986 INFO [hmilyTransaction-hmily-transaction-self-recovery-14][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:34,045 INFO [hmilyTransaction-hmily-transaction-self-recovery-28][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:34,615 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:38,888 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:46,891 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:47,010 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:48,288 INFO [hmilyTransaction-hmily-transaction-self-recovery-42][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:48,889 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:51,090 INFO [hmilyTransaction-hmily-transaction-self-recovery-2][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:54,565 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:54,804 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:55,571 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:56,578 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:57,581 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:58,591 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:19:58,889 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:20:01,340 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:20:01,453 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:20:02,896 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:20:03,264 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:20:08,889 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:20:16,887 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:20:17,013 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:20:18,889 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:20:19,597 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:20:20,604 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:20:24,569 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:20:24,801 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:20:25,574 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:20:26,585 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:20:28,890 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:20:31,351 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:20:31,461 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:20:32,897 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:20:33,269 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:20:33,988 INFO [hmilyTransaction-hmily-transaction-self-recovery-14][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:20:34,050 INFO [hmilyTransaction-hmily-transaction-self-recovery-28][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:20:38,890 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:20:41,608 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:20:42,612 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:20:46,891 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:20:47,013 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:20:48,290 INFO [hmilyTransaction-hmily-transaction-self-recovery-42][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:20:48,891 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:20:51,094 INFO [hmilyTransaction-hmily-transaction-self-recovery-2][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:20:54,565 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:20:54,801 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:20:55,570 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:20:56,576 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:20:58,891 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:01,338 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:01,451 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:02,896 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:03,265 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:03,617 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:04,623 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:08,891 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:16,891 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:17,010 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:18,892 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 1ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:24,568 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:24,804 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:25,573 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:26,578 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:27,586 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:28,591 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:28,893 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:31,341 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:31,455 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:32,896 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:33,266 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:33,991 INFO [hmilyTransaction-hmily-transaction-self-recovery-14][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:34,054 INFO [hmilyTransaction-hmily-transaction-self-recovery-28][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:38,893 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:46,891 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:47,013 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:48,293 INFO [hmilyTransaction-hmily-transaction-self-recovery-42][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:48,894 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:49,596 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:50,601 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:51,096 INFO [hmilyTransaction-hmily-transaction-self-recovery-2][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:54,582 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:54,800 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:55,587 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:56,590 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:21:58,894 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:22:01,339 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:22:01,464 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:22:02,897 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:22:03,266 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:22:08,903 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 8ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:22:12,611 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:22:16,889 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:22:17,012 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:22:18,903 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:22:24,567 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:22:24,819 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:22:25,572 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:22:26,577 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:22:28,904 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:22:31,342 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:22:31,454 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:22:32,896 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:22:33,265 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:22:33,615 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:22:33,994 INFO [hmilyTransaction-hmily-transaction-self-recovery-14][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:22:34,057 INFO [hmilyTransaction-hmily-transaction-self-recovery-28][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:22:34,618 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:22:38,905 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:22:46,890 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:22:47,028 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:22:48,296 INFO [hmilyTransaction-hmily-transaction-self-recovery-42][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:22:48,905 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:22:51,098 INFO [hmilyTransaction-hmily-transaction-self-recovery-2][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:22:54,565 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:22:54,801 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:22:55,571 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:22:56,575 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:22:57,582 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:22:58,587 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:22:58,906 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:01,340 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:01,464 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:02,895 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:03,270 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:08,354 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: depository-agent-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:08,907 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:09,361 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: depository-agent-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/depository-agent-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%2C%22depository-agent-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A349%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: depository-agent-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:16,889 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:17,009 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:18,908 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:19,594 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:20,598 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:21,878 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:24,569 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:24,802 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:25,573 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:26,579 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:28,908 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:31,341 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:31,416 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: uaa-service, cluster: DEFAULT, namespaces: application
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:31,454 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:32,421 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: uaa-service, cluster: DEFAULT, namespace: application, url: http://192.168.2.153:8080/configs/uaa-service/DEFAULT/application?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22uaa-service%2Bdefault%2Bapplication%22%3A308%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: uaa-service, cluster: DEFAULT, namespace: application, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:32,898 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:33,264 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:33,997 INFO [hmilyTransaction-hmily-transaction-self-recovery-14][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:34,061 INFO [hmilyTransaction-hmily-transaction-self-recovery-28][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:37,007 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: uaa-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:37,450 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:38,014 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: uaa-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/uaa-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22uaa-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A313%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: uaa-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:38,908 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:41,602 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:42,606 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:46,028 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:46,903 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:47,012 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:48,299 INFO [hmilyTransaction-hmily-transaction-self-recovery-42][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:48,909 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:49,274 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:50,254 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: content-search-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:51,101 INFO [hmilyTransaction-hmily-transaction-self-recovery-2][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:51,258 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: content-search-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/content-search-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: content-search-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:51,514 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: repayment-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:52,520 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: repayment-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/repayment-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%2C%22repayment-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A323%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: repayment-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:53,660 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:54,570 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:54,800 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:55,572 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:56,578 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:23:58,910 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 1ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:01,339 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:01,464 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:02,896 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:03,266 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:03,612 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:04,119 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:04,623 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:07,097 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:08,910 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:16,887 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:17,016 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:18,288 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: transaction-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:18,910 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:19,294 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.2.153:8080/configs/transaction-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.2.153&messages=%7B%22details%22%3A%7B%22transaction-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A285%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: transaction-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:24,581 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:24,800 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:25,586 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:26,593 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:27,600 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:28,604 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:28,911 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:31,340 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:31,466 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:32,897 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:33,267 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:33,872 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:34,000 INFO [hmilyTransaction-hmily-transaction-self-recovery-14][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:34,064 INFO [hmilyTransaction-hmily-transaction-self-recovery-28][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:38,911 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:46,890 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:47,011 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:48,302 INFO [hmilyTransaction-hmily-transaction-self-recovery-42][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:48,911 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:49,608 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:50,611 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:51,107 INFO [hmilyTransaction-hmily-transaction-self-recovery-2][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:54,576 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:54,814 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:55,582 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:56,586 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:24:58,911 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:25:01,352 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:25:01,454 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:25:02,903 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:25:03,267 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:25:08,912 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:25:11,617 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:25:12,622 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:25:16,889 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:25:17,015 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:25:18,912 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:25:19,691 INFO [lettuce-nioEventLoop-4-1][AbstractInternalLogger.java:219] - [null, java.io.IOException: 远程主机强迫关闭了一个现有的连接。, java.io.IOException: 远程主机强迫关闭了一个现有的连接。] Unexpected exception during request: [null, java.io.IOException: 远程主机强迫关闭了一个现有的连接。, java.io.IOException: 远程主机强迫关闭了一个现有的连接。]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:25:19,706 INFO [lettuce-nioEventLoop-4-1][AbstractInternalLogger.java:219] - [null, java.io.IOException: 远程主机强迫关闭了一个现有的连接。, java.io.IOException: 远程主机强迫关闭了一个现有的连接。] Unexpected exception during request: [null, java.io.IOException: 远程主机强迫关闭了一个现有的连接。, java.io.IOException: 远程主机强迫关闭了一个现有的连接。]
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:25:19,918 INFO [lettuce-eventExecutorLoop-1-4][AbstractInternalLogger.java:173] - Reconnecting, last destination was localhost/127.0.0.1:6379
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:25:20,077 INFO [lettuce-eventExecutorLoop-1-3][AbstractInternalLogger.java:173] - Reconnecting, last destination was localhost/127.0.0.1:6379
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:25:21,086 WARN [lettuce-nioEventLoop-4-2][AbstractInternalLogger.java:176] - Cannot reconnect: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:6379
+[${project.name}][${env:SERVER_PORT}] 2019-10-08 22:25:21,174 WARN [lettuce-nioEventLoop-4-2][AbstractInternalLogger.java:176] - Cannot reconnect: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: localhost/127.0.0.1:6379

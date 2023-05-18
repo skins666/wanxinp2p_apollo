@@ -1,14 +1,15 @@
 package cn.itcast.wanxinp2p.repayment.service;
 
-import cn.itcast.wanxinp2p.api.depository.DepositoryAgentApi;
+import cn.itcast.wanxinp2p.api.depository.model.RepaymentDetailRequest;
+import cn.itcast.wanxinp2p.api.depository.model.RepaymentRequest;
 import cn.itcast.wanxinp2p.api.depository.model.UserAutoPreTransactionRequest;
 import cn.itcast.wanxinp2p.api.repayment.model.ProjectWithTendersDTO;
-import cn.itcast.wanxinp2p.api.repayment.model.RepaymentRequest;
 import cn.itcast.wanxinp2p.api.transaction.model.ProjectDTO;
 import cn.itcast.wanxinp2p.api.transaction.model.TenderDTO;
 import cn.itcast.wanxinp2p.common.domain.*;
 import cn.itcast.wanxinp2p.common.util.CodeNoUtil;
 import cn.itcast.wanxinp2p.common.util.DateUtil;
+import cn.itcast.wanxinp2p.repayment.agent.DepositoryAgentApiAgent;
 import cn.itcast.wanxinp2p.repayment.entity.ReceivableDetail;
 import cn.itcast.wanxinp2p.repayment.entity.ReceivablePlan;
 import cn.itcast.wanxinp2p.repayment.entity.RepaymentDetail;
@@ -17,19 +18,17 @@ import cn.itcast.wanxinp2p.repayment.mapper.PlanMapper;
 import cn.itcast.wanxinp2p.repayment.mapper.ReceivableDetailMapper;
 import cn.itcast.wanxinp2p.repayment.mapper.ReceivablePlanMapper;
 import cn.itcast.wanxinp2p.repayment.mapper.RepaymentDetailMapper;
+import cn.itcast.wanxinp2p.repayment.message.RepaymentProducer;
 import cn.itcast.wanxinp2p.repayment.model.EqualInterestRepayment;
 import cn.itcast.wanxinp2p.repayment.util.RepaymentUtil;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
+import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import javax.annotation.Resource;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -43,18 +42,18 @@ public class RepaymentServiceImpl implements RepaymentService {
 
     @Autowired
     private ReceivablePlanMapper receivablePlanMapper;
-    @Resource
-    private RepaymentPlanService repaymentPlanService;
 
-
-    @Resource
+    @Autowired
     private RepaymentDetailMapper repaymentDetailMapper;
 
-    //注入feign代理
-    @Resource
-    private DepositoryAgentApi depositoryAgentApi;
+    @Autowired
+    private DepositoryAgentApiAgent depositoryAgentApiAgent;
 
+    @Autowired
     private ReceivableDetailMapper receivableDetailMapper;
+
+    @Autowired
+    private RepaymentProducer repaymentProducer;
 
     @Override
     @Transactional(rollbackFor = BusinessException.class)
@@ -62,192 +61,221 @@ public class RepaymentServiceImpl implements RepaymentService {
 
         //1.生成借款人还款计划
         //1.1 获取标的信息
-        ProjectDTO projectDTO = projectWithTendersDTO.getProject();
+        ProjectDTO projectDTO=projectWithTendersDTO.getProject();
 
         //1.2 获取投标信息
         List<TenderDTO> tenders = projectWithTendersDTO.getTenders();
 
         //1.3 计算还款的月数
-        Double ceil = Math.ceil(projectDTO.getPeriod() / 30.0);
-        Integer month = ceil.intValue();
+       Double ceil = Math.ceil(projectDTO.getPeriod()/30.0);
+       Integer month = ceil.intValue();
 
         //1.4 还款方式，只针对等额本息
         String repaymentWay = projectDTO.getRepaymentWay();
 
-        if (repaymentWay.equals(RepaymentWayCode.FIXED_REPAYMENT.getCode())) {
+        if(repaymentWay.equals(RepaymentWayCode.FIXED_REPAYMENT.getCode())){
             //1.5 生成还款计划
-            EqualInterestRepayment fixedRepayment = RepaymentUtil.fixedRepayment(projectDTO.getAmount(), projectDTO.getBorrowerAnnualRate(), month, projectDTO.getCommissionAnnualRate());
+            EqualInterestRepayment fixedRepayment = RepaymentUtil.fixedRepayment(projectDTO.getAmount(),projectDTO.getBorrowerAnnualRate(),month,projectDTO.getCommissionAnnualRate());
 
             //1.6 保存还款计划
-            List<RepaymentPlan> planList = saveRepaymentPlan(projectDTO, fixedRepayment);
+            List<RepaymentPlan> planList = saveRepaymentPlan(projectDTO,fixedRepayment);
 
             //2.生成投资人应收明细
             //2.1 根据投标信息生成应收明细
             tenders.forEach(tenderDTO -> {
-                EqualInterestRepayment receipt = RepaymentUtil.fixedRepayment(tenderDTO.getAmount(), tenderDTO.getProjectAnnualRate(), month, projectWithTendersDTO.getCommissionInvestorAnnualRate());
+                EqualInterestRepayment receipt = RepaymentUtil.fixedRepayment(tenderDTO.getAmount(),tenderDTO.getProjectAnnualRate(),month,projectWithTendersDTO.getCommissionInvestorAnnualRate());
 
                 //2.2 保存应收明细到数据库
                 planList.forEach(plan -> {
-                    saveRreceivablePlan(plan, tenderDTO, receipt);
+                    saveRreceivablePlan(plan,tenderDTO,receipt);
                 });
 
             });
 
-        } else {
+        }else{
             return "-1";
         }
 
         return DepositoryReturnCode.RETURN_CODE_00000.getCode();
     }
 
-    /**
-     * 查询到期还款计划
-     *
-     * @param date
-     * @return
-     */
-
     @Override
-    public List<RepaymentPlan> SelectDueRepayment(String date) {
-        //将String的data转换成LocalDateTime类型
-        LocalDateTime localDateTime = LocalDateTime.parse(date, DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
-// 将日期向前推三天
-
-
-        QueryWrapper<RepaymentPlan> repaymentPlanQueryWrapper = new QueryWrapper<>();
-        repaymentPlanQueryWrapper.lambda().eq(RepaymentPlan::getShouldRepaymentDate, localDateTime)
-                .eq(RepaymentPlan::getRepaymentStatus, 0);
-
-        return repaymentPlanService.list(repaymentPlanQueryWrapper);
-
+    public List<RepaymentPlan> selectDueRepayment(String date) {
+        return planMapper.selectDueRepayment(date);
     }
 
     @Override
     public RepaymentDetail saveRepaymentDetail(RepaymentPlan repaymentPlan) {
-        //1.先进行查询
-        QueryWrapper<RepaymentDetail> repaymentDetailQueryWrapper = new QueryWrapper<>();
-        repaymentDetailQueryWrapper.lambda().eq(RepaymentDetail::getRepaymentPlanId, repaymentPlan.getId());
+        //1. 进行查询
+        RepaymentDetail repaymentDetail=repaymentDetailMapper.selectOne(Wrappers.<RepaymentDetail>lambdaQuery().eq(RepaymentDetail::getRepaymentPlanId,repaymentPlan.getId()));
 
-        RepaymentDetail repaymentDetail = repaymentDetailMapper.selectOne(repaymentDetailQueryWrapper);
-        if (repaymentDetail == null) {
-
-
-            //2.查不到数据才进行保存
+        //2. 查不到数据才进行保存
+        if(repaymentDetail == null){
             repaymentDetail = new RepaymentDetail();
+            // 还款计划项标识
             repaymentDetail.setRepaymentPlanId(repaymentPlan.getId());
+            // 实还本息
             repaymentDetail.setAmount(repaymentPlan.getAmount());
+            // 实际还款时间
             repaymentDetail.setRepaymentDate(LocalDateTime.now());
-            repaymentDetail.setAmount(repaymentPlan.getAmount());
+            // 请求流水号
             repaymentDetail.setRequestNo(CodeNoUtil.getNo(CodePrefixCode.CODE_REQUEST_PREFIX));
+            // 未同步
             repaymentDetail.setStatus(StatusCode.STATUS_OUT.getCode());
-
+            // 保存数据
             repaymentDetailMapper.insert(repaymentDetail);
-
         }
+
         return repaymentDetail;
     }
 
     @Override
-    public UserAutoPreTransactionRequest generateUserAutoTranactionRequest(RepaymentPlan repaymentPlan, String requestNo) {
-        //1.构造请求数据
-        UserAutoPreTransactionRequest request = new UserAutoPreTransactionRequest();
-        request.setBizType(PreprocessBusinessTypeCode.REPAYMENT.getCode());
-        request.setAmount(repaymentPlan.getAmount());
-        request.setProjectNo(repaymentPlan.getProjectNo());
-        request.setUserNo(repaymentPlan.getUserNo());
-        request.setRemark("还款预处理");
-        request.setRequestNo(requestNo);
-        request.setId(repaymentPlan.getId());
-
-
-        return request;
-    }
-
-    @Override
     public void executeRepayment(String date) {
-        //1.查询到期还款计划
-        List<RepaymentPlan> repaymentPlans = SelectDueRepayment(date);
+        //查询到期的还款计划
+        List<RepaymentPlan> repaymentPlanList=selectDueRepayment(date);
 
-        //2.遍历还款计划
-        repaymentPlans.forEach(repaymentPlan -> {
-            RepaymentDetail repaymentDetail = saveRepaymentDetail(repaymentPlan);
-            //3.调用银行接口进行还款
-            Boolean preRepaymentResult = preRepayment(repaymentPlan, repaymentDetail.getRequestNo());
-            if (preRepaymentResult) {
-                log.info("还款预处理成功");
-                // TODO: 2023/5/18 0018 接口四
+        //生成还款明细
+        repaymentPlanList.forEach(repaymentPlan -> {
+            RepaymentDetail repaymentDetail=saveRepaymentDetail(repaymentPlan);
+
+            //还款预处理
+            Boolean proRepaymentResult = preRepayment(repaymentPlan,repaymentDetail.getRequestNo());
+
+            if(proRepaymentResult){
+                //未完待续
+                System.out.println("还款预处理成功");
+                String preRequestNo=repaymentDetail.getRequestNo();
+                RepaymentRequest repaymentRequest=generateRepaymentRequest(repaymentPlan,preRequestNo);
+                repaymentProducer.confirmRepayment(repaymentPlan,repaymentRequest);
             }
-
-
         });
 
 
     }
 
     /**
-     * @param repaymentPlan 还款计划
-     * @param preRequestNo  预处理请求流水号
+     * 构造还款信息请求数据
+     * @param repaymentPlan
+     * @param preRequestNo
      * @return
      */
-    @Override
-    public Boolean preRepayment(RepaymentPlan repaymentPlan, String preRequestNo) {
-        //构造请求数据
-        UserAutoPreTransactionRequest userAutoPreTransactionRequest = generateUserAutoTranactionRequest(repaymentPlan, preRequestNo);
-        //请求存管代理服务
-        RestResponse<String> stringRestResponse = depositoryAgentApi.userAutoPreTransaction(userAutoPreTransactionRequest);
-        //判断是否成功
-        return stringRestResponse.getResult().equals(DepositoryReturnCode.RETURN_CODE_00000.getCode());
+    private RepaymentRequest generateRepaymentRequest(RepaymentPlan repaymentPlan,
+                                                      String preRequestNo) {
+        //根据还款计划id,查询应收计划
+        List<ReceivablePlan> receivablePlanList = receivablePlanMapper.selectList(Wrappers.<ReceivablePlan>lambdaQuery().eq(ReceivablePlan::getRepaymentId,repaymentPlan.getId()));
 
+        RepaymentRequest repaymentRequest=new RepaymentRequest();
+        // 还款总额
+        repaymentRequest.setAmount(repaymentPlan.getAmount());
+        // 业务实体id
+        repaymentRequest.setId(repaymentPlan.getId());
+        // 向借款人收取的佣金
+        repaymentRequest.setCommission(repaymentPlan.getCommission());
+        // 标的编码
+        repaymentRequest.setProjectNo(repaymentPlan.getProjectNo());
+        // 请求流水号
+        repaymentRequest.setRequestNo(CodeNoUtil.getNo(CodePrefixCode.CODE_REQUEST_PREFIX));
+        // 预处理业务流水号
+        repaymentRequest.setPreRequestNo(preRequestNo);
 
+        List<RepaymentDetailRequest> detailRequests =new ArrayList<>();
+        receivablePlanList.forEach(receivablePlan -> {
+            RepaymentDetailRequest detailRequest=new RepaymentDetailRequest();
+            // 投资人用户编码
+            detailRequest.setUserNo(receivablePlan.getUserNo());
+            // 向投资人收取的佣金
+            detailRequest.setCommission(receivablePlan.getCommission());
+            // 投资人应得本金
+            detailRequest.setAmount(receivablePlan.getPrincipal());
+            // 投资人应得利息
+            detailRequest.setInterest(receivablePlan.getInterest());
+            //添加到集合
+            detailRequests.add(detailRequest);
+        });
+
+        repaymentRequest.setDetails(detailRequests);
+
+        return repaymentRequest;
     }
 
-    @Transactional
     @Override
+    public Boolean preRepayment(RepaymentPlan repaymentPlan, String preRequestNo) {
+        //1. 构造请求数据
+        UserAutoPreTransactionRequest userAutoPreTransactionRequest=generateUserAutoPreTransactionRequest(repaymentPlan,preRequestNo);
+
+        //2. 请求存管代理服务
+        RestResponse<String> restResponse=depositoryAgentApiAgent.userAutoPreTransaction(userAutoPreTransactionRequest);
+
+        //3. 返回结果
+        return restResponse.getResult().equals(DepositoryReturnCode.RETURN_CODE_00000.getCode());
+    }
+
+    @Override
+    @Transactional
     public Boolean confirmRepayment(RepaymentPlan repaymentPlan, RepaymentRequest repaymentRequest) {
-        //1.更新还款明细，已同步
+        //1. 更新还款明细：已同步
+        String preRequestNo=repaymentRequest.getPreRequestNo();
+        repaymentDetailMapper.update(null,Wrappers.<RepaymentDetail>lambdaUpdate().set(RepaymentDetail::getStatus,StatusCode.STATUS_IN.getCode()).eq(RepaymentDetail::getRequestNo,preRequestNo));
 
-        UpdateWrapper<RepaymentDetail> repaymentDetailUpdateWrapper = new UpdateWrapper<>();
-        repaymentDetailUpdateWrapper.lambda().eq(RepaymentDetail::getRequestNo, repaymentRequest.getRequestNo())
-
-                .set(RepaymentDetail::getStatus, StatusCode.STATUS_IN.getCode());
-         repaymentDetailMapper.update(null,repaymentDetailUpdateWrapper);
-
-         //通过还款计划流水号查询还款计划
-
-      Long  repaymentId = repaymentPlan.getId();
-
-        //2.更新应收计划，已收款（根据投标id和期数）
-
-
-        //保存应收明细到表中
-        //根据rePaymentId查询应收计划
-        QueryWrapper<ReceivablePlan> receivablePlanQueryWrapper = new QueryWrapper<>();
-        receivablePlanQueryWrapper.lambda().eq(ReceivablePlan::getRepaymentId, repaymentId);
-        List<ReceivablePlan> receivablePlanList = receivablePlanMapper.selectList(receivablePlanQueryWrapper);
-        //遍历应收计划
-        receivablePlanList.forEach(receivablePlan -> {
+        //2.1 更新receivable_plan表为：已收
+        //根据还款计划id，查询应收计划
+        List<ReceivablePlan> rereceivablePlanList = receivablePlanMapper.selectList(Wrappers.<ReceivablePlan>lambdaQuery().eq(ReceivablePlan::getRepaymentId,repaymentPlan.getId()));
+        rereceivablePlanList.forEach(receivablePlan -> {
             receivablePlan.setReceivableStatus(1);
-            //更新应收计划
             receivablePlanMapper.updateById(receivablePlan);
-            ReceivableDetail receivableDetail = new ReceivableDetail();
-            receivableDetail.setReceivableId(receivablePlan.getId());
-            receivableDetail.setAmount(receivablePlan.getAmount());
-            receivableDetail.setReceivableDate(LocalDateTime.now());
 
+            //2.2 保存数据到receivable_detail
+            // 构造应收明细
+            ReceivableDetail receivableDetail = new ReceivableDetail();
+            // 应收项标识
+            receivableDetail.setReceivableId(receivablePlan.getId());
+            // 实收本息
+            receivableDetail.setAmount(receivablePlan.getAmount());
+            // 实收时间
+            receivableDetail.setReceivableDate(DateUtil.now());
+            // 保存投资人应收明细
             receivableDetailMapper.insert(receivableDetail);
         });
 
+        //3. 更新还款计划：已还款
+        repaymentPlan.setRepaymentStatus("1");
+        int rows = planMapper.updateById(repaymentPlan);
+        return rows>0;
+    }
 
+    @Override
+    public void invokeConfirmRepayment(RepaymentPlan repaymentPlan, RepaymentRequest repaymentRequest) {
+        RestResponse<String> repaymentResponse = depositoryAgentApiAgent.confirmRepayment(repaymentRequest);
+        if(!repaymentResponse.getResult().equals(DepositoryReturnCode.RETURN_CODE_00000.getCode())){
+            throw  new RuntimeException("还款失败");
+        }
+    }
 
-
-
-        //3.更新还款计划，已还款
-        UpdateWrapper<RepaymentPlan> repaymentPlanUpdateWrapper = new UpdateWrapper<>();
-        repaymentPlanUpdateWrapper.lambda().eq(RepaymentPlan::getId, repaymentId)
-                .set(RepaymentPlan::getRepaymentStatus, "1");
-        boolean update = repaymentPlanService.update(null, repaymentPlanUpdateWrapper);
-        // TODO: 2023/5/18 本地事务
-        return update;
+    /**
+        * 构造存管代理服务预处理请求数据
+        * @param repaymentPlan
+        * @param preRequestNo
+        * @return
+        */
+    private UserAutoPreTransactionRequest  generateUserAutoPreTransactionRequest(RepaymentPlan repaymentPlan,
+                                          String preRequestNo) {
+        // 构造请求数据
+        UserAutoPreTransactionRequest userAutoPreTransactionRequest = new
+                UserAutoPreTransactionRequest();
+        // 冻结金额
+        userAutoPreTransactionRequest.setAmount(repaymentPlan.getAmount());
+        // 预处理业务类型
+        userAutoPreTransactionRequest.setBizType(PreprocessBusinessTypeCode.REPAYMENT.getCode());
+        // 标的号
+        userAutoPreTransactionRequest.setProjectNo(repaymentPlan.getProjectNo());
+        // 请求流水号
+        userAutoPreTransactionRequest.setRequestNo(preRequestNo);
+        // 标的用户编码
+        userAutoPreTransactionRequest.setUserNo(repaymentPlan.getUserNo());
+        // 关联业务实体标识
+        userAutoPreTransactionRequest.setId(repaymentPlan.getId());
+        // 返回结果
+        return userAutoPreTransactionRequest;
     }
 
     //保存还款计划到数据库

@@ -16,7 +16,8 @@ import java.math.BigDecimal;
  */
 @Data
 @ApiModel(value = "RepaymentDetailRequest", description = "还款明细请求信息")
-public class RepaymentDetailRequest {
+public class
+RepaymentDetailRequest {
 
     @ApiModelProperty("投资人用户编码")
     private String userNo;
