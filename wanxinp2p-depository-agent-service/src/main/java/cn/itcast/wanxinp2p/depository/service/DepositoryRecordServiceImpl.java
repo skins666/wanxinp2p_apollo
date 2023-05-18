@@ -107,6 +107,7 @@ public class DepositoryRecordServiceImpl extends ServiceImpl<DepositoryRecordMap
         if(responseDTO!=null){
             return responseDTO;
         }
+        //更新数据
         depositoryRecord = getEntityByRequestNo(userAutoPreTransactionRequest.getRequestNo());
 
         //2. 签名

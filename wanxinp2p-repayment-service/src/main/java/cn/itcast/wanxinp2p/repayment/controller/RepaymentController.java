@@ -31,4 +31,14 @@ public class RepaymentController implements RepaymentApi {
         String result=repaymentService.startRepayment(projectWithTendersDTO);
         return RestResponse.success(result);
     }
+
+
+    @ApiOperation("测试用户还款")
+    @ApiImplicitParam(name = "date", value = "还款日期",
+            required = true, dataType = "String",
+            paramType = "body")
+@PostMapping("/l/test-execute-repayment")
+    public void testExecuteRepayment(String date){
+        repaymentService.SelectDueRepayment(date);
+    }
 }
