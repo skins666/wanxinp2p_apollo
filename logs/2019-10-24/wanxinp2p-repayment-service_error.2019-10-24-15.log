@@ -1,0 +1,1 @@
+[wanxinp2p-repayment-service][${env:SERVER_PORT}] 2019-10-24 15:27:07,735 ERROR [main][MybatisConfiguration.java:90] - mapper[cn.itcast.wanxinp2p.repayment.mapper.PlanMapper.selectDueRepayment] is ignored, because it exists, maybe from xml file

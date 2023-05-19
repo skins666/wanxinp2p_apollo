@@ -1,0 +1,53 @@
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:09,201 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:09,201 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:611] - Evicting 1 items (expired=1, evictionLimit=1)
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:09,201 WARN [Eureka-EvictionTimer][AbstractInstanceRegistry.java:623] - DS: Registry: expired lease for CONSUMER-SERVICE/consumer-service:192.168.2.154:53050
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:09,201 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:330] - Cancelled instance CONSUMER-SERVICE/consumer-service:192.168.2.154:53050 (replication=false)
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:13,116 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:13,226 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:15,176 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:15,240 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:17,208 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:19,202 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:19,225 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:21,231 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:23,242 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:25,260 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:27,266 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:29,203 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:29,950 WARN [http-nio-53000-exec-10][AbstractInstanceRegistry.java:353] - DS: Registry: lease doesn't exist, registering resource: CONSUMER-SERVICE - consumer-service:192.168.2.154:53050
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:29,950 WARN [http-nio-53000-exec-10][InstanceResource.java:116] - Not Found (Renew): CONSUMER-SERVICE - consumer-service:192.168.2.154:53050
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:29,955 INFO [DiscoveryClient-HeartbeatExecutor-0][DiscoveryClient.java:850] - DiscoveryClient_CONSUMER-SERVICE/consumer-service:192.168.2.154:53050 - Re-registering apps/CONSUMER-SERVICE
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:29,956 INFO [DiscoveryClient-HeartbeatExecutor-0][DiscoveryClient.java:826] - DiscoveryClient_CONSUMER-SERVICE/consumer-service:192.168.2.154:53050: registering service...
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:29,967 INFO [http-nio-53000-exec-8][AbstractInstanceRegistry.java:266] - Registered instance CONSUMER-SERVICE/consumer-service:192.168.2.154:53050 with status UP (replication=false)
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:29,968 INFO [DiscoveryClient-HeartbeatExecutor-0][DiscoveryClient.java:835] - DiscoveryClient_CONSUMER-SERVICE/consumer-service:192.168.2.154:53050 - registration status: 204
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:30,486 INFO [http-nio-53000-exec-9][AbstractInstanceRegistry.java:266] - Registered instance CONSUMER-SERVICE/consumer-service:192.168.2.154:53050 with status UP (replication=true)
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:31,285 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:33,298 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:35,307 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:39,205 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 1ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:39,325 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:43,344 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:43,647 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:45,351 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:47,356 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:49,207 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:49,363 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:51,376 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:54,474 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:55,305 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:57,326 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:59,201 INFO [hmilyTransaction-hmily-transaction-self-recovery-42][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:59,209 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:59,398 INFO [hmilyTransaction-hmily-transaction-self-recovery-28][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:59,410 INFO [hmilyTransaction-hmily-transaction-self-recovery-14][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:59,970 INFO [DiscoveryClient-CacheRefreshExecutor-0][DiscoveryClient.java:958] - Disable delta property : false
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:59,970 INFO [DiscoveryClient-CacheRefreshExecutor-0][DiscoveryClient.java:959] - Single vip registry refresh property : null
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:59,970 INFO [DiscoveryClient-CacheRefreshExecutor-0][DiscoveryClient.java:960] - Force full registry fetch : false
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:59,970 INFO [DiscoveryClient-CacheRefreshExecutor-0][DiscoveryClient.java:961] - Application is null : false
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:59,970 INFO [DiscoveryClient-CacheRefreshExecutor-0][DiscoveryClient.java:962] - Registered Applications size is zero : true
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:59,970 INFO [DiscoveryClient-CacheRefreshExecutor-0][DiscoveryClient.java:964] - Application version is -1: false
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:59,970 INFO [DiscoveryClient-CacheRefreshExecutor-0][DiscoveryClient.java:1047] - Getting all instance registry info from the eureka server
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:04:59,977 INFO [DiscoveryClient-CacheRefreshExecutor-0][DiscoveryClient.java:1056] - The response status is 200
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:05:09,209 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:05:13,477 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2019-10-24 21:05:13,653 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true

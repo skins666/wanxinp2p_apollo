@@ -1,0 +1,47 @@
+[${project.name}][${env:SERVER_PORT}] 2019-10-22 14:48:21,656 ERROR [cn.itcast.wanxinp2p.repayment.job.RepaymentJob_Worker-1][DefaultJobExceptionHandler.java:33] - Job 'cn.itcast.wanxinp2p.repayment.job.RepaymentJob' exception occur in job processing
+org.springframework.messaging.MessagingException: send message Exception; nested exception is org.apache.rocketmq.client.exception.MQClientException: send message Exception
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/
+	at org.apache.rocketmq.spring.support.RocketMQUtil.convert(RocketMQUtil.java:78)
+	at org.apache.rocketmq.spring.core.RocketMQTemplate.sendMessageInTransaction(RocketMQTemplate.java:540)
+	at cn.itcast.wanxinp2p.repayment.message.RepaymentProducer.confirmRepayment(RepaymentProducer.java:28)
+	at cn.itcast.wanxinp2p.repayment.service.RepaymentServiceImpl.lambda$executeRepayment$2(RepaymentServiceImpl.java:150)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at cn.itcast.wanxinp2p.repayment.service.RepaymentServiceImpl.executeRepayment(RepaymentServiceImpl.java:139)
+	at cn.itcast.wanxinp2p.repayment.service.RepaymentServiceImpl$$FastClassBySpringCGLIB$$e8c06d50.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at com.alibaba.druid.support.spring.stat.DruidStatInterceptor.invoke(DruidStatInterceptor.java:73)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at cn.itcast.wanxinp2p.repayment.service.RepaymentServiceImpl$$EnhancerBySpringCGLIB$$24751f86.executeRepayment(<generated>)
+	at cn.itcast.wanxinp2p.repayment.service.RepaymentServiceImpl$$FastClassBySpringCGLIB$$e8c06d50.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:749)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at com.alibaba.druid.support.spring.stat.DruidStatInterceptor.invoke(DruidStatInterceptor.java:73)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688)
+	at cn.itcast.wanxinp2p.repayment.service.RepaymentServiceImpl$$EnhancerBySpringCGLIB$$230e2704.executeRepayment(<generated>)
+	at cn.itcast.wanxinp2p.repayment.job.RepaymentJob.execute(RepaymentJob.java:21)
+	at com.dangdang.ddframe.job.executor.type.SimpleJobExecutor.process(SimpleJobExecutor.java:41)
+	at com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.process(AbstractElasticJobExecutor.java:206)
+	at com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.process(AbstractElasticJobExecutor.java:171)
+	at com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute(AbstractElasticJobExecutor.java:150)
+	at com.dangdang.ddframe.job.executor.AbstractElasticJobExecutor.execute(AbstractElasticJobExecutor.java:122)
+	at com.dangdang.ddframe.job.lite.internal.schedule.LiteJob.execute(LiteJob.java:26)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573)
+Caused by: org.apache.rocketmq.client.exception.MQClientException: send message Exception
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.sendMessageInTransaction(DefaultMQProducerImpl.java:1159)
+	at org.apache.rocketmq.client.producer.TransactionMQProducer.sendMessageInTransaction(TransactionMQProducer.java:79)
+	at org.apache.rocketmq.spring.core.RocketMQTemplate.sendMessageInTransaction(RocketMQTemplate.java:538)
+	... 29 more
+Caused by: org.apache.rocketmq.client.exception.MQClientException: No route info of this topic, TP_CONFIRM_REPAYMENT
+See http://rocketmq.apache.org/docs/faq/ for further details.
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.sendDefaultImpl(DefaultMQProducerImpl.java:656)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1279)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.send(DefaultMQProducerImpl.java:1225)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.sendMessageInTransaction(DefaultMQProducerImpl.java:1157)
+	... 31 more
